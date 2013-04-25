@@ -1,17 +1,17 @@
 /* ------------------------------------------------------------------------------------------------------
- GCXAppDelegate.m
+ GPAppDelegate.m
  
  Created by Giulio Petek on 24.04.13.
  Copyright 2013 Giulio Petek. All rights reserved.
  ------------------------------------------------------------------------------------------------------ */
 
-#import "GCXAppDelegate.h"
+#import "GPAppDelegate.h"
 
 /* ------------------------------------------------------------------------------------------------------
- @implementation GCXAppDelegate
+ @implementation GPAppDelegate
  ------------------------------------------------------------------------------------------------------ */
 
-@implementation GCXAppDelegate
+@implementation GPAppDelegate
 
 #pragma mark -
 #pragma mark UIApplicationDelegate

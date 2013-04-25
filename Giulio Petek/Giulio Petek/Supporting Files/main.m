@@ -7,10 +7,10 @@
 
 
 #import <UIKit/UIKit.h>
-#import "GCXAppDelegate.h"
+#import "GPAppDelegate.h"
 
 int main(int argc, char *argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([GCXAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([GPAppDelegate class]));
     }
 }

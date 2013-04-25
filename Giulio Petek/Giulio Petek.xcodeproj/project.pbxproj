@@ -13,7 +13,7 @@
 		2CAF277017285618009B905D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF276D17285618009B905D /* Default-568h@2x.png */; };
 		2CAF277217285618009B905D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF276E17285618009B905D /* Default.png */; };
 		2CAF277417285618009B905D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF276F17285618009B905D /* Default@2x.png */; };
-		2CAF277D17285644009B905D /* GCXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF277A17285644009B905D /* GCXAppDelegate.m */; };
+		2CAF277D17285644009B905D /* GPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF277A17285644009B905D /* GPAppDelegate.m */; };
 		2CAF277F17285644009B905D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF277C17285644009B905D /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +27,8 @@
 		2CAF276E17285618009B905D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2CAF276F17285618009B905D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2CAF277617285626009B905D /* Giulio Petek-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Giulio Petek-Info.plist"; sourceTree = "<group>"; };
-		2CAF277917285644009B905D /* GCXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCXAppDelegate.h; sourceTree = "<group>"; };
-		2CAF277A17285644009B905D /* GCXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCXAppDelegate.m; sourceTree = "<group>"; };
+		2CAF277917285644009B905D /* GPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAppDelegate.h; sourceTree = "<group>"; };
+		2CAF277A17285644009B905D /* GPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAppDelegate.m; sourceTree = "<group>"; };
 		2CAF277B17285644009B905D /* Giulio Petek-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Giulio Petek-Prefix.pch"; sourceTree = "<group>"; };
 		2CAF277C17285644009B905D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,8 +120,8 @@
 		2CAF276B172855DD009B905D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF277917285644009B905D /* GCXAppDelegate.h */,
-				2CAF277A17285644009B905D /* GCXAppDelegate.m */,
+				2CAF277917285644009B905D /* GPAppDelegate.h */,
+				2CAF277A17285644009B905D /* GPAppDelegate.m */,
 				2CAF277B17285644009B905D /* Giulio Petek-Prefix.pch */,
 				2CAF277C17285644009B905D /* main.m */,
 			);
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CAF277D17285644009B905D /* GCXAppDelegate.m in Sources */,
+				2CAF277D17285644009B905D /* GPAppDelegate.m in Sources */,
 				2CAF277F17285644009B905D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +308,7 @@
 				2CAF276217284FD9009B905D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
