@@ -6,6 +6,7 @@
  ------------------------------------------------------------------------------------------------------ */
 
 #import "GPAppDelegate.h"
+#import "GPAboutMeViewController.h"
 
 /* ------------------------------------------------------------------------------------------------------
  @implementation GPAppDelegate
@@ -19,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[GPAboutMeViewController alloc] init];
     [self.window makeKeyAndVisible];
 
     return YES;
