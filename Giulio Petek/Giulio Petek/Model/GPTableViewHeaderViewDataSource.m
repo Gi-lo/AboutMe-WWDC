@@ -7,6 +7,7 @@
 
 #import "GPTableViewHeaderViewDataSource.h"
 #import "GPAvatarAndNameCollectionViewCell.h"
+#import "GPAboutTextCollectionViewCell.h"
 
 typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
     GPTableViewHeaderViewDataSourceAvatarAndNamePage = 0,
@@ -31,6 +32,7 @@ typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
 - (instancetype)initWithHeaderView:(GPTableViewHeaderView *)headerView {
     if ((self = [super init])) {
         [headerView registerClass:[GPAvatarAndNameCollectionViewCell class] forCellWithReuseIdentifier:@"GPTableViewHeaderViewDataSourceAvatarAndNamePage"];
+        [headerView registerClass:[GPAboutTextCollectionViewCell class] forCellWithReuseIdentifier:@"GPAboutTextCollectionViewCell"];
         [headerView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"test"];
     }
     
@@ -49,13 +51,17 @@ typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
         case GPTableViewHeaderViewDataSourceAvatarAndNamePage: {
             GPAvatarAndNameCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"GPTableViewHeaderViewDataSourceAvatarAndNamePage"
                                                                                                 forIndexPath:indexPath];
-            cell.avatarImageView.image = [UIImage imageNamed:@""];
+            cell.avatarImageView.image = [UIImage imageNamed:@"person01a.jpg"];
             cell.nameLabel.text = @"Giulio Petek";
             
             return cell;
         } break;
         case GPTableViewHeaderViewDataSourceAboutMePage: {
-            return [collectionView dequeueReusableCellWithReuseIdentifier:@"test" forIndexPath:indexPath];
+            GPAboutTextCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"GPAboutTextCollectionViewCell"
+                                                                                            forIndexPath:indexPath];
+            cell.aboutMeTextLabel.text = @"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem";
+            
+            return cell;
         } break;
         case GPTableViewHeaderViewDataSourceSocialPage: {
             return [collectionView dequeueReusableCellWithReuseIdentifier:@"test" forIndexPath:indexPath];

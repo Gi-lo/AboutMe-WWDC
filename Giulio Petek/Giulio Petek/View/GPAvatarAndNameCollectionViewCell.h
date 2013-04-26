@@ -5,6 +5,12 @@
  Copyright 2013 Giulio Petek. All rights reserved.
  ------------------------------------------------------------------------------------------------------ */
 
+#warning TODO
+/*
+ Create image factory ... layer properties ... no way ?
+ */
+
+
 /* --- interface -------------------------------------------------------------------------------------- */
 
 @interface GPAvatarAndNameCollectionViewCell : UICollectionViewCell

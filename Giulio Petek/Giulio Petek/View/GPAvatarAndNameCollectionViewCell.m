@@ -8,23 +8,15 @@
 #import "GPAvatarAndNameCollectionViewCell.h"
 
 static CGFloat const GPAvatarAndNameCollectionViewCellAvatarLength = 70.0f;
-
-/* ------------------------------------------------------------------------------------------------------
- @interface GPAvatarAndNameCollectionViewCell ()
- ------------------------------------------------------------------------------------------------------ */
-
-@interface GPAvatarAndNameCollectionViewCell ()
-
-@property (nonatomic, weak, readwrite) UIImageView *avatarImageView;
-@property (nonatomic, weak, readwrite) UILabel *nameLabel;
-
-@end
+static CGFloat const GPAvatarAndNameCollectionViewCellAvatarInset = 4.0f;
 
 /* ------------------------------------------------------------------------------------------------------
  @implementation GPAvatarAndNameCollectionViewCell
  ------------------------------------------------------------------------------------------------------ */
 
 @implementation GPAvatarAndNameCollectionViewCell
+@synthesize nameLabel = _nameLabel;
+@synthesize avatarImageView = _avatarImageView;
 
 #pragma mark -
 #pragma mark Getter
@@ -34,16 +26,16 @@ static CGFloat const GPAvatarAndNameCollectionViewCellAvatarLength = 70.0f;
         return _avatarImageView;
     }
     
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"person01a.jpg"]];
-    imageView.backgroundColor = [UIColor purpleColor];
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
     
 #warning SLOW build image factory or pre rendered image
     imageView.layer.cornerRadius = 8.0f;
     imageView.layer.shadowColor = [UIColor blackColor].CGColor;
     imageView.layer.shadowRadius = 3.0f;
     imageView.layer.shadowOffset = (CGSize){0.0f, 1.0f};
-    imageView.layer.borderWidth = 2.0f;
-    imageView.layer.shadowOpacity = 0.7f;
+    imageView.layer.shadowOpacity = 0.8f;
+    imageView.layer.borderWidth = 1.0f;
     imageView.layer.borderColor = [UIColor whiteColor].CGColor;
     
     [self.contentView addSubview:imageView];
@@ -76,12 +68,12 @@ static CGFloat const GPAvatarAndNameCollectionViewCellAvatarLength = 70.0f;
 
 - (void)layoutSubviews {
     [self.nameLabel sizeToFit];
-    self.nameLabel.center = (CGPoint){ self.contentView.center.x, CGRectGetHeight(self.contentView.bounds) - 40.0f };
+    self.nameLabel.center = (CGPoint){self.contentView.center.x, CGRectGetHeight(self.contentView.bounds) - 40.0f};
     self.nameLabel.frame = CGRectIntegral(self.nameLabel.frame);
 
     self.avatarImageView.frame = (CGRect){
         ceilf(CGRectGetWidth(self.contentView.bounds) / 2.0f - GPAvatarAndNameCollectionViewCellAvatarLength / 2.0f),
-        ceilf(CGRectGetMinY(self.nameLabel.frame) / 2.0f - GPAvatarAndNameCollectionViewCellAvatarLength / 2.0f),
+        ceilf(CGRectGetMinY(self.nameLabel.frame) / 2.0f - GPAvatarAndNameCollectionViewCellAvatarLength / 2.0f) + GPAvatarAndNameCollectionViewCellAvatarInset,
         GPAvatarAndNameCollectionViewCellAvatarLength, GPAvatarAndNameCollectionViewCellAvatarLength
     };
 }

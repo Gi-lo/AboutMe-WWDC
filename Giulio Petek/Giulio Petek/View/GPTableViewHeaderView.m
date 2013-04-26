@@ -9,7 +9,7 @@
 #import "GPTableViewHeaderViewFlowLayout.h"
 #import "GPTableViewHeaderViewBackgroundView.h"
 
-static CGFloat const GPTableViewHeaderViewheight = 150.0f;
+static CGFloat const GPTableViewHeaderViewheight = 180.0f;
 
 /* ------------------------------------------------------------------------------------------------------
  @interface GPTableViewHeaderView ()
@@ -42,6 +42,7 @@ static CGFloat const GPTableViewHeaderViewheight = 150.0f;
     if ((self = [super initWithFrame:CGRectZero collectionViewLayout:layout])) {
         self.showsHorizontalScrollIndicator = NO;
         self.pagingEnabled = YES;
+        self.backgroundColor = [UIColor clearColor];
         
         UIPageControl *pageControl = [[UIPageControl alloc] init];
         pageControl.userInteractionEnabled = NO;
@@ -83,7 +84,7 @@ static CGFloat const GPTableViewHeaderViewheight = 150.0f;
     }
     
     touchLocation.x -= self.contentOffset.x;
-    touchLocation.x > CGRectGetWidth(self.bounds) / 2 ? self._pageControl.currentPage++ : self._pageControl.currentPage--;
+    touchLocation.x > CGRectGetWidth(self.bounds) / 2.0f ? self._pageControl.currentPage++ : self._pageControl.currentPage--;
     [self scrollRectToVisible:(CGRect){{
             self._pageControl.currentPage * CGRectGetWidth(self.bounds), 0.0f
         },

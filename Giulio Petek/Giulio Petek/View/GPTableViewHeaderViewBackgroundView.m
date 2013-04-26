@@ -14,6 +14,7 @@
 @interface GPTableViewHeaderViewBackgroundView ()
 
 @property (nonatomic, weak) CAGradientLayer *_overlayLayer;
+@property (nonatomic, weak) CAShapeLayer *_shapeLayer;
 
 @end
 
@@ -45,14 +46,34 @@
         return __overlayLayer;
     }
     
-    CAGradientLayer *overlay = [CAGradientLayer layer];
-    overlay.colors = @[ (__bridge id)[UIColor clearColor].CGColor, (__bridge id)[UIColor colorWithWhite:0.0f alpha:0.8f].CGColor ];
-    overlay.locations = @[ @0.0f, @1.0f ];
-    [self.layer addSublayer:overlay];
+    CAGradientLayer *layer = [CAGradientLayer layer];
+    layer.colors = @[
+        (__bridge id)[UIColor colorWithWhite:1.0f alpha:0.6f].CGColor,
+        (__bridge id)[UIColor clearColor].CGColor,
+        (__bridge id)[UIColor colorWithWhite:0.0f alpha:0.8f].CGColor,
+        (__bridge id)[UIColor colorWithWhite:1.0f alpha:0.6f].CGColor,
+    ];
+    layer.locations = @[@0.0001f, @0.0f, @0.9999f, @1.0f];
+    [self.layer addSublayer:layer];
 
-    __overlayLayer = overlay;
+    __overlayLayer = layer;
     
     return __overlayLayer;
+}
+
+- (CAShapeLayer *)_shapeLayer {
+    if (__shapeLayer) {
+        return __shapeLayer;
+    }
+    
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    layer.frame = self.bounds;
+    //layer.backgroundColor = [UIColor clearColor].CGColor;
+    self.layer.mask = layer;
+    
+    __shapeLayer = layer;
+    
+    return __shapeLayer;
 }
 
 #pragma mark -
@@ -60,8 +81,13 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
+
     self._overlayLayer.frame = self.bounds;
+    
+    self._shapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                                  byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight
+                                                        cornerRadii:(CGSize){3.0f, 3.0f}].CGPath;
+    self._shapeLayer.frame = self.bounds;
 }
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C062C24172B29D70061292A /* person01a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C062C23172B29D70061292A /* person01a.jpg */; };
+		2C062C29172B361E0061292A /* GPAboutTextCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C062C28172B361D0061292A /* GPAboutTextCollectionViewCell.m */; };
 		2C1A4A18172B01BA00DBCF36 /* GPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A4A16172B01BA00DBCF36 /* GPViewController.m */; };
 		2C1A4A1E172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A4A1D172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m */; };
 		2C1A4A21172B01F900DBCF36 /* GPTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A4A20172B01F900DBCF36 /* GPTableViewHeaderView.m */; };
@@ -29,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		2C062C23172B29D70061292A /* person01a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person01a.jpg; sourceTree = "<group>"; };
+		2C062C27172B361D0061292A /* GPAboutTextCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAboutTextCollectionViewCell.h; sourceTree = "<group>"; };
+		2C062C28172B361D0061292A /* GPAboutTextCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAboutTextCollectionViewCell.m; sourceTree = "<group>"; };
 		2C1A4A16172B01BA00DBCF36 /* GPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPViewController.m; sourceTree = "<group>"; };
 		2C1A4A17172B01BA00DBCF36 /* GPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPViewController.h; sourceTree = "<group>"; };
 		2C1A4A1C172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableViewHeaderViewDataSource.h; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				2C46076A172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m */,
 				2C460761172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.h */,
 				2C460762172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m */,
+				2C062C27172B361D0061292A /* GPAboutTextCollectionViewCell.h */,
+				2C062C28172B361D0061292A /* GPAboutTextCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				2C460763172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m in Sources */,
 				2C460766172B2212003FA3EF /* GPUIStyle.m in Sources */,
 				2C46076B172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m in Sources */,
+				2C062C29172B361E0061292A /* GPAboutTextCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

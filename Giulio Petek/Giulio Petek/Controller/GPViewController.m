@@ -40,12 +40,21 @@
 #pragma mark Configure View
 
 - (void)_configureTableView {
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"test"];
     
     GPTableViewHeaderView *headerView = [[GPTableViewHeaderView alloc] init];
     self._headerDataSource = [[GPTableViewHeaderViewDataSource alloc] initWithHeaderView:headerView];
     
     headerView.dataSource = self._headerDataSource;
     self.tableView.tableHeaderView = headerView;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 100.0f;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [tableView dequeueReusableCellWithIdentifier:@"test" forIndexPath:indexPath];
 }
 
 @end
