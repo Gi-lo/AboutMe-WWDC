@@ -1,11 +1,11 @@
 /* ------------------------------------------------------------------------------------------------------
- GPAboutMeTableView.h
+ GPTableViewHeaderView.h
  
  Created by Giulio Petek on 26.04.13.
  Copyright 2013 Giulio Petek. All rights reserved.
  ------------------------------------------------------------------------------------------------------ */
 
-//TODO: Add header ___ENCAPSULATE DATA___!
+/* --- interface -------------------------------------------------------------------------------------- */
 
-@interface GPAboutMeTableView : UITableView
+@interface GPTableViewHeaderView : UICollectionView
 @end

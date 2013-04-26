@@ -1,43 +1,51 @@
 /* ------------------------------------------------------------------------------------------------------
- GPAboutMeViewController.m
+ GPViewController.m
  
  Created by Giulio Petek on 26.04.13.
  Copyright 2013 Giulio Petek. All rights reserved.
  ------------------------------------------------------------------------------------------------------ */
 
-#import "GPAboutMeViewController.h"
-#import "GPAboutMeTableView.h"
+#import "GPViewController.h"
+#import "GPTableViewHeaderView.h"
+#import "GPTableViewHeaderViewDataSource.h"
 
 /* ------------------------------------------------------------------------------------------------------
- @interface GPAboutMeViewController ()
+ @interface GPViewController ()
  ------------------------------------------------------------------------------------------------------ */
 
-@interface GPAboutMeViewController ()
+@interface GPViewController ()
 
-@property (nonatomic, weak) GPAboutMeTableView *_tableView;
+@property (nonatomic, strong) GPTableViewHeaderViewDataSource *_headerDataSource;
+
+- (void)_configureTableView;
 
 @end
 
 /* ------------------------------------------------------------------------------------------------------
- @implementation GPAboutMeViewController
+ @implementation GPViewController
  ------------------------------------------------------------------------------------------------------ */
 
-@implementation GPAboutMeViewController
+@implementation GPViewController
 
 #pragma mark -
 #pragma mark UIViewController
 
-- (void)loadView {
-    GPAboutMeTableView *tableView = [[GPAboutMeTableView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]
-                                                                        style:UITableViewStylePlain];
-    self.view = tableView;
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    [self _configureTableView];
 }
 
 #pragma mark -
-#pragma mark Getter
+#pragma mark Configure View
 
-- (GPAboutMeTableView *)view {
-    return (GPAboutMeTableView *)[super view];
+- (void)_configureTableView {
+    
+    GPTableViewHeaderView *headerView = [[GPTableViewHeaderView alloc] init];
+    self._headerDataSource = [[GPTableViewHeaderViewDataSource alloc] initWithHeaderView:headerView];
+    
+    headerView.dataSource = self._headerDataSource;
+    self.tableView.tableHeaderView = headerView;
 }
 
 @end
