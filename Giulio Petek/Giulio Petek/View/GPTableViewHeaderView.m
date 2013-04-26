@@ -7,6 +7,7 @@
 
 #import "GPTableViewHeaderView.h"
 #import "GPTableViewHeaderViewFlowLayout.h"
+#import "GPTableViewHeaderViewBackgroundView.h"
 
 static CGFloat const GPTableViewHeaderViewheight = 150.0f;
 
@@ -19,8 +20,6 @@ static CGFloat const GPTableViewHeaderViewheight = 150.0f;
 }
 
 @property (nonatomic, weak) UIPageControl *_pageControl;
-
-- (void)_pageDidChange:(UIPageControl *)sender;
 
 @end
 
@@ -48,10 +47,8 @@ static CGFloat const GPTableViewHeaderViewheight = 150.0f;
         pageControl.userInteractionEnabled = NO;
         [self addSubview:pageControl];
         __pageControl = pageControl;
-        
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
-        imageView.backgroundColor = [UIColor cyanColor];
-        self.backgroundView = imageView;
+          
+        self.backgroundView = [[GPTableViewHeaderViewBackgroundView alloc] init];
     }
     
     return self;
@@ -81,7 +78,6 @@ static CGFloat const GPTableViewHeaderViewheight = 150.0f;
     
     UITouch *touch = [touches anyObject];
     CGPoint touchLocation = [touch locationInView:self];
-    
     if (!CGRectContainsPoint(self._pageControl.frame, touchLocation)) {
         return;
     }
@@ -103,18 +99,6 @@ static CGFloat const GPTableViewHeaderViewheight = 150.0f;
     
     self._pageControl.numberOfPages = [self.dataSource collectionView:self numberOfItemsInSection:0];
     [self._pageControl sizeToFit];
-}
-
-#pragma mark -
-#pragma mark Actions
-
-- (void)_pageDidChange:(UIPageControl *)pageControl {
-    [self scrollRectToVisible:(CGRect){
-        {
-            pageControl.currentPage * CGRectGetWidth(self.bounds), 0.0f
-        },
-        self.bounds.size
-    } animated:YES];
 }
 
 #pragma mark -

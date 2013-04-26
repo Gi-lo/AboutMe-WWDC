@@ -6,6 +6,7 @@
  ------------------------------------------------------------------------------------------------------ */
 
 #import "GPTableViewHeaderViewDataSource.h"
+#import "GPAvatarAndNameCollectionViewCell.h"
 
 typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
     GPTableViewHeaderViewDataSourceAvatarAndNamePage = 0,
@@ -29,6 +30,7 @@ typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
 
 - (instancetype)initWithHeaderView:(GPTableViewHeaderView *)headerView {
     if ((self = [super init])) {
+        [headerView registerClass:[GPAvatarAndNameCollectionViewCell class] forCellWithReuseIdentifier:@"GPTableViewHeaderViewDataSourceAvatarAndNamePage"];
         [headerView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"test"];
     }
     
@@ -43,26 +45,24 @@ typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = nil;
     switch (indexPath.item) {
         case GPTableViewHeaderViewDataSourceAvatarAndNamePage: {
-            cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"test" forIndexPath:indexPath];
-            cell.backgroundColor = [UIColor greenColor];
-            cell.alpha = 0.5f;
+            GPAvatarAndNameCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"GPTableViewHeaderViewDataSourceAvatarAndNamePage"
+                                                                                                forIndexPath:indexPath];
+            cell.avatarImageView.image = [UIImage imageNamed:@""];
+            cell.nameLabel.text = @"Giulio Petek";
+            
+            return cell;
         } break;
         case GPTableViewHeaderViewDataSourceAboutMePage: {
-            cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"test" forIndexPath:indexPath];
-            cell.backgroundColor = [UIColor redColor];
-            cell.alpha = 0.5f;
+            return [collectionView dequeueReusableCellWithReuseIdentifier:@"test" forIndexPath:indexPath];
         } break;
         case GPTableViewHeaderViewDataSourceSocialPage: {
-            cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"test" forIndexPath:indexPath];
-            cell.backgroundColor = [UIColor blueColor];
-            cell.alpha = 0.5f;
+            return [collectionView dequeueReusableCellWithReuseIdentifier:@"test" forIndexPath:indexPath];
         } break;
     }
     
-    return cell;
+    return nil;
 }
 
 @end

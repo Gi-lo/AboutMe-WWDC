@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C062C24172B29D70061292A /* person01a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C062C23172B29D70061292A /* person01a.jpg */; };
 		2C1A4A18172B01BA00DBCF36 /* GPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A4A16172B01BA00DBCF36 /* GPViewController.m */; };
 		2C1A4A1E172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A4A1D172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m */; };
 		2C1A4A21172B01F900DBCF36 /* GPTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A4A20172B01F900DBCF36 /* GPTableViewHeaderView.m */; };
 		2C460760172B1913003FA3EF /* GPTableViewHeaderViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46075F172B1913003FA3EF /* GPTableViewHeaderViewFlowLayout.m */; };
+		2C460763172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C460762172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m */; };
+		2C460766172B2212003FA3EF /* GPUIStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C460765172B2212003FA3EF /* GPUIStyle.m */; };
+		2C460768172B23F4003FA3EF /* 1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C460767172B23F4003FA3EF /* 1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg */; };
+		2C46076B172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46076A172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m */; };
+		2C46076D172B25DD003FA3EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C46076C172B25DD003FA3EF /* QuartzCore.framework */; };
 		2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273117284FD9009B905D /* UIKit.framework */; };
 		2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273317284FD9009B905D /* Foundation.framework */; };
 		2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273517284FD9009B905D /* CoreGraphics.framework */; };
@@ -22,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C062C23172B29D70061292A /* person01a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person01a.jpg; sourceTree = "<group>"; };
 		2C1A4A16172B01BA00DBCF36 /* GPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPViewController.m; sourceTree = "<group>"; };
 		2C1A4A17172B01BA00DBCF36 /* GPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPViewController.h; sourceTree = "<group>"; };
 		2C1A4A1C172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableViewHeaderViewDataSource.h; sourceTree = "<group>"; };
@@ -30,11 +37,18 @@
 		2C1A4A20172B01F900DBCF36 /* GPTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableViewHeaderView.m; sourceTree = "<group>"; };
 		2C46075E172B1913003FA3EF /* GPTableViewHeaderViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableViewHeaderViewFlowLayout.h; sourceTree = "<group>"; };
 		2C46075F172B1913003FA3EF /* GPTableViewHeaderViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableViewHeaderViewFlowLayout.m; sourceTree = "<group>"; };
+		2C460761172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAvatarAndNameCollectionViewCell.h; sourceTree = "<group>"; };
+		2C460762172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAvatarAndNameCollectionViewCell.m; sourceTree = "<group>"; };
+		2C460764172B2212003FA3EF /* GPUIStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUIStyle.h; sourceTree = "<group>"; };
+		2C460765172B2212003FA3EF /* GPUIStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUIStyle.m; sourceTree = "<group>"; };
+		2C460767172B23F4003FA3EF /* 1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg"; sourceTree = "<group>"; };
+		2C460769172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableViewHeaderViewBackgroundView.h; sourceTree = "<group>"; };
+		2C46076A172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableViewHeaderViewBackgroundView.m; sourceTree = "<group>"; };
+		2C46076C172B25DD003FA3EF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2CAF272E17284FD9009B905D /* Giulio Petek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giulio Petek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAF273117284FD9009B905D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CAF273317284FD9009B905D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CAF273517284FD9009B905D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2CAF274F17284FD9009B905D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2CAF276D17285618009B905D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2CAF276E17285618009B905D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2CAF276F17285618009B905D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -50,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C46076D172B25DD003FA3EF /* QuartzCore.framework in Frameworks */,
 				2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */,
 				2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */,
 				2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */,
@@ -79,10 +94,10 @@
 		2CAF273017284FD9009B905D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C46076C172B25DD003FA3EF /* QuartzCore.framework */,
 				2CAF273117284FD9009B905D /* UIKit.framework */,
 				2CAF273317284FD9009B905D /* Foundation.framework */,
 				2CAF273517284FD9009B905D /* CoreGraphics.framework */,
-				2CAF274F17284FD9009B905D /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,6 +105,8 @@
 		2CAF273717284FD9009B905D /* Giulio Petek */ = {
 			isa = PBXGroup;
 			children = (
+				2C460767172B23F4003FA3EF /* 1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg */,
+				2C062C23172B29D70061292A /* person01a.jpg */,
 				2CAF276717285362009B905D /* Model */,
 				2CAF276817285369009B905D /* View */,
 				2CAF276917285371009B905D /* Controller */,
@@ -106,6 +123,8 @@
 				2C1A4A1D172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m */,
 				2C46075E172B1913003FA3EF /* GPTableViewHeaderViewFlowLayout.h */,
 				2C46075F172B1913003FA3EF /* GPTableViewHeaderViewFlowLayout.m */,
+				2C460764172B2212003FA3EF /* GPUIStyle.h */,
+				2C460765172B2212003FA3EF /* GPUIStyle.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +134,10 @@
 			children = (
 				2C1A4A1F172B01F900DBCF36 /* GPTableViewHeaderView.h */,
 				2C1A4A20172B01F900DBCF36 /* GPTableViewHeaderView.m */,
+				2C460769172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.h */,
+				2C46076A172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m */,
+				2C460761172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.h */,
+				2C460762172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +236,8 @@
 				2CAF277017285618009B905D /* Default-568h@2x.png in Resources */,
 				2CAF277217285618009B905D /* Default.png in Resources */,
 				2CAF277417285618009B905D /* Default@2x.png in Resources */,
+				2C460768172B23F4003FA3EF /* 1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg in Resources */,
+				2C062C24172B29D70061292A /* person01a.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +254,9 @@
 				2C1A4A1E172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m in Sources */,
 				2C1A4A21172B01F900DBCF36 /* GPTableViewHeaderView.m in Sources */,
 				2C460760172B1913003FA3EF /* GPTableViewHeaderViewFlowLayout.m in Sources */,
+				2C460763172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m in Sources */,
+				2C460766172B2212003FA3EF /* GPUIStyle.m in Sources */,
+				2C46076B172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,31 +1,24 @@
 /* ------------------------------------------------------------------------------------------------------
- GPTableViewHeaderViewFlowLayout.m
+ GPUIStyle.m
  
  Created by Giulio Petek on 26.04.13.
  Copyright 2013 Giulio Petek. All rights reserved.
  ------------------------------------------------------------------------------------------------------ */
 
-#import "GPTableViewHeaderViewFlowLayout.h"
+#import "GPUIStyle.h"
 
 /* ------------------------------------------------------------------------------------------------------
- @implementation GPTableViewHeaderViewFlowLayout
+ @implementation GPUIStyle
  ------------------------------------------------------------------------------------------------------ */
 
-@implementation GPTableViewHeaderViewFlowLayout
+@implementation GPUIStyle
 
-- (id)init {
-    if ((self = [super init])) {
-        self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-        self.minimumLineSpacing = 0;
-    }
-    
-    return self;
++ (UIFont *)someFont:(CGFloat)size {
+    return [UIFont systemFontOfSize:size];
 }
 
-- (void)prepareLayout {
-    [super prepareLayout];
-    
-    self.itemSize = self.collectionView.bounds.size;
++ (UIColor *)someColor {
+    return [UIColor greenColor];
 }
 
 @end
