@@ -10,7 +10,8 @@
 typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
     GPTableViewHeaderViewDataSourceAvatarAndNamePage = 0,
     GPTableViewHeaderViewDataSourceAboutMePage,
-    GPTableViewHeaderViewDataSourceSocialPage
+    GPTableViewHeaderViewDataSourceSocialPage,
+    GPTableViewHeaderViewDataSourceNumberOfPages
 };
 
 /* ------------------------------------------------------------------------------------------------------
@@ -38,7 +39,7 @@ typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
 #pragma mark UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 3;
+    return GPTableViewHeaderViewDataSourceNumberOfPages;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -47,14 +48,17 @@ typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
         case GPTableViewHeaderViewDataSourceAvatarAndNamePage: {
             cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"test" forIndexPath:indexPath];
             cell.backgroundColor = [UIColor greenColor];
+            cell.alpha = 0.5f;
         } break;
         case GPTableViewHeaderViewDataSourceAboutMePage: {
             cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"test" forIndexPath:indexPath];
             cell.backgroundColor = [UIColor redColor];
+            cell.alpha = 0.5f;
         } break;
         case GPTableViewHeaderViewDataSourceSocialPage: {
             cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"test" forIndexPath:indexPath];
             cell.backgroundColor = [UIColor blueColor];
+            cell.alpha = 0.5f;
         } break;
     }
     

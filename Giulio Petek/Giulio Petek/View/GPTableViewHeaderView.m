@@ -8,13 +8,15 @@
 #import "GPTableViewHeaderView.h"
 #import "GPTableViewHeaderViewFlowLayout.h"
 
-static CGFloat const GPTableViewHeaderViewheight = 100.0f;
+static CGFloat const GPTableViewHeaderViewheight = 150.0f;
 
 /* ------------------------------------------------------------------------------------------------------
  @interface GPTableViewHeaderView ()
  ------------------------------------------------------------------------------------------------------ */
 
-@interface GPTableViewHeaderView () <UICollectionViewDelegate>
+@interface GPTableViewHeaderView () <UICollectionViewDelegate> {
+    BOOL _collectionViewWasScrolled;
+}
 
 @property (nonatomic, weak) UIPageControl *_pageControl;
 
@@ -43,12 +45,54 @@ static CGFloat const GPTableViewHeaderViewheight = 100.0f;
         self.pagingEnabled = YES;
         
         UIPageControl *pageControl = [[UIPageControl alloc] init];
-        [pageControl addTarget:self action:@selector(_pageDidChange:) forControlEvents:UIControlEventTouchUpInside];
+        pageControl.userInteractionEnabled = NO;
         [self addSubview:pageControl];
         __pageControl = pageControl;
+        
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+        imageView.backgroundColor = [UIColor cyanColor];
+        self.backgroundView = imageView;
     }
     
     return self;
+}
+
+#pragma mark -
+#pragma mark Touches
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+
+    _collectionViewWasScrolled = NO;
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    [super touchesMoved:touches withEvent:event];
+    
+    _collectionViewWasScrolled = YES;
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    [super touchesEnded:touches withEvent:event];
+
+    if (_collectionViewWasScrolled) {
+        return;
+    }
+    
+    UITouch *touch = [touches anyObject];
+    CGPoint touchLocation = [touch locationInView:self];
+    
+    if (!CGRectContainsPoint(self._pageControl.frame, touchLocation)) {
+        return;
+    }
+    
+    touchLocation.x -= self.contentOffset.x;
+    touchLocation.x > CGRectGetWidth(self.bounds) / 2 ? self._pageControl.currentPage++ : self._pageControl.currentPage--;
+    [self scrollRectToVisible:(CGRect){{
+            self._pageControl.currentPage * CGRectGetWidth(self.bounds), 0.0f
+        },
+        self.bounds.size
+    } animated:YES];
 }
 
 #pragma mark -
