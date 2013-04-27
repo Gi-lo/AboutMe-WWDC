@@ -9,6 +9,11 @@
 #import "GPTableHeaderView.h"
 #import "GPTableHeaderDataSource.h"
 
+typedef NS_ENUM(NSInteger, GPViewControllerState) {
+    GPViewControllerStateAboutMe = 0,
+    GPViewControllerStateResume
+};
+
 /* ------------------------------------------------------------------------------------------------------
  @interface GPViewController ()
  ------------------------------------------------------------------------------------------------------ */
@@ -16,6 +21,7 @@
 @interface GPViewController ()
 
 @property (nonatomic, strong) GPTableHeaderDataSource *_headerDataSource;
+@property (nonatomic, unsafe_unretained) GPViewControllerState _currentState;
 
 - (void)_configureHeaderView;
 
@@ -52,13 +58,22 @@
     UIView *blackTopView = [[UIView alloc] initWithFrame:(CGRect){0.0f, -350.0f, CGRectGetWidth(self.tableView.bounds), 350.0f}];
     blackTopView.backgroundColor = [UIColor blackColor];
     [self.tableView addSubview:blackTopView];
-
 }
 
 #pragma mark -
 #pragma mark UITableViewDataSource
 
-- (void)
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (self._currentState == GPViewControllerStateAboutMe) {
+        return 1;
+    }
+    
+    return 0; // TODO:
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [[UITableViewCell alloc] init];
+}
 
 
 @end

@@ -8,7 +8,7 @@
 #import "GPTableHeaderView.h"
 #import "GPTableHeaderBackgroundImageView.h"
 
-static CGFloat const GPTableHeaderViewHeight = 120.0f;
+static CGFloat const GPTableHeaderViewHeight = 100.0f;
 
 /* ------------------------------------------------------------------------------------------------------
  @interface GPTableHeaderView ()
