@@ -34,6 +34,9 @@ typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
         [headerView registerClass:[GPAvatarAndNameCollectionViewCell class] forCellWithReuseIdentifier:@"GPTableViewHeaderViewDataSourceAvatarAndNamePage"];
         [headerView registerClass:[GPAboutTextCollectionViewCell class] forCellWithReuseIdentifier:@"GPAboutTextCollectionViewCell"];
         [headerView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"test"];
+        
+        headerView.dataSource = self;
+        [headerView reloadData];
     }
     
     return self;
@@ -59,7 +62,7 @@ typedef NS_ENUM(NSInteger, GPTableViewHeaderViewDataSourcePages) {
         case GPTableViewHeaderViewDataSourceAboutMePage: {
             GPAboutTextCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"GPAboutTextCollectionViewCell"
                                                                                             forIndexPath:indexPath];
-            cell.aboutMeTextLabel.text = @"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem";
+            cell.aboutMeTextLabel.text = @"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.";
             
             return cell;
         } break;

@@ -28,7 +28,7 @@ static CGFloat const GPAvatarAndNameCollectionViewCellAvatarInset = 4.0f;
     
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.contentMode = UIViewContentModeScaleAspectFill;
-    
+
 #warning SLOW build image factory or pre rendered image
     imageView.layer.cornerRadius = 8.0f;
     imageView.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -37,6 +37,7 @@ static CGFloat const GPAvatarAndNameCollectionViewCellAvatarInset = 4.0f;
     imageView.layer.shadowOpacity = 0.8f;
     imageView.layer.borderWidth = 1.0f;
     imageView.layer.borderColor = [UIColor whiteColor].CGColor;
+    imageView.clipsToBounds = YES;
     
     [self.contentView addSubview:imageView];
 
@@ -49,7 +50,7 @@ static CGFloat const GPAvatarAndNameCollectionViewCellAvatarInset = 4.0f;
     if (_nameLabel) {
         return _nameLabel;
     }
-    
+
     UILabel *label = [[UILabel alloc] init];
     label.shadowColor = [UIColor blackColor];
     label.shadowOffset = (CGSize){0.0f, 1.0f};
@@ -68,7 +69,7 @@ static CGFloat const GPAvatarAndNameCollectionViewCellAvatarInset = 4.0f;
 
 - (void)layoutSubviews {
     [self.nameLabel sizeToFit];
-    self.nameLabel.center = (CGPoint){self.contentView.center.x, CGRectGetHeight(self.contentView.bounds) - 40.0f};
+    self.nameLabel.center = (CGPoint){self.contentView.center.x, CGRectGetHeight(self.contentView.bounds)};
     self.nameLabel.frame = CGRectIntegral(self.nameLabel.frame);
 
     self.avatarImageView.frame = (CGRect){

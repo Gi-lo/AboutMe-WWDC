@@ -10,7 +10,6 @@
 drawText: -> we have a big transparent layer ....
 */
 
-
 /* --- interface -------------------------------------------------------------------------------------- */
 
 @interface GPAboutTextCollectionViewCell : UICollectionViewCell

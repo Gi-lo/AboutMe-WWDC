@@ -17,7 +17,7 @@
 
 @property (nonatomic, strong) GPTableViewHeaderViewDataSource *_headerDataSource;
 
-- (void)_configureTableView;
+- (void)_configureHeaderView;
 
 @end
 
@@ -33,28 +33,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self _configureTableView];
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    [self _configureHeaderView];
 }
 
 #pragma mark -
 #pragma mark Configure View
 
-- (void)_configureTableView {
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"test"];
-    
-    GPTableViewHeaderView *headerView = [[GPTableViewHeaderView alloc] init];
+- (void)_configureHeaderView {    
+    GPTableViewHeaderView *headerView = [[GPTableViewHeaderView alloc] init];    
     self._headerDataSource = [[GPTableViewHeaderViewDataSource alloc] initWithHeaderView:headerView];
-    
-    headerView.dataSource = self._headerDataSource;
-    self.tableView.tableHeaderView = headerView;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 100.0f;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [tableView dequeueReusableCellWithIdentifier:@"test" forIndexPath:indexPath];
+    [self.view addSubview:headerView];
 }
 
 @end

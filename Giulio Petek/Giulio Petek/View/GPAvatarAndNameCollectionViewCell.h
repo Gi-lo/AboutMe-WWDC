@@ -10,7 +10,6 @@
  Create image factory ... layer properties ... no way ?
  */
 
-
 /* --- interface -------------------------------------------------------------------------------------- */
 
 @interface GPAvatarAndNameCollectionViewCell : UICollectionViewCell

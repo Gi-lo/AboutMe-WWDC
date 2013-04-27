@@ -6,8 +6,11 @@
 //  Copyright (c) 2013 grandcentrix. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface GPSocialCollectionViewCell : UICollectionViewCell
+
+@property (nonatomic, copy) dispatch_block_t onPressedTwitter;
+@property (nonatomic, copy) dispatch_block_t onPressedGithub;
+@property (nonatomic, copy) dispatch_block_t onPressedMail;
+@property (nonatomic, copy) dispatch_block_t onPressedWebsite;
 
 @end
