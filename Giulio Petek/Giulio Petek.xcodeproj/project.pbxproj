@@ -21,6 +21,9 @@
 		2CAF277D17285644009B905D /* GPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF277A17285644009B905D /* GPAppDelegate.m */; };
 		2CAF277F17285644009B905D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF277C17285644009B905D /* main.m */; };
 		2CB88EDF172B88FD0031DD1A /* content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB88EDE172B88FD0031DD1A /* content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg */; };
+		2CC18FD4172BC1D8000C19C8 /* GPTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC18FCF172BC1D8000C19C8 /* GPTableHeaderView.m */; };
+		2CC18FD5172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC18FD1172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.m */; };
+		2CC18FD6172BC1D8000C19C8 /* GPTableHeaderViewContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC18FD3172BC1D8000C19C8 /* GPTableHeaderViewContentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,12 @@
 		2CAF277B17285644009B905D /* Giulio Petek-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Giulio Petek-Prefix.pch"; sourceTree = "<group>"; };
 		2CAF277C17285644009B905D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CB88EDE172B88FD0031DD1A /* content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg"; sourceTree = "<group>"; };
+		2CC18FCE172BC1D8000C19C8 /* GPTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableHeaderView.h; sourceTree = "<group>"; };
+		2CC18FCF172BC1D8000C19C8 /* GPTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableHeaderView.m; sourceTree = "<group>"; };
+		2CC18FD0172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableHeaderBackgroundImageView.h; sourceTree = "<group>"; };
+		2CC18FD1172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableHeaderBackgroundImageView.m; sourceTree = "<group>"; };
+		2CC18FD2172BC1D8000C19C8 /* GPTableHeaderViewContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableHeaderViewContentView.h; sourceTree = "<group>"; };
+		2CC18FD3172BC1D8000C19C8 /* GPTableHeaderViewContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableHeaderViewContentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +123,7 @@
 		2CAF276817285369009B905D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2CC18FCD172BC1D8000C19C8 /* GPTableHeader */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +167,19 @@
 				2CAF276F17285618009B905D /* Default@2x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		2CC18FCD172BC1D8000C19C8 /* GPTableHeader */ = {
+			isa = PBXGroup;
+			children = (
+				2CC18FCE172BC1D8000C19C8 /* GPTableHeaderView.h */,
+				2CC18FCF172BC1D8000C19C8 /* GPTableHeaderView.m */,
+				2CC18FD0172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.h */,
+				2CC18FD1172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.m */,
+				2CC18FD2172BC1D8000C19C8 /* GPTableHeaderViewContentView.h */,
+				2CC18FD3172BC1D8000C19C8 /* GPTableHeaderViewContentView.m */,
+			);
+			path = GPTableHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +254,9 @@
 				2CAF277F17285644009B905D /* main.m in Sources */,
 				2C68077E172B9A100003093C /* GPViewController.m in Sources */,
 				2C680784172B9A560003093C /* GPResumeViewController.m in Sources */,
+				2CC18FD4172BC1D8000C19C8 /* GPTableHeaderView.m in Sources */,
+				2CC18FD5172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.m in Sources */,
+				2CC18FD6172BC1D8000C19C8 /* GPTableHeaderViewContentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,28 +1,29 @@
 /* ------------------------------------------------------------------------------------------------------
- GPTableHeaderViewBackgroundImageView.m
+ GPTableHeaderBackgroundImageView.m
  
  Created by Giulio Petek on 26.04.13.
  Copyright 2013 Giulio Petek. All rights reserved.
  ------------------------------------------------------------------------------------------------------ */
 
-#import "GPTableHeaderViewBackgroundImageView.h"
+#import "GPTableHeaderBackgroundImageView.h"
 
 /* ------------------------------------------------------------------------------------------------------
- @interface GPTableHeaderViewBackgroundImageView ()
+ @interface GPTableHeaderBackgroundImageView ()
  ------------------------------------------------------------------------------------------------------ */
 
-@interface GPTableHeaderViewBackgroundImageView ()
+@interface GPTableHeaderBackgroundImageView ()
 
 @property (nonatomic, weak) CAGradientLayer *_overlayLayer;
+@property (nonatomic, weak) CAShapeLayer *_shapeLayer;
 @property (nonatomic, strong) dispatch_source_t _timerSource;
 
 @end
 
 /* ------------------------------------------------------------------------------------------------------
- @implementatiom GPTableHeaderViewBackgroundImageView ()
+ @implementatiom GPTableHeaderBackgroundImageView ()
  ------------------------------------------------------------------------------------------------------ */
 
-@implementation GPTableHeaderViewBackgroundImageView
+@implementation GPTableHeaderBackgroundImageView
 
 #pragma mark -
 #pragma mark Init
@@ -83,6 +84,19 @@
 #pragma mark -
 #pragma mark Getter
 
+- (CAShapeLayer *)_shapeLayer {
+    if (__shapeLayer) {
+        return __shapeLayer;
+    }
+    
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    self.layer.mask = layer;
+    
+    __shapeLayer = layer;
+    
+    return __shapeLayer;
+}
+
 - (CAGradientLayer *)_overlayLayer {
     if (__overlayLayer) {
         return __overlayLayer;
@@ -93,10 +107,9 @@
         (__bridge id)[UIColor colorWithWhite:1.0f alpha:0.6f].CGColor,
         (__bridge id)[UIColor clearColor].CGColor,
         (__bridge id)[UIColor colorWithWhite:0.0f alpha:0.8f].CGColor,
-        (__bridge id)[UIColor colorWithWhite:0.0f alpha:1.0f].CGColor,
-        (__bridge id)[UIColor colorWithWhite:1.0f alpha:0.8f].CGColor
+        (__bridge id)[UIColor blackColor].CGColor
     ];
-    layer.locations = @[@0.001f, @0.0f, @0.99f, @0.995f, @1.0f];
+    layer.locations = @[@0.0f, @0.01f, @0.99f, @1.0f];
     [self.layer addSublayer:layer];
     
     __overlayLayer = layer;
@@ -110,6 +123,10 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
+    self._shapeLayer.frame = self.bounds;
+    self._shapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                                  byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight
+                                                        cornerRadii:(CGSize){3.0f, 3.0f}].CGPath;
     self._overlayLayer.frame = self.bounds;
 }
 

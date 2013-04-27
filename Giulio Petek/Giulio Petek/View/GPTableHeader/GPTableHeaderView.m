@@ -6,7 +6,7 @@
  ------------------------------------------------------------------------------------------------------ */
 
 #import "GPTableHeaderView.h"
-#import "GPTableHeaderViewBackgroundImageView.h"
+#import "GPTableHeaderBackgroundImageView.h"
 #import "GPTableHeaderViewContentView.h"
 
 static CGFloat const GPTableHeaderViewHeight = 120.0f;
@@ -18,7 +18,7 @@ static CGFloat const GPTableHeaderViewHeight = 120.0f;
 @interface GPTableHeaderView ()
 
 @property (nonatomic, weak) GPTableHeaderViewContentView *_contentView;
-@property (nonatomic, weak) GPTableHeaderViewBackgroundImageView *_backgroundImageView;
+@property (nonatomic, weak) GPTableHeaderBackgroundImageView *_backgroundImageView;
 
 @end
 
@@ -36,6 +36,8 @@ static CGFloat const GPTableHeaderViewHeight = 120.0f;
         self._backgroundImageView.animationImages = images;
         self._contentView.avatarImageView.image = avatar;
         self._contentView.nameLabel.text = name;
+        
+        self.backgroundColor = [UIColor blackColor];
     }
     
     return self;
@@ -44,12 +46,12 @@ static CGFloat const GPTableHeaderViewHeight = 120.0f;
 #pragma mark -
 #pragma mark Getter
 
-- (GPTableHeaderViewBackgroundImageView *)_backgroundImageView {
+- (GPTableHeaderBackgroundImageView *)_backgroundImageView {
     if (__backgroundImageView) {
         return __backgroundImageView;
     }
     
-    GPTableHeaderViewBackgroundImageView *imageView = [[GPTableHeaderViewBackgroundImageView alloc] init];
+    GPTableHeaderBackgroundImageView *imageView = [[GPTableHeaderBackgroundImageView alloc] init];
     [imageView setAnimationDuration:20.0f];
     [self addSubview:imageView];
     
