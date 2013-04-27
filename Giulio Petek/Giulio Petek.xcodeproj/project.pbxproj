@@ -23,7 +23,8 @@
 		2CB88EDF172B88FD0031DD1A /* content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB88EDE172B88FD0031DD1A /* content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg */; };
 		2CC18FD4172BC1D8000C19C8 /* GPTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC18FCF172BC1D8000C19C8 /* GPTableHeaderView.m */; };
 		2CC18FD5172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC18FD1172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.m */; };
-		2CC18FD6172BC1D8000C19C8 /* GPTableHeaderViewContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC18FD3172BC1D8000C19C8 /* GPTableHeaderViewContentView.m */; };
+		2CC18FD6172BC1D8000C19C8 /* GPTableHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC18FD3172BC1D8000C19C8 /* GPTableHeaderCell.m */; };
+		2CC18FD9172BCBD1000C19C8 /* GPTableHeaderDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC18FD8172BCBD1000C19C8 /* GPTableHeaderDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +52,10 @@
 		2CC18FCF172BC1D8000C19C8 /* GPTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableHeaderView.m; sourceTree = "<group>"; };
 		2CC18FD0172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableHeaderBackgroundImageView.h; sourceTree = "<group>"; };
 		2CC18FD1172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableHeaderBackgroundImageView.m; sourceTree = "<group>"; };
-		2CC18FD2172BC1D8000C19C8 /* GPTableHeaderViewContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableHeaderViewContentView.h; sourceTree = "<group>"; };
-		2CC18FD3172BC1D8000C19C8 /* GPTableHeaderViewContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableHeaderViewContentView.m; sourceTree = "<group>"; };
+		2CC18FD2172BC1D8000C19C8 /* GPTableHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableHeaderCell.h; sourceTree = "<group>"; };
+		2CC18FD3172BC1D8000C19C8 /* GPTableHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableHeaderCell.m; sourceTree = "<group>"; };
+		2CC18FD7172BCBD1000C19C8 /* GPTableHeaderDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableHeaderDataSource.h; sourceTree = "<group>"; };
+		2CC18FD8172BCBD1000C19C8 /* GPTableHeaderDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableHeaderDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 		2CAF276717285362009B905D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2CC18FD7172BCBD1000C19C8 /* GPTableHeaderDataSource.h */,
+				2CC18FD8172BCBD1000C19C8 /* GPTableHeaderDataSource.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,8 +181,8 @@
 				2CC18FCF172BC1D8000C19C8 /* GPTableHeaderView.m */,
 				2CC18FD0172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.h */,
 				2CC18FD1172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.m */,
-				2CC18FD2172BC1D8000C19C8 /* GPTableHeaderViewContentView.h */,
-				2CC18FD3172BC1D8000C19C8 /* GPTableHeaderViewContentView.m */,
+				2CC18FD2172BC1D8000C19C8 /* GPTableHeaderCell.h */,
+				2CC18FD3172BC1D8000C19C8 /* GPTableHeaderCell.m */,
 			);
 			path = GPTableHeader;
 			sourceTree = "<group>";
@@ -256,7 +261,8 @@
 				2C680784172B9A560003093C /* GPResumeViewController.m in Sources */,
 				2CC18FD4172BC1D8000C19C8 /* GPTableHeaderView.m in Sources */,
 				2CC18FD5172BC1D8000C19C8 /* GPTableHeaderBackgroundImageView.m in Sources */,
-				2CC18FD6172BC1D8000C19C8 /* GPTableHeaderViewContentView.m in Sources */,
+				2CC18FD6172BC1D8000C19C8 /* GPTableHeaderCell.m in Sources */,
+				2CC18FD9172BCBD1000C19C8 /* GPTableHeaderDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

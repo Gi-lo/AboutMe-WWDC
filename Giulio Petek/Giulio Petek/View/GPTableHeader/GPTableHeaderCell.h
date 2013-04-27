@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------------------------------------------
- GPTableHeaderViewContentView.h
+ GPTableHeaderCell.h
  
  Created by Giulio Petek on 26.04.13.
  Copyright 2013 Giulio Petek. All rights reserved.
@@ -7,9 +7,9 @@
 
 /* --- interface -------------------------------------------------------------------------------------- */
 
-@interface GPTableHeaderViewContentView : UIView
+@interface GPTableHeaderCell : UICollectionViewCell
 
-@property (nonatomic, weak) UILabel *nameLabel;
-@property (nonatomic, weak) UIImageView *avatarImageView;
+@property (nonatomic, weak) UILabel *titleLabel;
+@property (nonatomic, weak) UIImageView *imageView;
 
 @end
