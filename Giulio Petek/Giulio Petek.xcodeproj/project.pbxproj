@@ -8,16 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2C062C24172B29D70061292A /* person01a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C062C23172B29D70061292A /* person01a.jpg */; };
-		2C062C29172B361E0061292A /* GPAboutTextCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C062C28172B361D0061292A /* GPAboutTextCollectionViewCell.m */; };
-		2C062C2C172B3AA20061292A /* GPSocialCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C062C2B172B3AA20061292A /* GPSocialCollectionViewCell.m */; };
-		2C1A4A18172B01BA00DBCF36 /* GPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A4A16172B01BA00DBCF36 /* GPViewController.m */; };
-		2C1A4A1E172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A4A1D172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m */; };
-		2C1A4A21172B01F900DBCF36 /* GPTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A4A20172B01F900DBCF36 /* GPTableViewHeaderView.m */; };
-		2C460763172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C460762172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m */; };
-		2C460766172B2212003FA3EF /* GPUIStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C460765172B2212003FA3EF /* GPUIStyle.m */; };
 		2C460768172B23F4003FA3EF /* 1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C460767172B23F4003FA3EF /* 1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg */; };
-		2C46076B172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46076A172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m */; };
 		2C46076D172B25DD003FA3EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C46076C172B25DD003FA3EF /* QuartzCore.framework */; };
+		2C68077E172B9A100003093C /* GPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C68077D172B9A100003093C /* GPViewController.m */; };
+		2C680784172B9A560003093C /* GPResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C680783172B9A560003093C /* GPResumeViewController.m */; };
 		2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273117284FD9009B905D /* UIKit.framework */; };
 		2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273317284FD9009B905D /* Foundation.framework */; };
 		2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273517284FD9009B905D /* CoreGraphics.framework */; };
@@ -26,28 +20,17 @@
 		2CAF277417285618009B905D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF276F17285618009B905D /* Default@2x.png */; };
 		2CAF277D17285644009B905D /* GPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF277A17285644009B905D /* GPAppDelegate.m */; };
 		2CAF277F17285644009B905D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF277C17285644009B905D /* main.m */; };
+		2CB88EDF172B88FD0031DD1A /* content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB88EDE172B88FD0031DD1A /* content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C062C23172B29D70061292A /* person01a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person01a.jpg; sourceTree = "<group>"; };
-		2C062C27172B361D0061292A /* GPAboutTextCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAboutTextCollectionViewCell.h; sourceTree = "<group>"; };
-		2C062C28172B361D0061292A /* GPAboutTextCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAboutTextCollectionViewCell.m; sourceTree = "<group>"; };
-		2C062C2A172B3AA10061292A /* GPSocialCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSocialCollectionViewCell.h; sourceTree = "<group>"; };
-		2C062C2B172B3AA20061292A /* GPSocialCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSocialCollectionViewCell.m; sourceTree = "<group>"; };
-		2C1A4A16172B01BA00DBCF36 /* GPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPViewController.m; sourceTree = "<group>"; };
-		2C1A4A17172B01BA00DBCF36 /* GPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPViewController.h; sourceTree = "<group>"; };
-		2C1A4A1C172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableViewHeaderViewDataSource.h; sourceTree = "<group>"; };
-		2C1A4A1D172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableViewHeaderViewDataSource.m; sourceTree = "<group>"; };
-		2C1A4A1F172B01F900DBCF36 /* GPTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableViewHeaderView.h; sourceTree = "<group>"; };
-		2C1A4A20172B01F900DBCF36 /* GPTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableViewHeaderView.m; sourceTree = "<group>"; };
-		2C460761172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAvatarAndNameCollectionViewCell.h; sourceTree = "<group>"; };
-		2C460762172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAvatarAndNameCollectionViewCell.m; sourceTree = "<group>"; };
-		2C460764172B2212003FA3EF /* GPUIStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUIStyle.h; sourceTree = "<group>"; };
-		2C460765172B2212003FA3EF /* GPUIStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUIStyle.m; sourceTree = "<group>"; };
 		2C460767172B23F4003FA3EF /* 1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg"; sourceTree = "<group>"; };
-		2C460769172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableViewHeaderViewBackgroundView.h; sourceTree = "<group>"; };
-		2C46076A172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableViewHeaderViewBackgroundView.m; sourceTree = "<group>"; };
 		2C46076C172B25DD003FA3EF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2C68077C172B9A100003093C /* GPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPViewController.h; sourceTree = "<group>"; };
+		2C68077D172B9A100003093C /* GPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPViewController.m; sourceTree = "<group>"; };
+		2C680782172B9A560003093C /* GPResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPResumeViewController.h; sourceTree = "<group>"; };
+		2C680783172B9A560003093C /* GPResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPResumeViewController.m; sourceTree = "<group>"; };
 		2CAF272E17284FD9009B905D /* Giulio Petek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giulio Petek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAF273117284FD9009B905D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CAF273317284FD9009B905D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +43,7 @@
 		2CAF277A17285644009B905D /* GPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAppDelegate.m; sourceTree = "<group>"; };
 		2CAF277B17285644009B905D /* Giulio Petek-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Giulio Petek-Prefix.pch"; sourceTree = "<group>"; };
 		2CAF277C17285644009B905D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CB88EDE172B88FD0031DD1A /* content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				2C460767172B23F4003FA3EF /* 1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg */,
+				2CB88EDE172B88FD0031DD1A /* content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg */,
 				2C062C23172B29D70061292A /* person01a.jpg */,
 				2CAF276717285362009B905D /* Model */,
 				2CAF276817285369009B905D /* View */,
@@ -122,10 +107,6 @@
 		2CAF276717285362009B905D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C1A4A1C172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.h */,
-				2C1A4A1D172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m */,
-				2C460764172B2212003FA3EF /* GPUIStyle.h */,
-				2C460765172B2212003FA3EF /* GPUIStyle.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,16 +114,6 @@
 		2CAF276817285369009B905D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2C1A4A1F172B01F900DBCF36 /* GPTableViewHeaderView.h */,
-				2C1A4A20172B01F900DBCF36 /* GPTableViewHeaderView.m */,
-				2C460769172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.h */,
-				2C46076A172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m */,
-				2C460761172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.h */,
-				2C460762172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m */,
-				2C062C27172B361D0061292A /* GPAboutTextCollectionViewCell.h */,
-				2C062C28172B361D0061292A /* GPAboutTextCollectionViewCell.m */,
-				2C062C2A172B3AA10061292A /* GPSocialCollectionViewCell.h */,
-				2C062C2B172B3AA20061292A /* GPSocialCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,8 +121,10 @@
 		2CAF276917285371009B905D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2C1A4A17172B01BA00DBCF36 /* GPViewController.h */,
-				2C1A4A16172B01BA00DBCF36 /* GPViewController.m */,
+				2C68077C172B9A100003093C /* GPViewController.h */,
+				2C68077D172B9A100003093C /* GPViewController.m */,
+				2C680782172B9A560003093C /* GPResumeViewController.h */,
+				2C680783172B9A560003093C /* GPResumeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,6 +216,7 @@
 				2CAF277417285618009B905D /* Default@2x.png in Resources */,
 				2C460768172B23F4003FA3EF /* 1318602514_bn_rhein_michael-sondermann_presseamt-bundesstadt-bonn.jpg in Resources */,
 				2C062C24172B29D70061292A /* person01a.jpg in Resources */,
+				2CB88EDF172B88FD0031DD1A /* content_1321453764_hochschule_bonn-rhein-sieg-quellehochschule.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,14 +229,8 @@
 			files = (
 				2CAF277D17285644009B905D /* GPAppDelegate.m in Sources */,
 				2CAF277F17285644009B905D /* main.m in Sources */,
-				2C1A4A18172B01BA00DBCF36 /* GPViewController.m in Sources */,
-				2C1A4A1E172B01F100DBCF36 /* GPTableViewHeaderViewDataSource.m in Sources */,
-				2C1A4A21172B01F900DBCF36 /* GPTableViewHeaderView.m in Sources */,
-				2C460763172B1F6D003FA3EF /* GPAvatarAndNameCollectionViewCell.m in Sources */,
-				2C460766172B2212003FA3EF /* GPUIStyle.m in Sources */,
-				2C46076B172B2537003FA3EF /* GPTableViewHeaderViewBackgroundView.m in Sources */,
-				2C062C29172B361E0061292A /* GPAboutTextCollectionViewCell.m in Sources */,
-				2C062C2C172B3AA20061292A /* GPSocialCollectionViewCell.m in Sources */,
+				2C68077E172B9A100003093C /* GPViewController.m in Sources */,
+				2C680784172B9A560003093C /* GPResumeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,5 +7,5 @@
 
 /* --- interface -------------------------------------------------------------------------------------- */
 
-@interface GPViewController : UIViewController
+@interface GPViewController : UITableViewController
 @end
