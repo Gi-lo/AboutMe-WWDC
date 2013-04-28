@@ -10,15 +10,31 @@
 		2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273117284FD9009B905D /* UIKit.framework */; };
 		2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273317284FD9009B905D /* Foundation.framework */; };
 		2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273517284FD9009B905D /* CoreGraphics.framework */; };
-		2CD96FC5172C713B008EF3EB /* GPMediaAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FC2172C713B008EF3EB /* GPMediaAsset.m */; };
-		2CD96FC6172C713B008EF3EB /* GPTimelineEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FC4172C713B008EF3EB /* GPTimelineEntry.m */; };
-		2CD96FC9172C71A1008EF3EB /* GPTimelineEntriesFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FC8172C71A1008EF3EB /* GPTimelineEntriesFetcher.m */; };
 		2CD96FCE172C71B3008EF3EB /* GPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FCC172C71B3008EF3EB /* GPAppDelegate.m */; };
 		2CD96FCF172C71B3008EF3EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FCD172C71B3008EF3EB /* main.m */; };
 		2CD96FD3172C71D1008EF3EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD0172C71D1008EF3EB /* Default-568h@2x.png */; };
 		2CD96FD4172C71D1008EF3EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD1172C71D1008EF3EB /* Default.png */; };
 		2CD96FD5172C71D1008EF3EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD2172C71D1008EF3EB /* Default@2x.png */; };
 		2CFA1F75172D2A9900655648 /* Test.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F74172D2A9900655648 /* Test.entry.bundle */; };
+		2CFA1F84172D3D4800655648 /* GPTimelineBubbleBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F82172D3D4800655648 /* GPTimelineBubbleBackground.png */; };
+		2CFA1F85172D3D4800655648 /* GPTimelineBubbleBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F83172D3D4800655648 /* GPTimelineBubbleBackground@2x.png */; };
+		2CFA1F88172D56AB00655648 /* GPTimelineCellIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F86172D56AB00655648 /* GPTimelineCellIndicator.png */; };
+		2CFA1F89172D56AB00655648 /* GPTimelineCellIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F87172D56AB00655648 /* GPTimelineCellIndicator@2x.png */; };
+		2CFA1FA1172D811A00655648 /* GPAboutMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F98172D811A00655648 /* GPAboutMeButton.m */; };
+		2CFA1FA2172D811A00655648 /* GPTimelineBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F9A172D811A00655648 /* GPTimelineBackgroundView.m */; };
+		2CFA1FA3172D811A00655648 /* GPTimelineBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F9C172D811A00655648 /* GPTimelineBubbleView.m */; };
+		2CFA1FA4172D811A00655648 /* GPTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F9E172D811A00655648 /* GPTimelineCell.m */; };
+		2CFA1FA5172D811A00655648 /* GPTimelineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1FA0172D811A00655648 /* GPTimelineHeaderView.m */; };
+		2CFA1FAB172D813C00655648 /* GPTimelineEntriesFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1FA8172D813C00655648 /* GPTimelineEntriesFetcher.m */; };
+		2CFA1FAC172D813C00655648 /* GPTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1FAA172D813C00655648 /* GPTimelineViewController.m */; };
+		2CFA1FB0172D815A00655648 /* GPCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1FAF172D815A00655648 /* GPCircleView.m */; };
+		2CFA1FB6172D81B900655648 /* GPMediaAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1FB3172D81B900655648 /* GPMediaAsset.m */; };
+		2CFA1FB7172D81B900655648 /* GPTimelineEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1FB5172D81B900655648 /* GPTimelineEntry.m */; };
+		2CFA1FBA172D8C3700655648 /* GPAboutMeButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1FB8172D8C3700655648 /* GPAboutMeButtonArrow.png */; };
+		2CFA1FBB172D8C3700655648 /* GPAboutMeButtonArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1FB9172D8C3700655648 /* GPAboutMeButtonArrow@2x.png */; };
+		2CFA1FBD172D8F9200655648 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFA1FBC172D8F9200655648 /* QuartzCore.framework */; };
+		2CFA1FCA172DBED400655648 /* SunsetOverBonn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1FC8172DBED400655648 /* SunsetOverBonn.png */; };
+		2CFA1FCB172DBED400655648 /* SunsetOverBonn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1FC9172DBED400655648 /* SunsetOverBonn@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,13 +42,6 @@
 		2CAF273117284FD9009B905D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CAF273317284FD9009B905D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CAF273517284FD9009B905D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2CAF274F17284FD9009B905D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		2CD96FC1172C713B008EF3EB /* GPMediaAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMediaAsset.h; sourceTree = "<group>"; };
-		2CD96FC2172C713B008EF3EB /* GPMediaAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMediaAsset.m; sourceTree = "<group>"; };
-		2CD96FC3172C713B008EF3EB /* GPTimelineEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineEntry.h; sourceTree = "<group>"; };
-		2CD96FC4172C713B008EF3EB /* GPTimelineEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineEntry.m; sourceTree = "<group>"; };
-		2CD96FC7172C71A1008EF3EB /* GPTimelineEntriesFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineEntriesFetcher.h; sourceTree = "<group>"; };
-		2CD96FC8172C71A1008EF3EB /* GPTimelineEntriesFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineEntriesFetcher.m; sourceTree = "<group>"; };
 		2CD96FCA172C71B3008EF3EB /* Giulio Petek-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Giulio Petek-Prefix.pch"; sourceTree = "<group>"; };
 		2CD96FCB172C71B3008EF3EB /* GPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAppDelegate.h; sourceTree = "<group>"; };
 		2CD96FCC172C71B3008EF3EB /* GPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +51,35 @@
 		2CD96FD2172C71D1008EF3EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2CD96FD8172C7205008EF3EB /* Giulio Petek-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Giulio Petek-Info.plist"; sourceTree = "<group>"; };
 		2CFA1F74172D2A9900655648 /* Test.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Test.entry.bundle; sourceTree = "<group>"; };
+		2CFA1F82172D3D4800655648 /* GPTimelineBubbleBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPTimelineBubbleBackground.png; sourceTree = "<group>"; };
+		2CFA1F83172D3D4800655648 /* GPTimelineBubbleBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPTimelineBubbleBackground@2x.png"; sourceTree = "<group>"; };
+		2CFA1F86172D56AB00655648 /* GPTimelineCellIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPTimelineCellIndicator.png; sourceTree = "<group>"; };
+		2CFA1F87172D56AB00655648 /* GPTimelineCellIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPTimelineCellIndicator@2x.png"; sourceTree = "<group>"; };
+		2CFA1F97172D811A00655648 /* GPAboutMeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAboutMeButton.h; sourceTree = "<group>"; };
+		2CFA1F98172D811A00655648 /* GPAboutMeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAboutMeButton.m; sourceTree = "<group>"; };
+		2CFA1F99172D811A00655648 /* GPTimelineBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineBackgroundView.h; sourceTree = "<group>"; };
+		2CFA1F9A172D811A00655648 /* GPTimelineBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineBackgroundView.m; sourceTree = "<group>"; };
+		2CFA1F9B172D811A00655648 /* GPTimelineBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineBubbleView.h; sourceTree = "<group>"; };
+		2CFA1F9C172D811A00655648 /* GPTimelineBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineBubbleView.m; sourceTree = "<group>"; };
+		2CFA1F9D172D811A00655648 /* GPTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineCell.h; sourceTree = "<group>"; };
+		2CFA1F9E172D811A00655648 /* GPTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineCell.m; sourceTree = "<group>"; };
+		2CFA1F9F172D811A00655648 /* GPTimelineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineHeaderView.h; sourceTree = "<group>"; };
+		2CFA1FA0172D811A00655648 /* GPTimelineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineHeaderView.m; sourceTree = "<group>"; };
+		2CFA1FA7172D813C00655648 /* GPTimelineEntriesFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineEntriesFetcher.h; sourceTree = "<group>"; };
+		2CFA1FA8172D813C00655648 /* GPTimelineEntriesFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineEntriesFetcher.m; sourceTree = "<group>"; };
+		2CFA1FA9172D813C00655648 /* GPTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineViewController.h; sourceTree = "<group>"; };
+		2CFA1FAA172D813C00655648 /* GPTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineViewController.m; sourceTree = "<group>"; };
+		2CFA1FAE172D815A00655648 /* GPCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCircleView.h; sourceTree = "<group>"; };
+		2CFA1FAF172D815A00655648 /* GPCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCircleView.m; sourceTree = "<group>"; };
+		2CFA1FB2172D81B900655648 /* GPMediaAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMediaAsset.h; sourceTree = "<group>"; };
+		2CFA1FB3172D81B900655648 /* GPMediaAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMediaAsset.m; sourceTree = "<group>"; };
+		2CFA1FB4172D81B900655648 /* GPTimelineEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineEntry.h; sourceTree = "<group>"; };
+		2CFA1FB5172D81B900655648 /* GPTimelineEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineEntry.m; sourceTree = "<group>"; };
+		2CFA1FB8172D8C3700655648 /* GPAboutMeButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPAboutMeButtonArrow.png; sourceTree = "<group>"; };
+		2CFA1FB9172D8C3700655648 /* GPAboutMeButtonArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPAboutMeButtonArrow@2x.png"; sourceTree = "<group>"; };
+		2CFA1FBC172D8F9200655648 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2CFA1FC8172DBED400655648 /* SunsetOverBonn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SunsetOverBonn.png; sourceTree = "<group>"; };
+		2CFA1FC9172DBED400655648 /* SunsetOverBonn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SunsetOverBonn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFA1FBD172D8F9200655648 /* QuartzCore.framework in Frameworks */,
 				2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */,
 				2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */,
 				2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */,
@@ -78,10 +117,10 @@
 		2CAF273017284FD9009B905D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CFA1FBC172D8F9200655648 /* QuartzCore.framework */,
 				2CAF273117284FD9009B905D /* UIKit.framework */,
 				2CAF273317284FD9009B905D /* Foundation.framework */,
 				2CAF273517284FD9009B905D /* CoreGraphics.framework */,
-				2CAF274F17284FD9009B905D /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,10 +140,7 @@
 		2CAF276717285362009B905D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2CD96FC3172C713B008EF3EB /* GPTimelineEntry.h */,
-				2CD96FC4172C713B008EF3EB /* GPTimelineEntry.m */,
-				2CD96FC1172C713B008EF3EB /* GPMediaAsset.h */,
-				2CD96FC2172C713B008EF3EB /* GPMediaAsset.m */,
+				2CFA1FB1172D81B900655648 /* Timeline */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +148,8 @@
 		2CAF276817285369009B905D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2CFA1FAD172D815A00655648 /* Generic */,
+				2CFA1F96172D811A00655648 /* Timeline */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,8 +157,7 @@
 		2CAF276917285371009B905D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2CD96FC7172C71A1008EF3EB /* GPTimelineEntriesFetcher.h */,
-				2CD96FC8172C71A1008EF3EB /* GPTimelineEntriesFetcher.m */,
+				2CFA1FA6172D813C00655648 /* Timeline */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				2CD96FD8172C7205008EF3EB /* Giulio Petek-Info.plist */,
+				2CFA1F90172D6FDD00655648 /* Bonn */,
 				2CD96FBD172C6F55008EF3EB /* Timeline */,
 				2CAF276C17285601009B905D /* Images */,
 			);
@@ -149,6 +187,12 @@
 		2CAF276C17285601009B905D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2CFA1FB8172D8C3700655648 /* GPAboutMeButtonArrow.png */,
+				2CFA1FB9172D8C3700655648 /* GPAboutMeButtonArrow@2x.png */,
+				2CFA1F86172D56AB00655648 /* GPTimelineCellIndicator.png */,
+				2CFA1F87172D56AB00655648 /* GPTimelineCellIndicator@2x.png */,
+				2CFA1F82172D3D4800655648 /* GPTimelineBubbleBackground.png */,
+				2CFA1F83172D3D4800655648 /* GPTimelineBubbleBackground@2x.png */,
 				2CD96FD0172C71D1008EF3EB /* Default-568h@2x.png */,
 				2CD96FD1172C71D1008EF3EB /* Default.png */,
 				2CD96FD2172C71D1008EF3EB /* Default@2x.png */,
@@ -160,6 +204,63 @@
 			isa = PBXGroup;
 			children = (
 				2CFA1F74172D2A9900655648 /* Test.entry.bundle */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		2CFA1F90172D6FDD00655648 /* Bonn */ = {
+			isa = PBXGroup;
+			children = (
+				2CFA1FC8172DBED400655648 /* SunsetOverBonn.png */,
+				2CFA1FC9172DBED400655648 /* SunsetOverBonn@2x.png */,
+			);
+			path = Bonn;
+			sourceTree = "<group>";
+		};
+		2CFA1F96172D811A00655648 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				2CFA1F9F172D811A00655648 /* GPTimelineHeaderView.h */,
+				2CFA1FA0172D811A00655648 /* GPTimelineHeaderView.m */,
+				2CFA1F97172D811A00655648 /* GPAboutMeButton.h */,
+				2CFA1F98172D811A00655648 /* GPAboutMeButton.m */,
+				2CFA1F9D172D811A00655648 /* GPTimelineCell.h */,
+				2CFA1F9E172D811A00655648 /* GPTimelineCell.m */,
+				2CFA1F9B172D811A00655648 /* GPTimelineBubbleView.h */,
+				2CFA1F9C172D811A00655648 /* GPTimelineBubbleView.m */,
+				2CFA1F99172D811A00655648 /* GPTimelineBackgroundView.h */,
+				2CFA1F9A172D811A00655648 /* GPTimelineBackgroundView.m */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		2CFA1FA6172D813C00655648 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				2CFA1FA7172D813C00655648 /* GPTimelineEntriesFetcher.h */,
+				2CFA1FA8172D813C00655648 /* GPTimelineEntriesFetcher.m */,
+				2CFA1FA9172D813C00655648 /* GPTimelineViewController.h */,
+				2CFA1FAA172D813C00655648 /* GPTimelineViewController.m */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		2CFA1FAD172D815A00655648 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				2CFA1FAE172D815A00655648 /* GPCircleView.h */,
+				2CFA1FAF172D815A00655648 /* GPCircleView.m */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		2CFA1FB1172D81B900655648 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				2CFA1FB4172D81B900655648 /* GPTimelineEntry.h */,
+				2CFA1FB5172D81B900655648 /* GPTimelineEntry.m */,
+				2CFA1FB2172D81B900655648 /* GPMediaAsset.h */,
+				2CFA1FB3172D81B900655648 /* GPMediaAsset.m */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -220,6 +321,14 @@
 				2CD96FD4172C71D1008EF3EB /* Default.png in Resources */,
 				2CD96FD5172C71D1008EF3EB /* Default@2x.png in Resources */,
 				2CFA1F75172D2A9900655648 /* Test.entry.bundle in Resources */,
+				2CFA1F84172D3D4800655648 /* GPTimelineBubbleBackground.png in Resources */,
+				2CFA1F85172D3D4800655648 /* GPTimelineBubbleBackground@2x.png in Resources */,
+				2CFA1F88172D56AB00655648 /* GPTimelineCellIndicator.png in Resources */,
+				2CFA1F89172D56AB00655648 /* GPTimelineCellIndicator@2x.png in Resources */,
+				2CFA1FBA172D8C3700655648 /* GPAboutMeButtonArrow.png in Resources */,
+				2CFA1FBB172D8C3700655648 /* GPAboutMeButtonArrow@2x.png in Resources */,
+				2CFA1FCA172DBED400655648 /* SunsetOverBonn.png in Resources */,
+				2CFA1FCB172DBED400655648 /* SunsetOverBonn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,11 +339,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD96FC5172C713B008EF3EB /* GPMediaAsset.m in Sources */,
-				2CD96FC6172C713B008EF3EB /* GPTimelineEntry.m in Sources */,
-				2CD96FC9172C71A1008EF3EB /* GPTimelineEntriesFetcher.m in Sources */,
 				2CD96FCE172C71B3008EF3EB /* GPAppDelegate.m in Sources */,
 				2CD96FCF172C71B3008EF3EB /* main.m in Sources */,
+				2CFA1FA1172D811A00655648 /* GPAboutMeButton.m in Sources */,
+				2CFA1FA2172D811A00655648 /* GPTimelineBackgroundView.m in Sources */,
+				2CFA1FA3172D811A00655648 /* GPTimelineBubbleView.m in Sources */,
+				2CFA1FA4172D811A00655648 /* GPTimelineCell.m in Sources */,
+				2CFA1FA5172D811A00655648 /* GPTimelineHeaderView.m in Sources */,
+				2CFA1FAB172D813C00655648 /* GPTimelineEntriesFetcher.m in Sources */,
+				2CFA1FAC172D813C00655648 /* GPTimelineViewController.m in Sources */,
+				2CFA1FB0172D815A00655648 /* GPCircleView.m in Sources */,
+				2CFA1FB6172D81B900655648 /* GPMediaAsset.m in Sources */,
+				2CFA1FB7172D81B900655648 /* GPTimelineEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
