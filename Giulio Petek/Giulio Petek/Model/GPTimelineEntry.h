@@ -21,11 +21,14 @@ typedef NS_ENUM(NSInteger, GPTimelineEntryType) {
 
 + (instancetype)timelineEntryNamed:(NSString *)name;
 
+- (UIColor *)suggestedUIColor;
+
 @property (nonatomic, unsafe_unretained, readonly) GPTimelineEntryType type;
+@property (nonatomic, strong, readonly) GPMediaAsset *mediaAsset;
 @property (nonatomic, strong, readonly) NSDate *dateString;
 @property (nonatomic, strong, readonly) NSString *title;
 @property (nonatomic, strong, readonly) NSString *text;
 @property (nonatomic, strong, readonly) NSDictionary *urls;
-@property (nonatomic, strong, readonly) GPMediaAsset *mediaAsset;
+
 
 @end

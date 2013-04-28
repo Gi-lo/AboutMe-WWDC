@@ -85,6 +85,18 @@ static NSString *NSStringFromGPTimelineEntryType(GPTimelineEntryType type) {
 }
 
 #pragma mark -
+#pragma mark Getter
+
+- (UIColor *)suggestedUIColor {
+    switch (self.type) {
+        case GPTimelineEntryTypeEducation: return [UIColor redColor]; break;
+        case GPTimelineEntryTypeProfession: return [UIColor blueColor]; break;
+    }
+    
+    return nil;
+}
+
+#pragma mark -
 #pragma mark Debug
 
 - (NSString *)description {
