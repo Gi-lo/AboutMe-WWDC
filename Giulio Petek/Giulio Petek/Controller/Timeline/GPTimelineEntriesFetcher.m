@@ -78,11 +78,7 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
 }
 
 + (void)_mapNamesToIndices {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul), ^{
-        
-#warning remove me
-        [NSThread sleepForTimeInterval:1.0f];
-        
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul), ^{        
         NSMutableArray *allEntryNames = [self _allEntryNames];
         NSMutableDictionary *datesForNames = [NSMutableDictionary dictionaryWithCapacity:[allEntryNames count]];
         NSMutableArray *sortedEntryNames = [NSMutableArray arrayWithCapacity:[allEntryNames count]];
