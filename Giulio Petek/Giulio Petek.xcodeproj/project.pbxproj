@@ -20,7 +20,6 @@
 		2CFA1F85172D3D4800655648 /* GPTimelineBubbleBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F83172D3D4800655648 /* GPTimelineBubbleBackground@2x.png */; };
 		2CFA1F88172D56AB00655648 /* GPTimelineCellIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F86172D56AB00655648 /* GPTimelineCellIndicator.png */; };
 		2CFA1F89172D56AB00655648 /* GPTimelineCellIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F87172D56AB00655648 /* GPTimelineCellIndicator@2x.png */; };
-		2CFA1F92172D6FDD00655648 /* Bonn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F91172D6FDD00655648 /* Bonn.bundle */; };
 		2CFA1FA1172D811A00655648 /* GPAboutMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F98172D811A00655648 /* GPAboutMeButton.m */; };
 		2CFA1FA2172D811A00655648 /* GPTimelineBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F9A172D811A00655648 /* GPTimelineBackgroundView.m */; };
 		2CFA1FA3172D811A00655648 /* GPTimelineBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F9C172D811A00655648 /* GPTimelineBubbleView.m */; };
@@ -34,8 +33,8 @@
 		2CFA1FBA172D8C3700655648 /* GPAboutMeButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1FB8172D8C3700655648 /* GPAboutMeButtonArrow.png */; };
 		2CFA1FBB172D8C3700655648 /* GPAboutMeButtonArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1FB9172D8C3700655648 /* GPAboutMeButtonArrow@2x.png */; };
 		2CFA1FBD172D8F9200655648 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFA1FBC172D8F9200655648 /* QuartzCore.framework */; };
-		2CFA1FC0172D94D200655648 /* GPTableHeaderBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1FBF172D94D100655648 /* GPTableHeaderBackgroundView.m */; };
-		2CFA1FC7172DB60900655648 /* GPBonnSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1FC6172DB60900655648 /* GPBonnSource.m */; };
+		2CFA1FCA172DBED400655648 /* SunsetOverBonn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1FC8172DBED400655648 /* SunsetOverBonn.png */; };
+		2CFA1FCB172DBED400655648 /* SunsetOverBonn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1FC9172DBED400655648 /* SunsetOverBonn@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +55,6 @@
 		2CFA1F83172D3D4800655648 /* GPTimelineBubbleBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPTimelineBubbleBackground@2x.png"; sourceTree = "<group>"; };
 		2CFA1F86172D56AB00655648 /* GPTimelineCellIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPTimelineCellIndicator.png; sourceTree = "<group>"; };
 		2CFA1F87172D56AB00655648 /* GPTimelineCellIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPTimelineCellIndicator@2x.png"; sourceTree = "<group>"; };
-		2CFA1F91172D6FDD00655648 /* Bonn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Bonn.bundle; sourceTree = "<group>"; };
 		2CFA1F97172D811A00655648 /* GPAboutMeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAboutMeButton.h; sourceTree = "<group>"; };
 		2CFA1F98172D811A00655648 /* GPAboutMeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAboutMeButton.m; sourceTree = "<group>"; };
 		2CFA1F99172D811A00655648 /* GPTimelineBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineBackgroundView.h; sourceTree = "<group>"; };
@@ -80,10 +78,8 @@
 		2CFA1FB8172D8C3700655648 /* GPAboutMeButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPAboutMeButtonArrow.png; sourceTree = "<group>"; };
 		2CFA1FB9172D8C3700655648 /* GPAboutMeButtonArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPAboutMeButtonArrow@2x.png"; sourceTree = "<group>"; };
 		2CFA1FBC172D8F9200655648 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		2CFA1FBE172D94D100655648 /* GPTableHeaderBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTableHeaderBackgroundView.h; sourceTree = "<group>"; };
-		2CFA1FBF172D94D100655648 /* GPTableHeaderBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTableHeaderBackgroundView.m; sourceTree = "<group>"; };
-		2CFA1FC5172DB60900655648 /* GPBonnSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPBonnSource.h; sourceTree = "<group>"; };
-		2CFA1FC6172DB60900655648 /* GPBonnSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPBonnSource.m; sourceTree = "<group>"; };
+		2CFA1FC8172DBED400655648 /* SunsetOverBonn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SunsetOverBonn.png; sourceTree = "<group>"; };
+		2CFA1FC9172DBED400655648 /* SunsetOverBonn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SunsetOverBonn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +140,6 @@
 		2CAF276717285362009B905D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2CFA1FC4172DB60900655648 /* Bonn */,
 				2CFA1FB1172D81B900655648 /* Timeline */,
 			);
 			path = Model;
@@ -216,7 +211,8 @@
 		2CFA1F90172D6FDD00655648 /* Bonn */ = {
 			isa = PBXGroup;
 			children = (
-				2CFA1F91172D6FDD00655648 /* Bonn.bundle */,
+				2CFA1FC8172DBED400655648 /* SunsetOverBonn.png */,
+				2CFA1FC9172DBED400655648 /* SunsetOverBonn@2x.png */,
 			);
 			path = Bonn;
 			sourceTree = "<group>";
@@ -226,8 +222,6 @@
 			children = (
 				2CFA1F9F172D811A00655648 /* GPTimelineHeaderView.h */,
 				2CFA1FA0172D811A00655648 /* GPTimelineHeaderView.m */,
-				2CFA1FBE172D94D100655648 /* GPTableHeaderBackgroundView.h */,
-				2CFA1FBF172D94D100655648 /* GPTableHeaderBackgroundView.m */,
 				2CFA1F97172D811A00655648 /* GPAboutMeButton.h */,
 				2CFA1F98172D811A00655648 /* GPAboutMeButton.m */,
 				2CFA1F9D172D811A00655648 /* GPTimelineCell.h */,
@@ -269,15 +263,6 @@
 				2CFA1FB3172D81B900655648 /* GPMediaAsset.m */,
 			);
 			path = Timeline;
-			sourceTree = "<group>";
-		};
-		2CFA1FC4172DB60900655648 /* Bonn */ = {
-			isa = PBXGroup;
-			children = (
-				2CFA1FC5172DB60900655648 /* GPBonnSource.h */,
-				2CFA1FC6172DB60900655648 /* GPBonnSource.m */,
-			);
-			path = Bonn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,9 +325,10 @@
 				2CFA1F85172D3D4800655648 /* GPTimelineBubbleBackground@2x.png in Resources */,
 				2CFA1F88172D56AB00655648 /* GPTimelineCellIndicator.png in Resources */,
 				2CFA1F89172D56AB00655648 /* GPTimelineCellIndicator@2x.png in Resources */,
-				2CFA1F92172D6FDD00655648 /* Bonn.bundle in Resources */,
 				2CFA1FBA172D8C3700655648 /* GPAboutMeButtonArrow.png in Resources */,
 				2CFA1FBB172D8C3700655648 /* GPAboutMeButtonArrow@2x.png in Resources */,
+				2CFA1FCA172DBED400655648 /* SunsetOverBonn.png in Resources */,
+				2CFA1FCB172DBED400655648 /* SunsetOverBonn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,8 +351,6 @@
 				2CFA1FB0172D815A00655648 /* GPCircleView.m in Sources */,
 				2CFA1FB6172D81B900655648 /* GPMediaAsset.m in Sources */,
 				2CFA1FB7172D81B900655648 /* GPTimelineEntry.m in Sources */,
-				2CFA1FC0172D94D200655648 /* GPTableHeaderBackgroundView.m in Sources */,
-				2CFA1FC7172DB60900655648 /* GPBonnSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

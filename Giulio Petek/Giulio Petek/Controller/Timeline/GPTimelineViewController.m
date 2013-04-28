@@ -10,7 +10,6 @@
 #import "GPTimelineCell.h"
 #import "GPTimelineBackgroundView.h"
 #import "GPTimelineHeaderView.h"
-#import "GPBonnSource.h"
 
 static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
 
@@ -24,6 +23,7 @@ static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
 
 - (void)_configureTableView;
 - (void)_openAboutMe:(GPAboutMeButton *)button;
+- (void)_timelineFetcherDidFinishMapping:(NSNotification *)notification;
 
 @end
 
@@ -43,11 +43,20 @@ static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
     
     self._entriesFetcher = [[GPTimelineEntriesFetcher alloc] init];
     if (![self._entriesFetcher isReady]) {
-        [[NSNotificationCenter defaultCenter] addObserver:self.tableView
-                                                 selector:@selector(reloadData)
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(_timelineFetcherDidFinishMapping:)
                                                      name:GPTimelineEntriesFetcherDidFinishMappingNotifiaction
                                                    object:nil];
     }
+}
+
+#pragma mark -
+#pragma mark Notification
+
+- (void)_timelineFetcherDidFinishMapping:(NSNotification *)notification {
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationBottom];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:GPTimelineEntriesFetcherDidFinishMappingNotifiaction object:nil];
 }
 
 #pragma mark -
@@ -62,7 +71,7 @@ static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
     [self.tableView addSubview:fakeOverlay];
     
     GPTimelineHeaderView *headerView = [[GPTimelineHeaderView alloc] init];
-    headerView.backgroundView.animationImages = [GPBonnSource allImages];
+    headerView.backgroundImageView.image = [UIImage imageNamed:@"SunsetOverBonn"];
     headerView.aboutMeButton.title = @"Giulio Petek";
     [headerView.aboutMeButton addTarget:self action:@selector(_openAboutMe:) forControlEvents:UIControlEventTouchUpInside];
     [headerView sizeToFit];

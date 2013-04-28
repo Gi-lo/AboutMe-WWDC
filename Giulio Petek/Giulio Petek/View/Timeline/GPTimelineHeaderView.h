@@ -6,7 +6,6 @@
  ------------------------------------------------------------------------------------------------------ */
 
 #import "GPAboutMeButton.h"
-#import "GPTableHeaderBackgroundView.h"
 
 /* --- interface -------------------------------------------------------------------------------------- */
 
@@ -14,6 +13,6 @@
 
 @property (nonatomic, weak, readonly) UIImageView *avatarImageView;
 @property (nonatomic, weak, readonly) GPAboutMeButton *aboutMeButton;
-@property (nonatomic, weak, readonly) GPTableHeaderBackgroundView *backgroundView;
+@property (nonatomic, weak, readonly) UIImageView *backgroundImageView;
 
 @end

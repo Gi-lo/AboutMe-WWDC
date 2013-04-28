@@ -9,21 +9,3 @@
 
 @interface GPTimelineViewController : UITableViewController
 @end
-
-
-/*
- 
-TODO:
- 
-  -> * changing header images
-  -> animate table view in
-
- 
- 
- 
- 
- * animate table view in
- * fix jerky scrolling sometimes -> timeprofiler
- * changeing header images
- 
-*/

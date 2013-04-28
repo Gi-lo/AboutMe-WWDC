@@ -17,23 +17,23 @@ static const UIEdgeInsets GPTimelineHeaderViewAvatarEdgeInsets = (UIEdgeInsets){
 @implementation GPTimelineHeaderView
 @synthesize aboutMeButton = _aboutMeButton;
 @synthesize avatarImageView = _avatarImageView;
-@synthesize backgroundView = _backgroundView;
+@synthesize backgroundImageView = _backgroundImageView;
 
 #pragma mark -
 #pragma mark Getter
 
-- (GPTableHeaderBackgroundView *)backgroundView {
-    if (_backgroundView) {
-        return _backgroundView;
+- (UIImageView *)backgroundImageView {
+    if (_backgroundImageView) {
+        return _backgroundImageView;
     }
         
-    GPTableHeaderBackgroundView *backgroundView = [[GPTableHeaderBackgroundView alloc] init];
-    [self addSubview:backgroundView];
-    [self sendSubviewToBack:backgroundView];
+    UIImageView *imageVew = [[UIImageView alloc] init];
+    [self addSubview:imageVew];
+    [self sendSubviewToBack:imageVew];
     
-    _backgroundView = backgroundView;
+    _backgroundImageView = imageVew;
         
-    return _backgroundView;
+    return _backgroundImageView;
 }
 
 - (GPAboutMeButton *)aboutMeButton {
@@ -76,13 +76,13 @@ static const UIEdgeInsets GPTimelineHeaderViewAvatarEdgeInsets = (UIEdgeInsets){
 #pragma mark Layout
 
 - (CGSize)sizeThatFits:(CGSize)size {
-    return [self.backgroundView sizeThatFits:size];
+    return [self.backgroundImageView sizeThatFits:size];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.backgroundView.frame = self.bounds;
+    self.backgroundImageView.frame = self.bounds;
     
     self.avatarImageView.frame = (CGRect){
         GPTimelineHeaderViewAvatarEdgeInsets.left,
