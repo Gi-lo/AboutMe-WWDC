@@ -12,6 +12,7 @@ static NSString *const GPTimelineEntryTitleKey = @"title";
 static NSString *const GPTimelineEntryTextKey = @"text";
 static NSString *const GPTimelineEntryURLsKey = @"urls";
 static NSString *const GPTimelineEntryTypeKey = @"type";
+static NSString *const GPTimelineEntryPreviewKey = @"preview";
 
 static NSString *const GPTimelineEntryTypeEducationString = @"education";
 static NSString *const GPTimelineEntryTypeProfessionString = @"profession";
@@ -44,9 +45,10 @@ static NSString *NSStringFromGPTimelineEntryType(GPTimelineEntryType type) {
 @interface GPTimelineEntry ()
 
 @property (nonatomic, unsafe_unretained, readwrite) GPTimelineEntryType type;
-@property (nonatomic, strong, readwrite) NSDate *dateString;
+@property (nonatomic, strong, readwrite) NSString *dateString;
 @property (nonatomic, strong, readwrite) NSString *title;
 @property (nonatomic, strong, readwrite) NSString *text;
+@property (nonatomic, strong, readwrite) NSString *previewText;
 @property (nonatomic, strong, readwrite) NSDictionary *urls;
 @property (nonatomic, strong, readwrite) GPMediaAsset *mediaAsset;
 
@@ -80,6 +82,7 @@ static NSString *NSStringFromGPTimelineEntryType(GPTimelineEntryType type) {
     entry.urls = infoPlist[GPTimelineEntryURLsKey];
     entry.type = GPTimelineEntryTypeFromString(infoPlist[GPTimelineEntryTypeKey]);
     entry.mediaAsset = [GPMediaAsset mediaAssetInTimelineEntryBundle:timelineEntryBundle];
+    entry.previewText = infoPlist[GPTimelineEntryPreviewKey];
     
     return entry;
 }
@@ -89,7 +92,7 @@ static NSString *NSStringFromGPTimelineEntryType(GPTimelineEntryType type) {
 
 - (UIColor *)suggestedUIColor {
     switch (self.type) {
-        case GPTimelineEntryTypeEducation: return [UIColor redColor]; break;
+        case GPTimelineEntryTypeEducation: return [UIColor colorWithRed:1.0f green:0.502f blue:0.004f alpha:1.0f]; break;
         case GPTimelineEntryTypeProfession: return [UIColor blueColor]; break;
     }
     
