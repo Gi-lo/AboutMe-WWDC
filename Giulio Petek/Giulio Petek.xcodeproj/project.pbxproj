@@ -10,11 +10,15 @@
 		2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273117284FD9009B905D /* UIKit.framework */; };
 		2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273317284FD9009B905D /* Foundation.framework */; };
 		2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273517284FD9009B905D /* CoreGraphics.framework */; };
-		2CAF277017285618009B905D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF276D17285618009B905D /* Default-568h@2x.png */; };
-		2CAF277217285618009B905D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF276E17285618009B905D /* Default.png */; };
-		2CAF277417285618009B905D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF276F17285618009B905D /* Default@2x.png */; };
-		2CAF277D17285644009B905D /* GPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF277A17285644009B905D /* GPAppDelegate.m */; };
-		2CAF277F17285644009B905D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF277C17285644009B905D /* main.m */; };
+		2CD96FC5172C713B008EF3EB /* GPMediaAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FC2172C713B008EF3EB /* GPMediaAsset.m */; };
+		2CD96FC6172C713B008EF3EB /* GPTimelineEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FC4172C713B008EF3EB /* GPTimelineEntry.m */; };
+		2CD96FC9172C71A1008EF3EB /* GPTimelineEntriesFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FC8172C71A1008EF3EB /* GPTimelineEntriesFetcher.m */; };
+		2CD96FCE172C71B3008EF3EB /* GPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FCC172C71B3008EF3EB /* GPAppDelegate.m */; };
+		2CD96FCF172C71B3008EF3EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FCD172C71B3008EF3EB /* main.m */; };
+		2CD96FD3172C71D1008EF3EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD0172C71D1008EF3EB /* Default-568h@2x.png */; };
+		2CD96FD4172C71D1008EF3EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD1172C71D1008EF3EB /* Default.png */; };
+		2CD96FD5172C71D1008EF3EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD2172C71D1008EF3EB /* Default@2x.png */; };
+		2CFA1F75172D2A9900655648 /* Test.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F74172D2A9900655648 /* Test.entry.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +27,21 @@
 		2CAF273317284FD9009B905D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CAF273517284FD9009B905D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2CAF274F17284FD9009B905D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		2CAF276D17285618009B905D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2CAF276E17285618009B905D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		2CAF276F17285618009B905D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		2CAF277617285626009B905D /* Giulio Petek-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Giulio Petek-Info.plist"; sourceTree = "<group>"; };
-		2CAF277917285644009B905D /* GPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAppDelegate.h; sourceTree = "<group>"; };
-		2CAF277A17285644009B905D /* GPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAppDelegate.m; sourceTree = "<group>"; };
-		2CAF277B17285644009B905D /* Giulio Petek-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Giulio Petek-Prefix.pch"; sourceTree = "<group>"; };
-		2CAF277C17285644009B905D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CD96FC1172C713B008EF3EB /* GPMediaAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMediaAsset.h; sourceTree = "<group>"; };
+		2CD96FC2172C713B008EF3EB /* GPMediaAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMediaAsset.m; sourceTree = "<group>"; };
+		2CD96FC3172C713B008EF3EB /* GPTimelineEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineEntry.h; sourceTree = "<group>"; };
+		2CD96FC4172C713B008EF3EB /* GPTimelineEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineEntry.m; sourceTree = "<group>"; };
+		2CD96FC7172C71A1008EF3EB /* GPTimelineEntriesFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineEntriesFetcher.h; sourceTree = "<group>"; };
+		2CD96FC8172C71A1008EF3EB /* GPTimelineEntriesFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineEntriesFetcher.m; sourceTree = "<group>"; };
+		2CD96FCA172C71B3008EF3EB /* Giulio Petek-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Giulio Petek-Prefix.pch"; sourceTree = "<group>"; };
+		2CD96FCB172C71B3008EF3EB /* GPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAppDelegate.h; sourceTree = "<group>"; };
+		2CD96FCC172C71B3008EF3EB /* GPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAppDelegate.m; sourceTree = "<group>"; };
+		2CD96FCD172C71B3008EF3EB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CD96FD0172C71D1008EF3EB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2CD96FD1172C71D1008EF3EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2CD96FD2172C71D1008EF3EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2CD96FD8172C7205008EF3EB /* Giulio Petek-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Giulio Petek-Info.plist"; sourceTree = "<group>"; };
+		2CFA1F74172D2A9900655648 /* Test.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Test.entry.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +101,10 @@
 		2CAF276717285362009B905D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2CD96FC3172C713B008EF3EB /* GPTimelineEntry.h */,
+				2CD96FC4172C713B008EF3EB /* GPTimelineEntry.m */,
+				2CD96FC1172C713B008EF3EB /* GPMediaAsset.h */,
+				2CD96FC2172C713B008EF3EB /* GPMediaAsset.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,6 +119,8 @@
 		2CAF276917285371009B905D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2CD96FC7172C71A1008EF3EB /* GPTimelineEntriesFetcher.h */,
+				2CD96FC8172C71A1008EF3EB /* GPTimelineEntriesFetcher.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,7 +128,8 @@
 		2CAF276A172855DD009B905D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF277617285626009B905D /* Giulio Petek-Info.plist */,
+				2CD96FD8172C7205008EF3EB /* Giulio Petek-Info.plist */,
+				2CD96FBD172C6F55008EF3EB /* Timeline */,
 				2CAF276C17285601009B905D /* Images */,
 			);
 			path = Resources;
@@ -120,10 +138,10 @@
 		2CAF276B172855DD009B905D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF277917285644009B905D /* GPAppDelegate.h */,
-				2CAF277A17285644009B905D /* GPAppDelegate.m */,
-				2CAF277B17285644009B905D /* Giulio Petek-Prefix.pch */,
-				2CAF277C17285644009B905D /* main.m */,
+				2CD96FCB172C71B3008EF3EB /* GPAppDelegate.h */,
+				2CD96FCC172C71B3008EF3EB /* GPAppDelegate.m */,
+				2CD96FCA172C71B3008EF3EB /* Giulio Petek-Prefix.pch */,
+				2CD96FCD172C71B3008EF3EB /* main.m */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -131,11 +149,19 @@
 		2CAF276C17285601009B905D /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2CAF276D17285618009B905D /* Default-568h@2x.png */,
-				2CAF276E17285618009B905D /* Default.png */,
-				2CAF276F17285618009B905D /* Default@2x.png */,
+				2CD96FD0172C71D1008EF3EB /* Default-568h@2x.png */,
+				2CD96FD1172C71D1008EF3EB /* Default.png */,
+				2CD96FD2172C71D1008EF3EB /* Default@2x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		2CD96FBD172C6F55008EF3EB /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				2CFA1F74172D2A9900655648 /* Test.entry.bundle */,
+			);
+			path = Timeline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +216,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CAF277017285618009B905D /* Default-568h@2x.png in Resources */,
-				2CAF277217285618009B905D /* Default.png in Resources */,
-				2CAF277417285618009B905D /* Default@2x.png in Resources */,
+				2CD96FD3172C71D1008EF3EB /* Default-568h@2x.png in Resources */,
+				2CD96FD4172C71D1008EF3EB /* Default.png in Resources */,
+				2CD96FD5172C71D1008EF3EB /* Default@2x.png in Resources */,
+				2CFA1F75172D2A9900655648 /* Test.entry.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CAF277D17285644009B905D /* GPAppDelegate.m in Sources */,
-				2CAF277F17285644009B905D /* main.m in Sources */,
+				2CD96FC5172C713B008EF3EB /* GPMediaAsset.m in Sources */,
+				2CD96FC6172C713B008EF3EB /* GPTimelineEntry.m in Sources */,
+				2CD96FC9172C71A1008EF3EB /* GPTimelineEntriesFetcher.m in Sources */,
+				2CD96FCE172C71B3008EF3EB /* GPAppDelegate.m in Sources */,
+				2CD96FCF172C71B3008EF3EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
