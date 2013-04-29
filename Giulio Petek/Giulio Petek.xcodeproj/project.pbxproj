@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		2C2D358D172ECF3300EE1025 /* SunsetOverBonn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D358B172ECF3300EE1025 /* SunsetOverBonn.png */; };
 		2C2D358E172ECF3300EE1025 /* SunsetOverBonn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D358C172ECF3300EE1025 /* SunsetOverBonn@2x.png */; };
+		2C2D3599172EF8C000EE1025 /* GPBackButton_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D3595172EF8C000EE1025 /* GPBackButton_selected.png */; };
+		2C2D359A172EF8C000EE1025 /* GPBackButton_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D3596172EF8C000EE1025 /* GPBackButton_selected@2x.png */; };
+		2C2D359B172EF8C000EE1025 /* GPBackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D3597172EF8C000EE1025 /* GPBackButton.png */; };
+		2C2D359C172EF8C000EE1025 /* GPBackButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D3598172EF8C000EE1025 /* GPBackButton@2x.png */; };
+		2C2D359F172EFAE000EE1025 /* GPNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D359E172EFAE000EE1025 /* GPNavigationBar.m */; };
+		2C2D35A3172EFB0700EE1025 /* GPTimelineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35A2172EFB0700EE1025 /* GPTimelineDetailViewController.m */; };
 		2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273117284FD9009B905D /* UIKit.framework */; };
 		2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273317284FD9009B905D /* Foundation.framework */; };
 		2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273517284FD9009B905D /* CoreGraphics.framework */; };
@@ -40,6 +46,14 @@
 /* Begin PBXFileReference section */
 		2C2D358B172ECF3300EE1025 /* SunsetOverBonn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SunsetOverBonn.png; sourceTree = "<group>"; };
 		2C2D358C172ECF3300EE1025 /* SunsetOverBonn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SunsetOverBonn@2x.png"; sourceTree = "<group>"; };
+		2C2D3595172EF8C000EE1025 /* GPBackButton_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPBackButton_selected.png; sourceTree = "<group>"; };
+		2C2D3596172EF8C000EE1025 /* GPBackButton_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPBackButton_selected@2x.png"; sourceTree = "<group>"; };
+		2C2D3597172EF8C000EE1025 /* GPBackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPBackButton.png; sourceTree = "<group>"; };
+		2C2D3598172EF8C000EE1025 /* GPBackButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPBackButton@2x.png"; sourceTree = "<group>"; };
+		2C2D359D172EFAE000EE1025 /* GPNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPNavigationBar.h; sourceTree = "<group>"; };
+		2C2D359E172EFAE000EE1025 /* GPNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPNavigationBar.m; sourceTree = "<group>"; };
+		2C2D35A1172EFB0700EE1025 /* GPTimelineDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineDetailViewController.h; sourceTree = "<group>"; };
+		2C2D35A2172EFB0700EE1025 /* GPTimelineDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineDetailViewController.m; sourceTree = "<group>"; };
 		2CAF272E17284FD9009B905D /* Giulio Petek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giulio Petek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAF273117284FD9009B905D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CAF273317284FD9009B905D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C2D35A0172EFAF600EE1025 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D35A1172EFB0700EE1025 /* GPTimelineDetailViewController.h */,
+				2C2D35A2172EFB0700EE1025 /* GPTimelineDetailViewController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		2CAF272517284FD9009B905D = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +154,8 @@
 				2CAF276717285362009B905D /* Model */,
 				2CAF276817285369009B905D /* View */,
 				2CAF276917285371009B905D /* Controller */,
-				2CAF276A172855DD009B905D /* Resources */,
 				2CAF276B172855DD009B905D /* Supporting Files */,
+				2CAF276A172855DD009B905D /* Resources */,
 			);
 			path = "Giulio Petek";
 			sourceTree = "<group>";
@@ -187,6 +210,10 @@
 		2CAF276C17285601009B905D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2C2D3595172EF8C000EE1025 /* GPBackButton_selected.png */,
+				2C2D3596172EF8C000EE1025 /* GPBackButton_selected@2x.png */,
+				2C2D3597172EF8C000EE1025 /* GPBackButton.png */,
+				2C2D3598172EF8C000EE1025 /* GPBackButton@2x.png */,
 				2CFA1FB8172D8C3700655648 /* GPAboutMeButtonArrow.png */,
 				2CFA1FB9172D8C3700655648 /* GPAboutMeButtonArrow@2x.png */,
 				2CFA1F86172D56AB00655648 /* GPTimelineCellIndicator.png */,
@@ -237,6 +264,7 @@
 		2CFA1FA6172D813C00655648 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				2C2D35A0172EFAF600EE1025 /* Detail */,
 				2CFA1FA7172D813C00655648 /* GPTimelineEntriesFetcher.h */,
 				2CFA1FA8172D813C00655648 /* GPTimelineEntriesFetcher.m */,
 				2CFA1FA9172D813C00655648 /* GPTimelineViewController.h */,
@@ -248,6 +276,8 @@
 		2CFA1FAD172D815A00655648 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
+				2C2D359D172EFAE000EE1025 /* GPNavigationBar.h */,
+				2C2D359E172EFAE000EE1025 /* GPNavigationBar.m */,
 				2CFA1FAE172D815A00655648 /* GPCircleView.h */,
 				2CFA1FAF172D815A00655648 /* GPCircleView.m */,
 			);
@@ -329,6 +359,10 @@
 				2CFA1FBB172D8C3700655648 /* GPAboutMeButtonArrow@2x.png in Resources */,
 				2C2D358D172ECF3300EE1025 /* SunsetOverBonn.png in Resources */,
 				2C2D358E172ECF3300EE1025 /* SunsetOverBonn@2x.png in Resources */,
+				2C2D3599172EF8C000EE1025 /* GPBackButton_selected.png in Resources */,
+				2C2D359A172EF8C000EE1025 /* GPBackButton_selected@2x.png in Resources */,
+				2C2D359B172EF8C000EE1025 /* GPBackButton.png in Resources */,
+				2C2D359C172EF8C000EE1025 /* GPBackButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +385,8 @@
 				2CFA1FB0172D815A00655648 /* GPCircleView.m in Sources */,
 				2CFA1FB6172D81B900655648 /* GPMediaAsset.m in Sources */,
 				2CFA1FB7172D81B900655648 /* GPTimelineEntry.m in Sources */,
+				2C2D359F172EFAE000EE1025 /* GPNavigationBar.m in Sources */,
+				2C2D35A3172EFB0700EE1025 /* GPTimelineDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

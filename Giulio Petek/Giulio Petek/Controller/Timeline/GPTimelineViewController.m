@@ -10,6 +10,7 @@
 #import "GPTimelineCell.h"
 #import "GPTimelineBackgroundView.h"
 #import "GPTimelineHeaderView.h"
+#import "GPTimelineDetailViewController.h"
 
 static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
 
@@ -116,6 +117,10 @@ static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    GPTimelineEntry *timelineEntry = [self._entriesFetcher timelineEntryAtIndex:indexPath.row];
+    GPTimelineDetailViewController *detailViewController = [[GPTimelineDetailViewController alloc] initWithTimelineEntry:timelineEntry];
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 @end

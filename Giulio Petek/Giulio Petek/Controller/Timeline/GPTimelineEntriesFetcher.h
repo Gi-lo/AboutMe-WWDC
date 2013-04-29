@@ -18,6 +18,8 @@ extern NSString *const GPTimelineEntriesFetcherDidFinishMappingNotifiaction;
 @property (nonatomic, unsafe_unretained, readonly, getter = isReady) BOOL ready;
 
 - (NSUInteger)numberOfEntries;
+
 - (void)fetchTimelineEntryAtIndex:(NSUInteger)idx andCallback:(GPTimelineEntriesFetcherCallback)callback;
+- (GPTimelineEntry *)timelineEntryAtIndex:(NSUInteger)idx;
 
 @end

@@ -6,7 +6,6 @@
  ------------------------------------------------------------------------------------------------------ */
 
 #import "GPAppDelegate.h"
-#import "GPTimelineEntriesFetcher.h"
 #import "GPTimelineViewController.h"
 
 /* ------------------------------------------------------------------------------------------------------
@@ -20,9 +19,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor blueColor];
-    self.window.rootViewController = [[GPTimelineViewController alloc] init];
+    self.window.backgroundColor = [UIColor blackColor];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[GPTimelineViewController alloc] init]];
+    [navigationController setNavigationBarHidden:YES animated:NO];
+    self.window.rootViewController = navigationController;
+    
     [self.window makeKeyAndVisible];
+
+    /*
+    GPNavigationBar *navbar = [[GPNavigationBar alloc] initWithFrame:(CGRect){0.0f, 20.0f, 0.0f, 0.0f}];
+    navbar.lineColor = [UIColor orangeColor];
+    navbar.titleLabel.text = @"My way is great";
+    [self.window addSubview:navbar];
+    */
+    
+    //self.window.rootViewController = [[GPTimelineViewController alloc] init];
+   
 
     return YES;
 }

@@ -10,7 +10,7 @@
 static CGFloat const GPTimelineBackgroundViewLineOriginX = 13.0f;
 
 /* ------------------------------------------------------------------------------------------------------
- @implementation GPCircleView
+ @implementation GPTimelineBackgroundView
  ------------------------------------------------------------------------------------------------------ */
 
 @implementation GPTimelineBackgroundView
