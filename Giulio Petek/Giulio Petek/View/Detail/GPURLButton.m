@@ -38,9 +38,7 @@
 #pragma mark -
 #pragma mark - Layout
 
-- (void)didMoveToSuperview {
-    [super didMoveToSuperview];
-    
+- (void)didMoveToSuperview {    
     self.backgroundColor = [UIColor whiteColor];
 }
 

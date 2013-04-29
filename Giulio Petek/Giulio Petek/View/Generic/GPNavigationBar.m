@@ -106,9 +106,7 @@ static CGFloat const GPNavigationBarHeight = 44.0f;
     self._backButton.frame = (CGRect){0.0f, 0.0f, GPNavigationBarHeight, GPNavigationBarHeight};
 }
 
-- (void)didMoveToSuperview {
-    [super didMoveToSuperview];
-    
+- (void)didMoveToSuperview {    
     self.backgroundColor = [UIColor whiteColor];
     
     [self sizeToFit];
@@ -118,15 +116,10 @@ static CGFloat const GPNavigationBarHeight = 44.0f;
 #pragma mark Drawing
 
 - (void)drawRect:(CGRect)rect {
-    [super drawRect:rect];
-    
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSaveGState(context);
-
-    [self.lineColor setFill];
-    UIRectFill((CGRect){0.0f, CGRectGetHeight(self.bounds) - 1.0f, CGRectGetWidth(self.bounds), 1.0f});
-
-    CGContextRestoreGState(context);
+    GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
+        [self.lineColor setFill];
+        UIRectFill((CGRect){0.0f, CGRectGetHeight(self.bounds) - 1.0f, CGRectGetWidth(self.bounds), 1.0f});
+    });
 }
 
 @end

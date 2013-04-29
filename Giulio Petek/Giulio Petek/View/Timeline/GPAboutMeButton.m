@@ -48,9 +48,7 @@ static CGFloat const GPAboutMeButtonArrowSpacing = 5.0f;
     return sizeOfTitle;
 }
 
-- (void)didMoveToSuperview {
-    [super didMoveToSuperview];
-    
+- (void)didMoveToSuperview {    
     self.backgroundColor = [UIColor clearColor];
 }
 
@@ -58,23 +56,18 @@ static CGFloat const GPAboutMeButtonArrowSpacing = 5.0f;
 #pragma mark Drawing
 
 - (void)drawRect:(CGRect)rect {
-    [super drawRect:rect];
-    
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSaveGState(context);
-    
-    CGContextSetShadowWithColor(context, (CGSize){0.0f, 1.0f}, 2.0f, [UIColor colorWithWhite:0.0f alpha:0.5f].CGColor);
-    [self.highlighted ? [UIColor colorWithWhite:0.851f alpha:1.0f] : [UIColor whiteColor] setFill];
-    
-    CGFloat textWidth = [self.title drawInRect:self.bounds withFont:[UIFont systemFontOfSize:20.0f]].width;
-    
-    UIImage *arrowImage = [UIImage imageNamed:self.highlighted ? @"GPTimelineCellIndicator": @"GPAboutMeButtonArrow"];
-    [arrowImage drawInRect:CGRectIntegral((CGRect){{
-            textWidth + GPAboutMeButtonArrowSpacing,
-            CGRectGetHeight(self.bounds) / 2.0f -  arrowImage.size.height / 2.0f
-        }, arrowImage.size})];
-     
-     CGContextRestoreGState(context);
+    GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
+        CGContextSetShadowWithColor(UIGraphicsGetCurrentContext(), (CGSize){0.0f, 1.0f}, 2.0f, [UIColor colorWithWhite:0.0f alpha:0.5f].CGColor);
+        [self.highlighted ? [UIColor colorWithWhite:0.851f alpha:1.0f] : [UIColor whiteColor] setFill];
+        
+        CGFloat textWidth = [self.title drawInRect:self.bounds withFont:[UIFont systemFontOfSize:20.0f]].width;
+        
+        UIImage *arrowImage = [UIImage imageNamed:self.highlighted ? @"GPTimelineCellIndicator": @"GPAboutMeButtonArrow"];
+        [arrowImage drawInRect:CGRectIntegral((CGRect){{
+                textWidth + GPAboutMeButtonArrowSpacing,
+                CGRectGetHeight(self.bounds) / 2.0f -  arrowImage.size.height / 2.0f
+            }, arrowImage.size})];
+    });
 }
 
 @end

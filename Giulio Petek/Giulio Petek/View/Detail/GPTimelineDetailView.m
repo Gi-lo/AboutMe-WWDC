@@ -95,8 +95,6 @@
 }
 
 - (void)didMoveToSuperview {
-    [super didMoveToSuperview];
-
     self.backgroundColor = [UIColor clearColor];
 
     [self sizeToFit];
@@ -116,9 +114,7 @@
 #pragma mark - 
 #pragma mark Drawing
 
-- (void)drawRect:(CGRect)rect {
-    [super drawRect:rect];
-    
+- (void)drawRect:(CGRect)rect {    
     UIImage *backgroundImage = [UIImage imageNamed:@"GPContentTextBackground"];
     backgroundImage = [backgroundImage resizableImageWithCapInsets:BACKGROUND_IMAGE_INSETS resizingMode:UIImageResizingModeStretch];
     [backgroundImage drawInRect:self.bounds];

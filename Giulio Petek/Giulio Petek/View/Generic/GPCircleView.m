@@ -56,9 +56,7 @@
     self._circlePath = nil;
 }
 
-- (void)didMoveToSuperview {
-    [super didMoveToSuperview];
-    
+- (void)didMoveToSuperview {    
     self.backgroundColor = [UIColor clearColor];
 }
 
@@ -66,13 +64,10 @@
 #pragma mark Drawing
 
 - (void)drawRect:(CGRect)rect {
-    [super drawRect:rect];
-    
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSaveGState(context);
-    [self.circleColor setFill];
-    [self._circlePath fill];
-    CGContextRestoreGState(context);
+    GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
+        [self.circleColor setFill];
+        [self._circlePath fill];
+    });
 }
 
 @end

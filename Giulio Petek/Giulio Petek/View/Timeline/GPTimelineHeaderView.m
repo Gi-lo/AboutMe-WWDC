@@ -115,8 +115,6 @@ static const UIEdgeInsets GPTimelineHeaderViewAvatarEdgeInsets = (UIEdgeInsets){
                         context:GPTimelineHeaderScrollViewDidScrollViewContext];
     
     [self sizeToFit];
-    
-    [super didMoveToSuperview];
 }
 
 - (void)removeFromSuperview {

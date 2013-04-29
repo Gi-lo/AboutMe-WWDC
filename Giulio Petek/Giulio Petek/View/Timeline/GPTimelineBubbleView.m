@@ -102,18 +102,14 @@ static CGRect const GPTimelinePreviewTextLabelFrame = (CGRect){12.0f, 0.0f, 0.0f
 #pragma mark -
 #pragma mark Layout
 
-- (void)didMoveToSuperview {
-    [super didMoveToSuperview];
-        
+- (void)didMoveToSuperview {        
     self.backgroundColor = [UIColor clearColor];
 }
 
 #pragma mark -
 #pragma mark Drawing
 
-- (void)drawRect:(CGRect)rect {
-    [super drawRect:rect];
-    
+- (void)drawRect:(CGRect)rect {    
     UIImage *image = [UIImage imageNamed:@"GPTimelineBubbleBackground"];
     image = [image resizableImageWithCapInsets:GPTimelineBubbleBackgroundImageEdgeInsets resizingMode:UIImageResizingModeStretch];
     [image drawInRect:self.bounds];

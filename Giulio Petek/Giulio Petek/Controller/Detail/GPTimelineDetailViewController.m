@@ -9,7 +9,9 @@
 #import "GPNavigationBar.h"
 #import "GPTimelineDetailView.h"
 
-static CGFloat const GPTimelineDetailViewControllerViewMargin = 10.0f;
+#define DETAIL_VIEW_FRAME (CGRect){10.0f, 10.0f, 0.0f, 0.0f}
+#define SCROLL_VIEW_FRAME (CGRect){ 0.0f, CGRectGetHeight(navigationBar.bounds), CGRectGetWidth(container.bounds),  CGRectGetHeight(container.bounds) - CGRectGetHeight(navigationBar.bounds)}
+#define SCOLL_VIEW_CONTENT_SIZE (CGSize){CGRectGetWidth(container.bounds), CGRectGetMaxY(detailView.frame) + CGRectGetMinY(DETAIL_VIEW_FRAME)}
 
 /* ------------------------------------------------------------------------------------------------------
  @interface GPTimelineDetailViewController ()
@@ -51,25 +53,20 @@ static CGFloat const GPTimelineDetailViewControllerViewMargin = 10.0f;
     navigationBar.titleLabel.text = self._timelineEntry.title;
     [container addSubview:navigationBar];
     
-    GPTimelineDetailView *detailView = [[GPTimelineDetailView alloc] initWithFrame:(CGRect){
-        GPTimelineDetailViewControllerViewMargin, GPTimelineDetailViewControllerViewMargin, 0.0f, 0.0f
-    }];
+    GPTimelineDetailView *detailView = [[GPTimelineDetailView alloc] initWithFrame:DETAIL_VIEW_FRAME];
     detailView.contentTextLabel.text = self._timelineEntry.text;
     detailView.actionDelegate = self;
-    for (NSString *buttonTitle in [self._timelineEntry.urls allKeys]) { [detailView appendButtonWithTitle:buttonTitle]; }
     [detailView.mediaAssetView.playButton addTarget:self
                                              action:@selector(_didTapVideoButton:)
                                    forControlEvents:UIControlEventTouchUpInside];
     detailView.mediaAssetView.type = self._timelineEntry.type;
     detailView.mediaAssetView.imageView.image = [self._timelineEntry.mediaAsset previewImage];
     detailView.mediaAssetView.playButton.circleColor = [self._timelineEntry suggestedUIColor];
+    for (NSString *buttonTitle in [self._timelineEntry.urls allKeys]) { [detailView appendButtonWithTitle:buttonTitle]; }
     
-    CGRect scrollViewFrame = container.bounds;
-    scrollViewFrame.size.height -= CGRectGetHeight(navigationBar.bounds);
-    scrollViewFrame.origin.y += CGRectGetHeight(navigationBar.bounds);
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:scrollViewFrame];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:SCROLL_VIEW_FRAME];
     [scrollView addSubview:detailView];
-    scrollView.contentSize = (CGSize){CGRectGetWidth(container.bounds), CGRectGetMaxY(detailView.frame) + GPTimelineDetailViewControllerViewMargin};
+    scrollView.contentSize = SCOLL_VIEW_CONTENT_SIZE;
     [container addSubview:scrollView];
 
     self.view = container;
