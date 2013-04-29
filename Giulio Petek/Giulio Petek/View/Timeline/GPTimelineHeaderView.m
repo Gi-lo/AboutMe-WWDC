@@ -7,6 +7,9 @@
 
 #import "GPTimelineHeaderView.h"
 
+static void *GPTimelineHeaderScrollViewDidScrollViewContext;
+
+static const CGFloat GPTimelineHeaderViewHeight = 100.0f;
 static const CGFloat GPTimelineHeaderViewAvatarLength = 70.0f;
 static const UIEdgeInsets GPTimelineHeaderViewAvatarEdgeInsets = (UIEdgeInsets){0.0f, 15.0f, 10.0f, 8.0f};
 
@@ -27,11 +30,13 @@ static const UIEdgeInsets GPTimelineHeaderViewAvatarEdgeInsets = (UIEdgeInsets){
         return _backgroundImageView;
     }
         
-    UIImageView *imageVew = [[UIImageView alloc] init];
-    [self addSubview:imageVew];
-    [self sendSubviewToBack:imageVew];
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.clipsToBounds = YES;
+    [self addSubview:imageView];
+    [self sendSubviewToBack:imageView];
     
-    _backgroundImageView = imageVew;
+    _backgroundImageView = imageView;
         
     return _backgroundImageView;
 }
@@ -53,7 +58,7 @@ static const UIEdgeInsets GPTimelineHeaderViewAvatarEdgeInsets = (UIEdgeInsets){
     if (_avatarImageView) {
         return _avatarImageView;
     }
-    
+
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.backgroundColor = [UIColor redColor];
     imageView.layer.cornerRadius = GPTimelineHeaderViewAvatarLength / 2.0f;
@@ -73,10 +78,51 @@ static const UIEdgeInsets GPTimelineHeaderViewAvatarEdgeInsets = (UIEdgeInsets){
 }
 
 #pragma mark -
+#pragma mark KVO
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(UIScrollView *)object change:(NSDictionary *)change context:(void *)context {
+    if (context == GPTimelineHeaderScrollViewDidScrollViewContext) {
+        [self _scrollViewDidScroll:[[change valueForKey:NSKeyValueChangeNewKey] CGPointValue]];
+    }
+}
+
+- (void)_scrollViewDidScroll:(CGPoint)contentOffset {
+    if (contentOffset.y > 0) {
+        return;
+    }
+    
+    self.frame = CGRectIntegral((CGRect){0.0f, contentOffset.y, CGRectGetWidth(self.bounds), contentOffset.y * (-1)});
+}
+
+#pragma mark -
 #pragma mark Layout
 
 - (CGSize)sizeThatFits:(CGSize)size {
-    return [self.backgroundImageView sizeThatFits:size];
+    return (CGSize){CGRectGetWidth(self.superview.bounds), GPTimelineHeaderViewHeight};
+}
+
+- (void)didMoveToSuperview {
+    NSAssert([self.superview isKindOfClass:[UIScrollView class]], @"Superview must be of class UIScrollView");
+    
+    UIScrollView *scrollView = (UIScrollView *)self.superview;
+    UIEdgeInsets newInset = scrollView.contentInset;
+    newInset.top = GPTimelineHeaderViewHeight;
+    scrollView.contentInset = newInset;
+    
+    [self.superview addObserver:self
+                     forKeyPath:@"contentOffset"
+                        options:NSKeyValueObservingOptionNew
+                        context:GPTimelineHeaderScrollViewDidScrollViewContext];
+    
+    [self sizeToFit];
+    
+    [super didMoveToSuperview];
+}
+
+- (void)removeFromSuperview {
+    [super removeFromSuperview];
+    
+    [self removeObserver:self forKeyPath:@"contentOffset" context:GPTimelineHeaderScrollViewDidScrollViewContext];
 }
 
 - (void)layoutSubviews {

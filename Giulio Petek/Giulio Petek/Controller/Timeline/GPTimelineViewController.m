@@ -66,16 +66,11 @@ static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
     self.tableView.backgroundView = [[GPTimelineBackgroundView alloc] init];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    UIView *fakeOverlay = [[UIView alloc] initWithFrame:(CGRect){0.0f, -347.0f, CGRectGetWidth(self.tableView.bounds), 350.0f}];
-    fakeOverlay.backgroundColor = [UIColor blackColor];
-    [self.tableView addSubview:fakeOverlay];
-    
     GPTimelineHeaderView *headerView = [[GPTimelineHeaderView alloc] init];
     headerView.backgroundImageView.image = [UIImage imageNamed:@"SunsetOverBonn"];
     headerView.aboutMeButton.title = @"Giulio Petek";
     [headerView.aboutMeButton addTarget:self action:@selector(_openAboutMe:) forControlEvents:UIControlEventTouchUpInside];
-    [headerView sizeToFit];
-    self.tableView.tableHeaderView = headerView;
+    [self.tableView addSubview:headerView];
 }
 
 #pragma mark -
