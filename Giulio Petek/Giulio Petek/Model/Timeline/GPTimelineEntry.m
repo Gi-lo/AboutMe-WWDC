@@ -12,7 +12,7 @@ static NSString *const GPTimelineEntryTitleKey = @"title";
 static NSString *const GPTimelineEntryTextKey = @"text";
 static NSString *const GPTimelineEntryURLsKey = @"urls";
 static NSString *const GPTimelineEntryTypeKey = @"type";
-static NSString *const GPTimelineEntryPreviewKey = @"preview";
+static NSString *const GPTimelineEntryPreviewKey = @"previewText";
 
 static NSString *const GPTimelineEntryTypeEducationString = @"education";
 static NSString *const GPTimelineEntryTypeProfessionString = @"profession";

@@ -100,7 +100,7 @@ static CGFloat const GPNavigationBarHeight = 44.0f;
         GPNavigationBarHeight,
         0.0f,
         CGRectGetWidth(self.bounds) - GPNavigationBarHeight * 2.0f,
-        GPNavigationBarHeight - 2.0f
+        GPNavigationBarHeight - 1.0f
     };
     
     self._backButton.frame = (CGRect){0.0f, 0.0f, GPNavigationBarHeight, GPNavigationBarHeight};
@@ -124,7 +124,7 @@ static CGFloat const GPNavigationBarHeight = 44.0f;
     CGContextSaveGState(context);
 
     [self.lineColor setFill];
-    UIRectFill((CGRect){0.0f, CGRectGetHeight(self.bounds) - 2.0f, CGRectGetWidth(self.bounds), 2.0f});
+    UIRectFill((CGRect){0.0f, CGRectGetHeight(self.bounds) - 1.0f, CGRectGetWidth(self.bounds), 1.0f});
 
     CGContextRestoreGState(context);
 }

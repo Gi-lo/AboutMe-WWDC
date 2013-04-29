@@ -14,7 +14,17 @@
 		2C2D359B172EF8C000EE1025 /* GPBackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D3597172EF8C000EE1025 /* GPBackButton.png */; };
 		2C2D359C172EF8C000EE1025 /* GPBackButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D3598172EF8C000EE1025 /* GPBackButton@2x.png */; };
 		2C2D359F172EFAE000EE1025 /* GPNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D359E172EFAE000EE1025 /* GPNavigationBar.m */; };
-		2C2D35A3172EFB0700EE1025 /* GPTimelineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35A2172EFB0700EE1025 /* GPTimelineDetailViewController.m */; };
+		2C2D35AB172EFBE900EE1025 /* GPTimelineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35AA172EFBE900EE1025 /* GPTimelineDetailViewController.m */; };
+		2C2D35AF172EFC5100EE1025 /* GPTimelineDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35AE172EFC5100EE1025 /* GPTimelineDetailView.m */; };
+		2C2D35B2172EFE8D00EE1025 /* GPMediaAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35B1172EFE8D00EE1025 /* GPMediaAssetView.m */; };
+		2C2D35B5172F01A400EE1025 /* GPContentTextBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D35B3172F01A400EE1025 /* GPContentTextBackground.png */; };
+		2C2D35B6172F01A400EE1025 /* GPContentTextBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D35B4172F01A400EE1025 /* GPContentTextBackground@2x.png */; };
+		2C2D35B9172F0C3600EE1025 /* GPPlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35B8172F0C3600EE1025 /* GPPlayButton.m */; };
+		2C2D35BB172F0E1700EE1025 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D35BA172F0E1700EE1025 /* MediaPlayer.framework */; };
+		2C2D35BE172F141B00EE1025 /* GPTriangleGlyph.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D35BC172F141B00EE1025 /* GPTriangleGlyph.png */; };
+		2C2D35BF172F141B00EE1025 /* GPTriangleGlyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D35BD172F141B00EE1025 /* GPTriangleGlyph@2x.png */; };
+		2C2D35C2172F20B900EE1025 /* GPURLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35C1172F20B800EE1025 /* GPURLButton.m */; };
+		2C2D35C7172F268200EE1025 /* GCXDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35C6172F268200EE1025 /* GCXDrawing.m */; };
 		2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273117284FD9009B905D /* UIKit.framework */; };
 		2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273317284FD9009B905D /* Foundation.framework */; };
 		2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273517284FD9009B905D /* CoreGraphics.framework */; };
@@ -52,8 +62,23 @@
 		2C2D3598172EF8C000EE1025 /* GPBackButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPBackButton@2x.png"; sourceTree = "<group>"; };
 		2C2D359D172EFAE000EE1025 /* GPNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPNavigationBar.h; sourceTree = "<group>"; };
 		2C2D359E172EFAE000EE1025 /* GPNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPNavigationBar.m; sourceTree = "<group>"; };
-		2C2D35A1172EFB0700EE1025 /* GPTimelineDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineDetailViewController.h; sourceTree = "<group>"; };
-		2C2D35A2172EFB0700EE1025 /* GPTimelineDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineDetailViewController.m; sourceTree = "<group>"; };
+		2C2D35A9172EFBE900EE1025 /* GPTimelineDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineDetailViewController.h; sourceTree = "<group>"; };
+		2C2D35AA172EFBE900EE1025 /* GPTimelineDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineDetailViewController.m; sourceTree = "<group>"; };
+		2C2D35AD172EFC5100EE1025 /* GPTimelineDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineDetailView.h; sourceTree = "<group>"; };
+		2C2D35AE172EFC5100EE1025 /* GPTimelineDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTimelineDetailView.m; sourceTree = "<group>"; };
+		2C2D35B0172EFE8D00EE1025 /* GPMediaAssetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMediaAssetView.h; sourceTree = "<group>"; };
+		2C2D35B1172EFE8D00EE1025 /* GPMediaAssetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPMediaAssetView.m; sourceTree = "<group>"; };
+		2C2D35B3172F01A400EE1025 /* GPContentTextBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPContentTextBackground.png; sourceTree = "<group>"; };
+		2C2D35B4172F01A400EE1025 /* GPContentTextBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPContentTextBackground@2x.png"; sourceTree = "<group>"; };
+		2C2D35B7172F0C3500EE1025 /* GPPlayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPlayButton.h; sourceTree = "<group>"; };
+		2C2D35B8172F0C3600EE1025 /* GPPlayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPlayButton.m; sourceTree = "<group>"; };
+		2C2D35BA172F0E1700EE1025 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2C2D35BC172F141B00EE1025 /* GPTriangleGlyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPTriangleGlyph.png; sourceTree = "<group>"; };
+		2C2D35BD172F141B00EE1025 /* GPTriangleGlyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPTriangleGlyph@2x.png"; sourceTree = "<group>"; };
+		2C2D35C0172F20B800EE1025 /* GPURLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPURLButton.h; sourceTree = "<group>"; };
+		2C2D35C1172F20B800EE1025 /* GPURLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPURLButton.m; sourceTree = "<group>"; };
+		2C2D35C5172F268200EE1025 /* GCXDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCXDrawing.h; sourceTree = "<group>"; };
+		2C2D35C6172F268200EE1025 /* GCXDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCXDrawing.m; sourceTree = "<group>"; };
 		2CAF272E17284FD9009B905D /* Giulio Petek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giulio Petek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAF273117284FD9009B905D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CAF273317284FD9009B905D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2D35BB172F0E1700EE1025 /* MediaPlayer.framework in Frameworks */,
 				2CFA1FBD172D8F9200655648 /* QuartzCore.framework in Frameworks */,
 				2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */,
 				2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */,
@@ -111,13 +137,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C2D35A0172EFAF600EE1025 /* Detail */ = {
+		2C2D35A5172EFBD100EE1025 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				2C2D35A1172EFB0700EE1025 /* GPTimelineDetailViewController.h */,
-				2C2D35A2172EFB0700EE1025 /* GPTimelineDetailViewController.m */,
+				2C2D35A9172EFBE900EE1025 /* GPTimelineDetailViewController.h */,
+				2C2D35AA172EFBE900EE1025 /* GPTimelineDetailViewController.m */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		2C2D35AC172EFC1C00EE1025 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D35AD172EFC5100EE1025 /* GPTimelineDetailView.h */,
+				2C2D35AE172EFC5100EE1025 /* GPTimelineDetailView.m */,
+				2C2D35B0172EFE8D00EE1025 /* GPMediaAssetView.h */,
+				2C2D35B1172EFE8D00EE1025 /* GPMediaAssetView.m */,
+				2C2D35B7172F0C3500EE1025 /* GPPlayButton.h */,
+				2C2D35B8172F0C3600EE1025 /* GPPlayButton.m */,
+				2C2D35C0172F20B800EE1025 /* GPURLButton.h */,
+				2C2D35C1172F20B800EE1025 /* GPURLButton.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		2C2D35C4172F224800EE1025 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D35C5172F268200EE1025 /* GCXDrawing.h */,
+				2C2D35C6172F268200EE1025 /* GCXDrawing.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		2CAF272517284FD9009B905D = {
@@ -140,6 +190,7 @@
 		2CAF273017284FD9009B905D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C2D35BA172F0E1700EE1025 /* MediaPlayer.framework */,
 				2CFA1FBC172D8F9200655648 /* QuartzCore.framework */,
 				2CAF273117284FD9009B905D /* UIKit.framework */,
 				2CAF273317284FD9009B905D /* Foundation.framework */,
@@ -154,6 +205,7 @@
 				2CAF276717285362009B905D /* Model */,
 				2CAF276817285369009B905D /* View */,
 				2CAF276917285371009B905D /* Controller */,
+				2C2D35C4172F224800EE1025 /* Helper */,
 				2CAF276B172855DD009B905D /* Supporting Files */,
 				2CAF276A172855DD009B905D /* Resources */,
 			);
@@ -171,6 +223,7 @@
 		2CAF276817285369009B905D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2C2D35AC172EFC1C00EE1025 /* Detail */,
 				2CFA1FAD172D815A00655648 /* Generic */,
 				2CFA1F96172D811A00655648 /* Timeline */,
 			);
@@ -180,6 +233,7 @@
 		2CAF276917285371009B905D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2C2D35A5172EFBD100EE1025 /* Detail */,
 				2CFA1FA6172D813C00655648 /* Timeline */,
 			);
 			path = Controller;
@@ -210,6 +264,10 @@
 		2CAF276C17285601009B905D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2C2D35BC172F141B00EE1025 /* GPTriangleGlyph.png */,
+				2C2D35BD172F141B00EE1025 /* GPTriangleGlyph@2x.png */,
+				2C2D35B3172F01A400EE1025 /* GPContentTextBackground.png */,
+				2C2D35B4172F01A400EE1025 /* GPContentTextBackground@2x.png */,
 				2C2D3595172EF8C000EE1025 /* GPBackButton_selected.png */,
 				2C2D3596172EF8C000EE1025 /* GPBackButton_selected@2x.png */,
 				2C2D3597172EF8C000EE1025 /* GPBackButton.png */,
@@ -264,7 +322,6 @@
 		2CFA1FA6172D813C00655648 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
-				2C2D35A0172EFAF600EE1025 /* Detail */,
 				2CFA1FA7172D813C00655648 /* GPTimelineEntriesFetcher.h */,
 				2CFA1FA8172D813C00655648 /* GPTimelineEntriesFetcher.m */,
 				2CFA1FA9172D813C00655648 /* GPTimelineViewController.h */,
@@ -363,6 +420,10 @@
 				2C2D359A172EF8C000EE1025 /* GPBackButton_selected@2x.png in Resources */,
 				2C2D359B172EF8C000EE1025 /* GPBackButton.png in Resources */,
 				2C2D359C172EF8C000EE1025 /* GPBackButton@2x.png in Resources */,
+				2C2D35B5172F01A400EE1025 /* GPContentTextBackground.png in Resources */,
+				2C2D35B6172F01A400EE1025 /* GPContentTextBackground@2x.png in Resources */,
+				2C2D35BE172F141B00EE1025 /* GPTriangleGlyph.png in Resources */,
+				2C2D35BF172F141B00EE1025 /* GPTriangleGlyph@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +447,12 @@
 				2CFA1FB6172D81B900655648 /* GPMediaAsset.m in Sources */,
 				2CFA1FB7172D81B900655648 /* GPTimelineEntry.m in Sources */,
 				2C2D359F172EFAE000EE1025 /* GPNavigationBar.m in Sources */,
-				2C2D35A3172EFB0700EE1025 /* GPTimelineDetailViewController.m in Sources */,
+				2C2D35AB172EFBE900EE1025 /* GPTimelineDetailViewController.m in Sources */,
+				2C2D35AF172EFC5100EE1025 /* GPTimelineDetailView.m in Sources */,
+				2C2D35B2172EFE8D00EE1025 /* GPMediaAssetView.m in Sources */,
+				2C2D35B9172F0C3600EE1025 /* GPPlayButton.m in Sources */,
+				2C2D35C2172F20B900EE1025 /* GPURLButton.m in Sources */,
+				2C2D35C7172F268200EE1025 /* GCXDrawing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

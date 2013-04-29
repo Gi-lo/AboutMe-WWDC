@@ -105,7 +105,7 @@ static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
                                             cell.circleView.circleColor = [timelineEntry suggestedUIColor];
                                             cell.timelineBubbleView.titleLabel.text = timelineEntry.title;
                                             cell.timelineBubbleView.dateLabel.text = timelineEntry.dateString;
-                                            cell.timelineBubbleView.textPreviewLabel.text = timelineEntry.text;
+                                            cell.timelineBubbleView.textPreviewLabel.text = timelineEntry.previewText;
                                         }];
     
     
