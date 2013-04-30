@@ -46,7 +46,6 @@
 		2CD96FD3172C71D1008EF3EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD0172C71D1008EF3EB /* Default-568h@2x.png */; };
 		2CD96FD4172C71D1008EF3EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD1172C71D1008EF3EB /* Default.png */; };
 		2CD96FD5172C71D1008EF3EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD2172C71D1008EF3EB /* Default@2x.png */; };
-		2CFA1F75172D2A9900655648 /* Test.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA1F74172D2A9900655648 /* Test.entry.bundle */; };
 		2CFA1FA1172D811A00655648 /* GPAboutMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F98172D811A00655648 /* GPAboutMeButton.m */; };
 		2CFA1FA2172D811A00655648 /* GPTimelineBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F9A172D811A00655648 /* GPTimelineBackgroundView.m */; };
 		2CFA1FA3172D811A00655648 /* GPTimelineBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F9C172D811A00655648 /* GPTimelineBubbleView.m */; };
@@ -112,7 +111,6 @@
 		2CD96FD1172C71D1008EF3EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2CD96FD2172C71D1008EF3EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2CD96FD8172C7205008EF3EB /* Giulio Petek-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Giulio Petek-Info.plist"; sourceTree = "<group>"; };
-		2CFA1F74172D2A9900655648 /* Test.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Test.entry.bundle; sourceTree = "<group>"; };
 		2CFA1F97172D811A00655648 /* GPAboutMeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAboutMeButton.h; sourceTree = "<group>"; };
 		2CFA1F98172D811A00655648 /* GPAboutMeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAboutMeButton.m; sourceTree = "<group>"; };
 		2CFA1F99172D811A00655648 /* GPTimelineBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTimelineBackgroundView.h; sourceTree = "<group>"; };
@@ -319,7 +317,6 @@
 		2CD96FBD172C6F55008EF3EB /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
-				2CFA1F74172D2A9900655648 /* Test.entry.bundle */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -438,7 +435,6 @@
 				2CD96FD3172C71D1008EF3EB /* Default-568h@2x.png in Resources */,
 				2CD96FD4172C71D1008EF3EB /* Default.png in Resources */,
 				2CD96FD5172C71D1008EF3EB /* Default@2x.png in Resources */,
-				2CFA1F75172D2A9900655648 /* Test.entry.bundle in Resources */,
 				2C2D358D172ECF3300EE1025 /* SunsetOverBonn.png in Resources */,
 				2C2D358E172ECF3300EE1025 /* SunsetOverBonn@2x.png in Resources */,
 				2C00D4C1172FC563002F0C5D /* GPAboutMeButtonArrow_selected.png in Resources */,
