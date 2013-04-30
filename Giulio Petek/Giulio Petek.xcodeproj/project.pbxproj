@@ -34,11 +34,11 @@
 		2C00D4E5172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DA172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle */; };
 		2C00D4E6172FDB38002F0C5D /* FH BRS.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DB172FDB38002F0C5D /* FH BRS.entry.bundle */; };
 		2C00D4E7172FDB38002F0C5D /* Final examinatons.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DC172FDB38002F0C5D /* Final examinatons.entry.bundle */; };
-		2C00D4E8172FDB38002F0C5D /* GCX full time.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DD172FDB38002F0C5D /* GCX full time.bundle */; };
 		2C00D4E9172FDB38002F0C5D /* GCX Summer Internship.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DE172FDB38002F0C5D /* GCX Summer Internship.entry.bundle */; };
 		2C00D4EA172FDB38002F0C5D /* PocketPlayer.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DF172FDB38002F0C5D /* PocketPlayer.entry.bundle */; };
 		2C00D4EB172FDB38002F0C5D /* Relocation To Bonn.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4E0172FDB38002F0C5D /* Relocation To Bonn.entry.bundle */; };
 		2C00D4EC172FDB38002F0C5D /* Working Student.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4E1172FDB38002F0C5D /* Working Student.entry.bundle */; };
+		2C00D4F6173008DC002F0C5D /* GCX full time.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4F5173008DC002F0C5D /* GCX full time.entry.bundle */; };
 		2C2D358D172ECF3300EE1025 /* SunsetOverBonn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D358B172ECF3300EE1025 /* SunsetOverBonn.png */; };
 		2C2D358E172ECF3300EE1025 /* SunsetOverBonn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D358C172ECF3300EE1025 /* SunsetOverBonn@2x.png */; };
 		2C2D359F172EFAE000EE1025 /* GPNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D359E172EFAE000EE1025 /* GPNavigationBar.m */; };
@@ -98,11 +98,11 @@
 		2C00D4DA172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Etch-a-Sketch.entry.bundle"; sourceTree = "<group>"; };
 		2C00D4DB172FDB38002F0C5D /* FH BRS.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "FH BRS.entry.bundle"; sourceTree = "<group>"; };
 		2C00D4DC172FDB38002F0C5D /* Final examinatons.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Final examinatons.entry.bundle"; sourceTree = "<group>"; };
-		2C00D4DD172FDB38002F0C5D /* GCX full time.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "GCX full time.bundle"; sourceTree = "<group>"; };
 		2C00D4DE172FDB38002F0C5D /* GCX Summer Internship.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "GCX Summer Internship.entry.bundle"; sourceTree = "<group>"; };
 		2C00D4DF172FDB38002F0C5D /* PocketPlayer.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PocketPlayer.entry.bundle; sourceTree = "<group>"; };
 		2C00D4E0172FDB38002F0C5D /* Relocation To Bonn.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Relocation To Bonn.entry.bundle"; sourceTree = "<group>"; };
 		2C00D4E1172FDB38002F0C5D /* Working Student.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Working Student.entry.bundle"; sourceTree = "<group>"; };
+		2C00D4F5173008DC002F0C5D /* GCX full time.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "GCX full time.entry.bundle"; sourceTree = "<group>"; };
 		2C2D358B172ECF3300EE1025 /* SunsetOverBonn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SunsetOverBonn.png; sourceTree = "<group>"; };
 		2C2D358C172ECF3300EE1025 /* SunsetOverBonn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SunsetOverBonn@2x.png"; sourceTree = "<group>"; };
 		2C2D359D172EFAE000EE1025 /* GPNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPNavigationBar.h; sourceTree = "<group>"; };
@@ -336,13 +336,13 @@
 		2CD96FBD172C6F55008EF3EB /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				2C00D4F5173008DC002F0C5D /* GCX full time.entry.bundle */,
 				2C00D4D7172FDB38002F0C5D /* AEG.entry.bundle */,
 				2C00D4D8172FDB38002F0C5D /* Birth.entry.bundle */,
 				2C00D4D9172FDB38002F0C5D /* CKCrashReporter.entry.bundle */,
 				2C00D4DA172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle */,
 				2C00D4DB172FDB38002F0C5D /* FH BRS.entry.bundle */,
 				2C00D4DC172FDB38002F0C5D /* Final examinatons.entry.bundle */,
-				2C00D4DD172FDB38002F0C5D /* GCX full time.bundle */,
 				2C00D4DE172FDB38002F0C5D /* GCX Summer Internship.entry.bundle */,
 				2C00D4DF172FDB38002F0C5D /* PocketPlayer.entry.bundle */,
 				2C00D4E0172FDB38002F0C5D /* Relocation To Bonn.entry.bundle */,
@@ -493,11 +493,11 @@
 				2C00D4E5172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle in Resources */,
 				2C00D4E6172FDB38002F0C5D /* FH BRS.entry.bundle in Resources */,
 				2C00D4E7172FDB38002F0C5D /* Final examinatons.entry.bundle in Resources */,
-				2C00D4E8172FDB38002F0C5D /* GCX full time.bundle in Resources */,
 				2C00D4E9172FDB38002F0C5D /* GCX Summer Internship.entry.bundle in Resources */,
 				2C00D4EA172FDB38002F0C5D /* PocketPlayer.entry.bundle in Resources */,
 				2C00D4EB172FDB38002F0C5D /* Relocation To Bonn.entry.bundle in Resources */,
 				2C00D4EC172FDB38002F0C5D /* Working Student.entry.bundle in Resources */,
+				2C00D4F6173008DC002F0C5D /* GCX full time.entry.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

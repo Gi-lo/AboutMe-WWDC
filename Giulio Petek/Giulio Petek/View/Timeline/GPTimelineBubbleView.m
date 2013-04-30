@@ -8,8 +8,8 @@
 #import "GPTimelineBubbleView.h"
  
 #define BACKGROUND_INSETS self.highlighted ? (UIEdgeInsets){0.0f, 7.0f, 5.0f, 3.0f} : (UIEdgeInsets){0.0f, 8.0f, 5.0f, 3.0f}
-#define DATE_FRAME (CGRect){CGRectGetWidth(self.bounds) - 110.f, 2.0f, 90.0f, 28.0f}
-#define TITLE_FRAME (CGRect){12.0f, 2.0f, CGRectGetWidth(self.bounds) - 110.f - 12.0f, 28.0f}
+#define DATE_FRAME (CGRect){CGRectGetWidth(self.bounds) - 116.f, 2.0f, 96.0f, 28.0f}
+#define TITLE_FRAME (CGRect){12.0f, 2.0f, CGRectGetWidth(self.bounds) - 116.f - 12.0f, 28.0f}
 #define TEXT_FRAME (CGRect){12.0f, CGRectGetMinY(DATE_FRAME) + CGRectGetHeight(DATE_FRAME) - 5.0f, CGRectGetWidth(self.bounds) - 34.0f, CGRectGetHeight(self.bounds) - CGRectGetMinY(DATE_FRAME) - CGRectGetHeight(DATE_FRAME)}
 
 /* ------------------------------------------------------------------------------------------------------

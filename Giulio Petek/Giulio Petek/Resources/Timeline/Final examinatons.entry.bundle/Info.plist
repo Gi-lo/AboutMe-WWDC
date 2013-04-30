@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>date</key>
-	<string>January 2012</string>
+	<string>May 2012</string>
 	<key>title</key>
 	<string>Final Examinations</string>
 	<key>text</key>
-	<string>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+	<string>/</string>
 	<key>previewText</key>
-	<string>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</string>
+	<string>Subjects: Biology, Geography, English and of course computer science.</string>
 	<key>urls</key>
 	<dict>
 		<key>URL1</key>

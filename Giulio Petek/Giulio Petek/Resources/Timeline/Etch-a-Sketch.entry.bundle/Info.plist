@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>date</key>
-	<string>January 2012</string>
+	<string>April 2010</string>
 	<key>title</key>
-	<string>Etch-a-Sketch</string>
+	<string>EtchPad</string>
 	<key>text</key>
-	<string>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+	<string>/</string>
 	<key>previewText</key>
-	<string>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</string>
+	<string>Etch-a-Sketch is an application designed to bring back some childhood memories.</string>
 	<key>urls</key>
 	<dict>
 		<key>URL1</key>
@@ -18,6 +18,6 @@
 		<string>http://google.de</string>
 	</dict>
 	<key>type</key>
-	<string>education</string>
+	<string>private</string>
 </dict>
 </plist>

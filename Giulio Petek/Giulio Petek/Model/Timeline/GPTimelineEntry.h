@@ -12,8 +12,8 @@
 typedef NS_ENUM(NSInteger, GPTimelineEntryType) {
     GPTimelineEntryTypeEducation = 0,
     GPTimelineEntryTypeProfession,
-    GPTimelineEntryTypePrivate
-    // ...
+    GPTimelineEntryTypePrivate,
+    GPTimelineEntryTypeOthers
 };
 
 /* --- interface -------------------------------------------------------------------------------------- */

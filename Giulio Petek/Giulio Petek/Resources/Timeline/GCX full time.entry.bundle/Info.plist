@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>date</key>
-	<string>September 2012</string>
+	<string>June 2012</string>
 	<key>title</key>
-	<string>Working Student</string>
+	<string>Full time Job</string>
 	<key>text</key>
 	<string>/</string>
 	<key>previewText</key>
-	<string>Financing my education and learning by doing.</string>
+	<string>My first full time job experience.</string>
 	<key>urls</key>
 	<dict>
 		<key>URL1</key>
@@ -18,6 +18,6 @@
 		<string>http://google.de</string>
 	</dict>
 	<key>type</key>
-	<string>education</string>
+	<string>profession</string>
 </dict>
 </plist>
