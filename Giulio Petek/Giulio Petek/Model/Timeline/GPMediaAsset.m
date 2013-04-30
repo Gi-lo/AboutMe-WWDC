@@ -15,13 +15,20 @@ static NSString *NSStringFromGPMediaAssetType(GPMediaAssetType type) {
     
     return nil;
 }
+
+static NSString *urlEscapeString(NSString *string) {
+    NSString *encodedstring = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)string, NULL, (CFStringRef)@"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8);
+    return encodedstring;
+}
+
 /* ------------------------------------------------------------------------------------------------------
  @interface GPMediaAsset ()
  ------------------------------------------------------------------------------------------------------ */
 
 @interface GPMediaAsset ()
 
-@property (nonatomic, strong, readwrite) NSString *filePath;
+@property (nonatomic, strong, readwrite) NSURL *videoURL;
+@property (nonatomic, strong) NSString *_previewImagePath;
 @property (nonatomic, unsafe_unretained, readwrite) GPMediaAssetType type;
 
 @end
@@ -35,33 +42,17 @@ static NSString *NSStringFromGPMediaAssetType(GPMediaAssetType type) {
 #pragma mark -
 #pragma mark Init
 
-+ (instancetype)mediaAssetInTimelineEntryBundle:(NSBundle *)bundle {
++ (instancetype)mediaAssetForAssociatedBundle:(NSBundle *)bundle andVideoURLString:(NSString *)urlString {
     GPMediaAsset *asset = [[GPMediaAsset alloc] init];
     
-    NSString *basePath = [[bundle resourcePath] stringByAppendingPathComponent:@"MediaAsset"];
-    
-    NSArray *supportedVideoFormats = @[@"mov", @"mp4"];
-    for (NSString *videoFormat in supportedVideoFormats) {
-        NSString *filePath = [basePath stringByAppendingPathExtension:videoFormat];
-        
-        if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-            asset.filePath = filePath;
-            asset.type = GPMediaAssetTypeVideo;
-            break;
-        }
+    NSString *previewImageName = @"Preview";
+    if ([[UIScreen mainScreen] scale]) {
+        previewImageName = [previewImageName stringByAppendingString:([[UIScreen mainScreen] scale] == 2.0 ? @"@2x" : nil)];
     }
     
-    NSArray *supportedImageFormats = @[@"png", @"jpg", @"jpeg"];
-    for (NSString *imageFormat in supportedImageFormats) {
-        NSString *filePath = [basePath stringByAppendingPathExtension:imageFormat];
-        
-        if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-            asset.filePath = filePath;
-            asset.type = GPMediaAssetTypePhoto;
-            break;
-        }
-    }
-
+    asset._previewImagePath = [bundle pathForResource:previewImageName ofType:@"png"];
+    asset.videoURL = [urlString length] ? [NSURL URLWithString:urlString] : nil;
+    
     return asset;
 }
 
@@ -69,12 +60,14 @@ static NSString *NSStringFromGPMediaAssetType(GPMediaAssetType type) {
 #pragma mark Preview Image
 
 - (UIImage *)previewImage {
-    if (self.type == GPMediaAssetTypePhoto) {
-        return [UIImage imageWithContentsOfFile:self.filePath];
-    }
-    
-    MPMoviePlayerController *player = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:self.filePath]];
-    return [player thumbnailImageAtTime:1.0 timeOption:MPMovieTimeOptionNearestKeyFrame];
+    return [UIImage imageWithContentsOfFile:self._previewImagePath];
+}
+
+#pragma mark -
+#pragma mark - Getter
+
+- (GPMediaAssetType)type {
+    return self.videoURL ? GPMediaAssetTypeVideo : GPMediaAssetTypePhoto;
 }
 
 #pragma mark -

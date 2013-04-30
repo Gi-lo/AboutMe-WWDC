@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date</key>
+	<string>June 2012</string>
+	<key>title</key>
+	<string>Full time Job</string>
+	<key>text</key>
+	<string>During the break till university started, I worked as a Junior Developer for grandcentrix. It was my first full time job. With all the good memories I had from the last summer internship I was very interested in getting and mastering more challenges. I worked on Apps for ROMA, RTL and Siedle. 
+
+Yet the most interesting application was for Loewe. A co-worker and I had the job to build a showcase application for IFA, an international multimedia fair, in Berlin. The application was something similar to a remote control. In addition it shows current telecasts data and you can also control your Loewe SoundBox with it. At the end my co-worker attended the IFA and presented some aspects of the application. It was an amazing feeling that the application you have worked on was showcased on an international fair. Later Loewe acquired us to build an App Store ready version.</string>
+	<key>previewText</key>
+	<string>My first full time job experience.</string>
+	<key>urls</key>
+	<dict>
+		<key>Loewe Assistmedia iPad (German)</key>
+		<string>http://www.grandcentrix.net/portfolio/loewe-assist-media-social-tv/</string>
+		<key>RTL Media Group (German)</key>
+		<string>http://www.grandcentrix.net/portfolio/rtl-media-group-social-tv/</string>
+		<key>IFA</key>
+		<string>http://b2b.ifa-berlin.com/en/</string>
+	</dict>
+	<key>type</key>
+	<string>profession</string>
+</dict>
+</plist>

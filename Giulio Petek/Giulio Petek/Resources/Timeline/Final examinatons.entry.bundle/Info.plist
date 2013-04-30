@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date</key>
+	<string>May 2012</string>
+	<key>title</key>
+	<string>Final Examinations</string>
+	<key>text</key>
+	<string>My final examinations took place during march and april, 2012. By getting my test results in May, I had the required education to enroll at a university.
+
+My subjects included biology, geography, english and computer science. The two latter ones were a good foundation for what I do now. Studying computer science and communicating in english. Biology and geography where two other topics where I was interested in. Although I decided to not enlarge my knowledge about it.</string>
+	<key>previewText</key>
+	<string>Subjects: Biology, Geography, English and of course computer science.</string>
+	<key>type</key>
+	<string>education</string>
+</dict>
+</plist>

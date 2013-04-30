@@ -32,7 +32,7 @@
     
     _circleColor = circleColor;
     
-    self.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.2f];
+    self.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.1f];
     
     [self setNeedsDisplay];
 }
@@ -41,18 +41,18 @@
 #pragma mark Drawing
 
 - (void)drawRect:(CGRect)rect {
-    GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
+    GCXSafeCurrentContextDrawing(^{
         CGRect circleFrame = CIRCLE_FRAME;
         UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:circleFrame cornerRadius:floorf(CGRectGetHeight(circleFrame) / 2.0f)];
         
         [self.circleColor setFill];
         [path fill];
         
-        UIImage *playImage = [UIImage imageNamed:@"GPTriangleGlyph"];
+        UIImage *playImage = [UIImage imageNamed:@"GPPlayButtonGlyph"];
         [playImage drawInRect:PLAY_GLYPH_FRAME];
         
         if (self.highlighted) {
-            [[UIColor colorWithWhite:0.0f alpha:0.3f] setFill];
+            [[UIColor colorWithWhite:0.0f alpha:0.2f] setFill];
             [path fill];
         }
     });

@@ -73,10 +73,6 @@
     [self._webView stopLoading];
 }
 
-- (BOOL)shouldAutorotate {
-    return YES;
-}
-
 #pragma mark -
 #pragma mark Actions
 

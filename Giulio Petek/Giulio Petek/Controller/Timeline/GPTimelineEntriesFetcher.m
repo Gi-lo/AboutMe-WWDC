@@ -20,7 +20,6 @@ static dispatch_once_t monthsToken = 0;
 
 @interface GPTimelineEntriesFetcher ()
 
-@property (nonatomic, strong) NSCache *_entryCache;
 @property (nonatomic, strong) NSOperationQueue *_entryFetchQueue;
 
 + (NSMutableArray *)_allEntryNames;
@@ -48,15 +47,15 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
 
 + (NSMutableArray *)_allEntryNames {
     NSBundle *mainBundle = [NSBundle mainBundle];
-    NSArray *allBundlesInMain = [mainBundle URLsForResourcesWithExtension:@"entry.bundle" subdirectory:nil];
+    NSArray *allBundlesInMain = [mainBundle pathsForResourcesOfType:@"entry.bundle" inDirectory:nil];
     
     NSMutableArray *allEntryNames = [NSMutableArray arrayWithCapacity:[allBundlesInMain count]];
-    for (NSURL *bundleURL in allBundlesInMain) {
-        NSString *resourceSpecifier = [bundleURL resourceSpecifier];
-        NSRange rangeOfEntryBundle = [resourceSpecifier rangeOfString:@".entry.bundle"];
+    for (NSString *bundlePath in allBundlesInMain) {
+        NSString *lastPathComponent = [bundlePath lastPathComponent];
+        NSRange rangeOfEntryBundle = [lastPathComponent rangeOfString:@".entry.bundle"];
 
         if (rangeOfEntryBundle.location != NSNotFound) {
-            [allEntryNames addObject:[resourceSpecifier substringToIndex:rangeOfEntryBundle.location]];
+            [allEntryNames addObject:[lastPathComponent substringToIndex:rangeOfEntryBundle.location]];
         }
     }
     
@@ -87,26 +86,30 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
             NSString *currentName = [allEntryNames lastObject];
             NSString *currentDateString = [self _dateStringForEntryNamed:currentName];
             if (![currentDateString length]) {
+                [allEntryNames removeLastObject];
                 continue;
             }
-                        
+        
             __block int i = 0;
+            __block BOOL loopWasCancelled = NO;
             [sortedEntryNames enumerateObjectsUsingBlock:^(NSString *alreadyProcessedName, NSUInteger idx, BOOL *stop) {
+                i = idx;
+
                 NSString *alreadyProcessedDateString = datesForNames[alreadyProcessedName];
                 if ([self _dateStringIsOlder:alreadyProcessedDateString than:currentDateString]) {
+                    loopWasCancelled = YES;
                     *stop = YES;
                 }
-                
-                if (idx == 0) { idx++; } i = idx;
             }];
-                        
+            if (!loopWasCancelled) { i = [sortedEntryNames count]; }
+        
             [datesForNames setObject:currentDateString forKey:currentName];
             [sortedEntryNames insertObject:currentName atIndex:i];
             [allEntryNames removeLastObject];
         }
         
         GPTimelineEntriesFetcherIndexList = [sortedEntryNames copy];
-        
+
         dispatch_async(dispatch_get_main_queue(), ^{
             [[NSNotificationCenter defaultCenter] postNotificationName:GPTimelineEntriesFetcherDidFinishMappingNotifiaction object:nil];
         });
@@ -156,10 +159,7 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
 #pragma mark Init
 
 - (instancetype)init {
-    if ((self = [super init])) {
-        self._entryCache = [[NSCache alloc] init];
-        self._entryCache.name = @"GPTimelineEntriesFetcherEntryCache";
-        
+    if ((self = [super init])) {        
         self._entryFetchQueue = [[NSOperationQueue alloc] init];
         self._entryFetchQueue.name = @"GPTimelineEntriesFetcherEntryFetchQueue";
         self._entryFetchQueue.maxConcurrentOperationCount = 1;
@@ -188,37 +188,17 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
 #pragma mark -
 #pragma mark Fetch
 
-- (GPTimelineEntry *)timelineEntryAtIndex:(NSUInteger)idx {
-    if (!self.isReady) {
-        NSLog(@"Requested timeline entry before mapping was done! Resgister for GPTimelineEntriesFetcherDidFinsihMappingNotifiaction if you want to be notified once its done.");
-        return nil;
-    }
-    
-    if ([GPTimelineEntriesFetcherIndexList count] < idx) {
-        NSLog(@"Requested an entry at an index which is not there. Use <numberOfEntries> to avoid this error.");
-        return nil;
-    }
-    
-    __block GPTimelineEntry *timelineEntry = [self._entryCache objectForKey:@(idx)];
-    if (timelineEntry) {
-        return timelineEntry;
-    }
-    
-    timelineEntry = [GPTimelineEntry timelineEntryNamed:GPTimelineEntriesFetcherIndexList[idx]];
-    if (timelineEntry) {
-        [self._entryCache setObject:timelineEntry forKey:@(idx)];
-    }
-    
-    return timelineEntry;
+- (GPTimelineEntry *)timelineEntryAtIndex:(NSUInteger)idx {    
+    return [GPTimelineEntry timelineEntryNamed:GPTimelineEntriesFetcherIndexList[idx]];
 }
 
-- (void)fetchTimelineEntryAtIndex:(NSUInteger)idx andCallback:(GPTimelineEntriesFetcherCallback)callback {    
+- (void)fetchTimelineEntryAtIndex:(NSUInteger)idx andCallback:(GPTimelineEntriesFetcherCallback)callback {
     [self._entryFetchQueue addOperationWithBlock:^{
         GPTimelineEntry *timelineEntry = [self timelineEntryAtIndex:idx];
         
-        dispatch_async(dispatch_get_main_queue(), ^{
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             callback(timelineEntry);
-        });
+        }];
     }];
 }
 

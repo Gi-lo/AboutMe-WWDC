@@ -27,7 +27,6 @@
  ------------------------------------------------------------------------------------------------------ */
 
 @implementation GPNavigationBar
-
 @synthesize titleLabel = _titleLabel;
 
 #pragma mark -
@@ -110,8 +109,8 @@
 #pragma mark -
 #pragma mark Drawing
 
-- (void)drawRect:(CGRect)rect {
-    GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
+- (void)drawRect:(CGRect)rect {    
+    GCXSafeCurrentContextDrawing(^{
         [[UIColor whiteColor] setFill];
         UIRectFill(self.bounds);
         

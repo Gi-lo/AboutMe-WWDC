@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date</key>
+	<string>August 2009</string>
+	<key>title</key>
+	<string>PocketPlayer</string>
+	<key>text</key>
+	<string>Released in August 2009, PocketPlayer was my first App Store application. It was developed to simplify the way you listen to your music. Especially if you do a lot of sports you get pretty much annoyed by putting out your iPhone or iPod Touch to change a song. With PocketPlayer you can control your music by simple gestures:
+
+- Double-tap to play/pause
+- Swipe left/right to change the current song
+- Swipe up/down to change the volume
+
+PocketPlayer was for about 15 weeks under the top 20 Music Applications on the German App Store. I have tried to update the application frequently as it contained themes. At a certain point I had to remove it from the App Store as there was not enough revenue to continue working on it.
+
+Please note, that the video above is provided in German. Nevertheless it shows the main features in very good and understandable way.</string>
+	<key>previewText</key>
+	<string>Simplify the way you listen to your music with innovative gestures!</string>
+	<key>urls</key>
+	<dict>
+		<key>iPhone in Canada Review</key>
+		<string>http://www.iphoneincanada.ca/reviews/app-review-pocketplayer-for-iphone/</string>
+		<key>Apfeltech Review (German)</key>
+		<string>http://apfeltech.net/2009/08/review-gewinnspiel-pocketplayer/</string>
+	</dict>
+	<key>type</key>
+	<string>private</string>
+	<key>videoURL</key>
+	<string>http://f.cl.ly/items/083W311X1W2e2m2h452U/App%20Review%20-%20Pocket%20Player.mp4</string>
+</dict>
+</plist>

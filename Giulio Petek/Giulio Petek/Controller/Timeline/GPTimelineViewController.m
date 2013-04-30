@@ -54,6 +54,8 @@
                                                  selector:@selector(_timelineFetcherDidFinishMapping:)
                                                      name:GPTimelineEntriesFetcherDidFinishMappingNotifiaction
                                                    object:nil];
+    } else {
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationBottom];
     }
 }
 

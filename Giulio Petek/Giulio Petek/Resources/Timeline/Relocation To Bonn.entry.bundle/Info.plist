@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date</key>
+	<string>July 2012</string>
+	<key>title</key>
+	<string>Relocation to Bonn</string>
+	<key>text</key>
+	<string>By enrolling at the University of Applied Science Bonn-Rhein-Sieg and my work in Cologne there was no reason to stay in Kaarst. I decided to join an apartment-sharing community as it could else be very hard to get along in strange city where you do not know anyone. My 3 roommates became close friends and we are just like a small family.
+
+Besides the great people, Bonn also is a beautiful city. The image you see on the timeline view of this application was taken on sunset in Bonn. It shows the Post Tower which is the headquarters of the logistic company DHL.</string>
+	<key>previewText</key>
+	<string>Moving to Bonn was probably one of the best descisions I have made.</string>
+	<key>urls</key>
+	<dict>
+		<key>Bonn</key>
+		<string>http://www.bonn.de/index.html?lang=en</string>
+		<key>Post Tower</key>
+		<string>http://en.wikipedia.org/wiki/Post_Tower</string>
+	</dict>
+	<key>type</key>
+	<string>other</string>
+</dict>
+</plist>
