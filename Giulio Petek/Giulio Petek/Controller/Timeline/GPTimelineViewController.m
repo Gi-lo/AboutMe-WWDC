@@ -14,16 +14,26 @@
 
 #define CELL_HEIGHT 100.0f
 
+typedef NS_ENUM(NSInteger, GPTimelineViewControllerSection) {
+    GPTimelineViewControllerAboutMeSection = 0,
+    GPTimelineViewControllerTimelineSection,
+    GPTimelineViewControllerSectionNum
+};
+
 /* ------------------------------------------------------------------------------------------------------
  @implementation GPTimelineViewController ()
  ------------------------------------------------------------------------------------------------------ */
 
 @interface GPTimelineViewController ()
 
+@property (nonatomic, unsafe_unretained, getter = _isShowingAboutMeText) BOOL _showAboutMeText;
 @property (nonatomic, strong, readwrite) GPTimelineEntriesFetcher *_entriesFetcher;
 
 - (void)_openAboutMe:(GPAboutMeButton *)button;
 - (void)_timelineFetcherDidFinishMapping:(NSNotification *)notification;
+
+- (UITableViewCell *)_aboutMeCell;
+- (GPTimelineCell *)_timelineCellForIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
@@ -54,8 +64,6 @@
                                                  selector:@selector(_timelineFetcherDidFinishMapping:)
                                                      name:GPTimelineEntriesFetcherDidFinishMappingNotifiaction
                                                    object:nil];
-    } else {
-        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationBottom];
     }
 }
 
@@ -72,14 +80,25 @@
 #pragma mark Actions
 
 - (void)_openAboutMe:(GPAboutMeButton *)button {
-    // ... 
+    self._showAboutMeText = !self._isShowingAboutMeText;
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0]
+                  withRowAnimation:self._showAboutMeText ? UITableViewRowAnimationBottom : UITableViewRowAnimationTop];
 }
 
 #pragma mark - 
 #pragma mark UITableViewDataSource
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return GPTimelineViewControllerSectionNum;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self._entriesFetcher isReady] ? [self._entriesFetcher numberOfEntries] : 0;
+    switch (section) {
+        case GPTimelineViewControllerAboutMeSection: return self._isShowingAboutMeText; break;
+        case GPTimelineViewControllerTimelineSection: return [self._entriesFetcher numberOfEntries]; break;
+    }
+    
+    return 0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -87,7 +106,23 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    GPTimelineCell *cell = [GPTimelineCell reusableCellFromTableView:tableView];
+    if (indexPath.section == GPTimelineViewControllerAboutMeSection) {
+        return [self _aboutMeCell];
+    } else {
+        return [self _timelineCellForIndexPath:indexPath];
+    }
+}
+
+#pragma mark -
+#pragma mark UITableViewCells 
+
+- (UITableViewCell *)_aboutMeCell {
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:0 reuseIdentifier:@"ficken"];
+    return cell;
+}
+
+- (GPTimelineCell *)_timelineCellForIndexPath:(NSIndexPath *)indexPath {
+    GPTimelineCell *cell = [GPTimelineCell reusableCellFromTableView:self.tableView];
     cell.tag = indexPath.row;
     
     [self._entriesFetcher fetchTimelineEntryAtIndex:cell.tag
@@ -101,8 +136,6 @@
                                             cell.timelineBubbleView.dateLabel.text = timelineEntry.dateString;
                                             cell.timelineBubbleView.textPreviewLabel.text = timelineEntry.previewText;
                                         }];
-    
-    
     return cell;
 }
 
