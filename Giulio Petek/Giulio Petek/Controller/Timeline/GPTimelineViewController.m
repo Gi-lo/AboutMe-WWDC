@@ -40,7 +40,14 @@ static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self _configureTableView];
+    self.tableView.backgroundView = [[GPTimelineBackgroundView alloc] init];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    GPTimelineHeaderView *headerView = [[GPTimelineHeaderView alloc] init];
+    headerView.backgroundImageView.image = [UIImage imageNamed:@"SunsetOverBonn"];
+    headerView.aboutMeButton.title = @"Giulio Petek";
+    [headerView.aboutMeButton addTarget:self action:@selector(_openAboutMe:) forControlEvents:UIControlEventTouchUpInside];
+    [self.tableView addSubview:headerView];
     
     self._entriesFetcher = [[GPTimelineEntriesFetcher alloc] init];
     if (![self._entriesFetcher isReady]) {
@@ -58,20 +65,6 @@ static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
     [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationBottom];
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:GPTimelineEntriesFetcherDidFinishMappingNotifiaction object:nil];
-}
-
-#pragma mark -
-#pragma mark Configure
-
-- (void)_configureTableView {
-    self.tableView.backgroundView = [[GPTimelineBackgroundView alloc] init];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
-    GPTimelineHeaderView *headerView = [[GPTimelineHeaderView alloc] init];
-    headerView.backgroundImageView.image = [UIImage imageNamed:@"SunsetOverBonn"];
-    headerView.aboutMeButton.title = @"Giulio Petek";
-    [headerView.aboutMeButton addTarget:self action:@selector(_openAboutMe:) forControlEvents:UIControlEventTouchUpInside];
-    [self.tableView addSubview:headerView];
 }
 
 #pragma mark -

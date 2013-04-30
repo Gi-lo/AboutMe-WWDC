@@ -8,6 +8,7 @@
 #import "GPTimelineDetailViewController.h"
 #import "GPNavigationBar.h"
 #import "GPTimelineDetailView.h"
+#import "GPWebViewController.h"
 
 #define DETAIL_VIEW_FRAME (CGRect){10.0f, 10.0f, 0.0f, 0.0f}
 #define SCROLL_VIEW_FRAME (CGRect){ 0.0f, CGRectGetHeight(navigationBar.bounds), CGRectGetWidth(container.bounds),  CGRectGetHeight(container.bounds) - CGRectGetHeight(navigationBar.bounds)}
@@ -82,9 +83,11 @@
 #pragma mark -
 #pragma mark GPTimelineDetailViewActionDelegate
 
-- (void)didPressButtonWithTitle:(NSString *)title inDetailView:(GPTimelineDetailView *)detailView {
-    NSURL *url = [self._timelineEntry.urls objectForKey:title];
-    NSLog(@"%@", url);
+- (void)didPressURLButtonWithTitle:(NSString *)title inDetailView:(GPTimelineDetailView *)detailView {
+    NSURL *url = [NSURL URLWithString:[self._timelineEntry.urls objectForKey:title]];
+    GPWebViewController *webController = [[GPWebViewController alloc] initWithURL:url];
+
+    [self.navigationController presentViewController:[[UINavigationController alloc] initWithRootViewController:webController] animated:YES completion:nil];
 }
 
 #pragma mark -

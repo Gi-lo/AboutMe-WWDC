@@ -12,7 +12,8 @@
 @class GPTimelineDetailView;
 @protocol GPTimelineDetailViewActionDelegate <NSObject>
 
-- (void)didPressButtonWithTitle:(NSString *)title inDetailView:(GPTimelineDetailView *)detailView;
+@optional
+- (void)didPressURLButtonWithTitle:(NSString *)title inDetailView:(GPTimelineDetailView *)detailView;
 
 @end
 

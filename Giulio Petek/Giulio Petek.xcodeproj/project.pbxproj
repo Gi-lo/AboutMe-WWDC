@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C00D4AA172FB711002F0C5D /* GPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C00D4A9172FB711002F0C5D /* GPWebViewController.m */; };
 		2C2D358D172ECF3300EE1025 /* SunsetOverBonn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D358B172ECF3300EE1025 /* SunsetOverBonn.png */; };
 		2C2D358E172ECF3300EE1025 /* SunsetOverBonn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D358C172ECF3300EE1025 /* SunsetOverBonn@2x.png */; };
 		2C2D3599172EF8C000EE1025 /* GPBackButton_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D3595172EF8C000EE1025 /* GPBackButton_selected.png */; };
@@ -54,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C00D4A8172FB711002F0C5D /* GPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPWebViewController.h; sourceTree = "<group>"; };
+		2C00D4A9172FB711002F0C5D /* GPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPWebViewController.m; sourceTree = "<group>"; };
 		2C2D358B172ECF3300EE1025 /* SunsetOverBonn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SunsetOverBonn.png; sourceTree = "<group>"; };
 		2C2D358C172ECF3300EE1025 /* SunsetOverBonn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SunsetOverBonn@2x.png"; sourceTree = "<group>"; };
 		2C2D3595172EF8C000EE1025 /* GPBackButton_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPBackButton_selected.png; sourceTree = "<group>"; };
@@ -137,6 +140,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C00D4A7172FB6D8002F0C5D /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				2C00D4A8172FB711002F0C5D /* GPWebViewController.h */,
+				2C00D4A9172FB711002F0C5D /* GPWebViewController.m */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
 		2C2D35A5172EFBD100EE1025 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +245,7 @@
 		2CAF276917285371009B905D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2C00D4A7172FB6D8002F0C5D /* Generic */,
 				2C2D35A5172EFBD100EE1025 /* Detail */,
 				2CFA1FA6172D813C00655648 /* Timeline */,
 			);
@@ -453,6 +466,7 @@
 				2C2D35B9172F0C3600EE1025 /* GPPlayButton.m in Sources */,
 				2C2D35C2172F20B900EE1025 /* GPURLButton.m in Sources */,
 				2C2D35C7172F268200EE1025 /* GCXDrawing.m in Sources */,
+				2C00D4AA172FB711002F0C5D /* GPWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

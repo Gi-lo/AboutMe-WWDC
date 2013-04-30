@@ -74,10 +74,20 @@
     
     GPURLButton *button = [[GPURLButton alloc] init];
     button.title = title;
+    [button addTarget:self action:@selector(_pressedURLButton:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:button];
     [self._buttons addPointer:(__bridge void *)(button)];
     
     [self sizeToFit];
+}
+
+#pragma mark -
+#pragma mark Actions
+
+- (void)_pressedURLButton:(GPURLButton *)button {
+    if ([self.actionDelegate respondsToSelector:@selector(didPressURLButtonWithTitle:inDetailView:)]) {
+        [self.actionDelegate didPressURLButtonWithTitle:button.title inDetailView:self];
+    }
 }
 
 #pragma mark -
