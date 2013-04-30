@@ -6,12 +6,11 @@
  ------------------------------------------------------------------------------------------------------ */
 
 #import "GPTimelineBubbleView.h"
-
-static UIEdgeInsets const GPTimelineBubbleBackgroundImageEdgeInsets = (UIEdgeInsets){0.0f, 8.0f, 5.0f, 3.0f};
-
-static CGRect const GPTimelineTitleLabelFrame = (CGRect){12.0f, 2.0f, 0.0f, 28.0f};
-static CGRect const GPTimelineDateLabelFrame = (CGRect){112.0f, 2.0f, 90.0f, 28.0f};
-static CGRect const GPTimelinePreviewTextLabelFrame = (CGRect){12.0f, 0.0f, 0.0f, 0.0f};
+ 
+#define BACKGROUND_INSETS self.highlighted ? (UIEdgeInsets){0.0f, 7.0f, 5.0f, 3.0f} : (UIEdgeInsets){0.0f, 8.0f, 5.0f, 3.0f}
+#define DATE_FRAME (CGRect){CGRectGetWidth(self.bounds) - 110.f, 2.0f, 90.0f, 28.0f}
+#define TITLE_FRAME (CGRect){12.0f, 2.0f, CGRectGetWidth(self.bounds) - CGRectGetMinX(DATE_FRAME) - 12.0f, 28.0f}
+#define TEXT_FRAME (CGRect){12.0f, CGRectGetMinY(DATE_FRAME) + CGRectGetHeight(DATE_FRAME) - 5.0f, CGRectGetWidth(self.bounds) - 34.0f, CGRectGetHeight(self.bounds) - CGRectGetMinY(DATE_FRAME) - CGRectGetHeight(DATE_FRAME)}
 
 /* ------------------------------------------------------------------------------------------------------
  @interface GPTimelineBubbleView
@@ -59,12 +58,9 @@ static CGRect const GPTimelinePreviewTextLabelFrame = (CGRect){12.0f, 0.0f, 0.0f
     label.font = [UIFont boldSystemFontOfSize:14.0f];
     label.textColor = [UIColor colorWithWhite:0.302f alpha:1.0f];
     label.adjustsFontSizeToFitWidth = YES;
-
-    CGRect frame = GPTimelineTitleLabelFrame;
-    frame.size.width = CGRectGetWidth(self.bounds) - CGRectGetMinX(GPTimelineDateLabelFrame) - CGRectGetMinX(GPTimelineTitleLabelFrame);
-    label.frame = frame;
-    
+    label.frame = TITLE_FRAME;
     [self addSubview:label];
+    
     self.titleLabel = label;
 }
 
@@ -73,12 +69,9 @@ static CGRect const GPTimelinePreviewTextLabelFrame = (CGRect){12.0f, 0.0f, 0.0f
     label.font = [UIFont boldSystemFontOfSize:12.0f];
     label.textColor = [UIColor colorWithWhite:0.502f alpha:1.0f];
     label.textAlignment = NSTextAlignmentRight;
-    
-    CGRect frame = GPTimelineDateLabelFrame;
-    frame.origin.x = CGRectGetWidth(self.bounds) - CGRectGetMinX(GPTimelineDateLabelFrame);
-    label.frame = frame;
-    
+    label.frame = DATE_FRAME;
     [self addSubview:label];
+    
     self.dateLabel = label;
 }
 
@@ -87,35 +80,38 @@ static CGRect const GPTimelinePreviewTextLabelFrame = (CGRect){12.0f, 0.0f, 0.0f
     label.font = [UIFont systemFontOfSize:13.0f];
     label.textColor = [UIColor colorWithWhite:0.502f alpha:1.0f];
     label.numberOfLines = 2;
-
-    CGRect frame = GPTimelinePreviewTextLabelFrame;
-    frame.origin.y = CGRectGetMinY(GPTimelineTitleLabelFrame) + CGRectGetHeight(GPTimelineTitleLabelFrame);
-    frame.size.height = CGRectGetHeight(self.bounds) - frame.origin.y;
-    frame.origin.y -= 5.0f;
-    frame.size.width = CGRectGetWidth(self.bounds) - CGRectGetMinX(GPTimelinePreviewTextLabelFrame) * 2.0f - 10.0f;
-    label.frame = frame;
-    
+    label.frame = TEXT_FRAME;
     [self addSubview:label];
+    
     self.textPreviewLabel = label;
+}
+
+#pragma mark -
+#pragma mark Setter
+
+- (void)setHighlighted:(BOOL)highlighted {
+    if (_highlighted == highlighted) {
+        return;
+    }
+    
+    _highlighted = highlighted;
+    
+    [self setNeedsDisplay];
 }
 
 #pragma mark -
 #pragma mark Layout
 
-- (void)didMoveToSuperview {
-    [super didMoveToSuperview];
-        
+- (void)didMoveToSuperview {        
     self.backgroundColor = [UIColor clearColor];
 }
 
 #pragma mark -
 #pragma mark Drawing
 
-- (void)drawRect:(CGRect)rect {
-    [super drawRect:rect];
-    
-    UIImage *image = [UIImage imageNamed:@"GPTimelineBubbleBackground"];
-    image = [image resizableImageWithCapInsets:GPTimelineBubbleBackgroundImageEdgeInsets resizingMode:UIImageResizingModeStretch];
+- (void)drawRect:(CGRect)rect {    
+    UIImage *image = [UIImage imageNamed:(self.highlighted ? @"GPTimelineBubbleBackground_selected" : @"GPTimelineBubbleBackground")];
+    image = [image resizableImageWithCapInsets:BACKGROUND_INSETS resizingMode:UIImageResizingModeStretch];
     [image drawInRect:self.bounds];
 }
 

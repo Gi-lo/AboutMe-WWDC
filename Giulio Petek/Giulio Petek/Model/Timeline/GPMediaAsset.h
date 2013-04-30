@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, GPMediaAssetType) {
 @interface GPMediaAsset : NSObject
 
 + (instancetype)mediaAssetInTimelineEntryBundle:(NSBundle *)bundle;
+- (UIImage *)previewImage;
 
 @property (nonatomic, unsafe_unretained, readonly) GPMediaAssetType type;
 @property (nonatomic, strong, readonly) NSString *filePath;
