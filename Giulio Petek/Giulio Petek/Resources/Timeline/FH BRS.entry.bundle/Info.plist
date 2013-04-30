@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>date</key>
+	<string>September 2012</string>
+	<key>title</key>
+	<string>FH BRS</string>
+	<key>text</key>
+	<string>After my final examinations I decided to study computer science at the University of Applied Science Bonn-Rhein-Sieg. 
+
+The first semester included subjects like theoretical computer science where we discussed complexity, automatas and language classes. For me a completely different yet interesting aspect of computer science. Besides that I had to learn Java and learn some basics of physics and math. 
+
+I plan graduating with a bachelor degree in two and a half year. Afterwards I may do my master degree which normally takes 4 more semesters.</string>
+	<key>previewText</key>
+	<string>I study computer sciene at the University of Applied Science in Bonn-Rhein-Sieg.</string>
+	<key>urls</key>
+	<dict>
+		<key>FH Bonn-Rhein-Sieg</key>
+		<string>http://www.inf.h-brs.de/informatik/en/Start.html</string>
+	</dict>
+	<key>type</key>
+	<string>education</string>
+</dict>
+</plist>

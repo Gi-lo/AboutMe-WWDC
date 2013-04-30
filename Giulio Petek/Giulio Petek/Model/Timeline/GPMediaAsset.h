@@ -18,10 +18,10 @@ typedef NS_ENUM(NSInteger, GPMediaAssetType) {
 
 @interface GPMediaAsset : NSObject
 
-+ (instancetype)mediaAssetInTimelineEntryBundle:(NSBundle *)bundle;
++ (instancetype)mediaAssetForAssociatedBundle:(NSBundle *)bundle andVideoURLString:(NSString *)urlString;
 - (UIImage *)previewImage;
 
 @property (nonatomic, unsafe_unretained, readonly) GPMediaAssetType type;
-@property (nonatomic, strong, readonly) NSString *filePath;
+@property (nonatomic, strong, readonly) NSURL *videoURL;
 
 @end

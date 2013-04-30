@@ -46,7 +46,7 @@
 #pragma mark Drawing
 
 - (void)drawRect:(CGRect)rect {    
-    GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
+    GCXSafeCurrentContextDrawing(^{
         [(self.highlighted ? [UIColor colorWithWhite:0.8f alpha:1.0f] : [UIColor colorWithWhite:0.3f alpha:1.0f]) setFill];
         
         [self.title drawInRect:TEXT_FRAME

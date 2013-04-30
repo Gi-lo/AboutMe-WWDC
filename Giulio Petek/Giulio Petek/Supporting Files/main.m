@@ -5,9 +5,9 @@
  Copyright 2013 Giulio Petek. All rights reserved.
  ------------------------------------------------------------------------------------------------------ */
 
-
-#import <UIKit/UIKit.h>
 #import "GPAppDelegate.h"
+
+#warning DONT FORGET TO CHANGE CODE SIGNING!!!
 
 int main(int argc, char *argv[]) {
     @autoreleasepool {

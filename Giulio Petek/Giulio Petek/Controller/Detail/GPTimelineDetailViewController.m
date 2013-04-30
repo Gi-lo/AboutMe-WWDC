@@ -49,7 +49,7 @@
     container.backgroundColor = [UIColor colorWithWhite:0.902f alpha:1.0f];
 
     GPNavigationBar *navigationBar = [[GPNavigationBar alloc] init];
-    navigationBar.lineColor = [UIColor orangeColor];
+    navigationBar.lineColor = [self._timelineEntry suggestedUIColor];
     navigationBar.delegate = self;
     navigationBar.titleLabel.text = self._timelineEntry.title;
     [container addSubview:navigationBar];
@@ -58,7 +58,7 @@
     detailView.contentTextLabel.text = self._timelineEntry.text;
     detailView.actionDelegate = self;
     [detailView.mediaAssetView.playButton addTarget:self action:@selector(_didTapVideoButton:) forControlEvents:UIControlEventTouchUpInside];
-    detailView.mediaAssetView.type = self._timelineEntry.type;
+    detailView.mediaAssetView.type = self._timelineEntry.mediaAsset.type;
     detailView.mediaAssetView.imageView.image = [self._timelineEntry.mediaAsset previewImage];
     detailView.mediaAssetView.playButton.circleColor = [self._timelineEntry suggestedUIColor];
     for (NSString *buttonTitle in [self._timelineEntry.urls allKeys]) { [detailView appendButtonWithTitle:buttonTitle]; }
@@ -75,7 +75,7 @@
 #pragma mark Actions
 
 - (void)_didTapVideoButton:(GPPlayButton *)button {
-    MPMoviePlayerViewController *moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:self._timelineEntry.mediaAsset.filePath]];
+    MPMoviePlayerViewController *moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:self._timelineEntry.mediaAsset.videoURL];
     [self presentMoviePlayerViewControllerAnimated:moviePlayer];
 }
 

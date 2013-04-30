@@ -8,9 +8,9 @@
 #import "GPTimelineDetailView.h"
 #import "GPURLButton.h"
 
-#define DETAI_WIDTH 300.0f
+#define DETAIL_WIDTH 300.0f
 #define MEDIA_ASSET_FRAME (CGRect){10.0f, 10.0f, CGRectGetWidth(self.bounds) - 20.0f, 150.0f}
-#define CONTENT_LABEL_FRAME (CGRect) {10.0f, 10.0f + CGRectGetMaxY(MEDIA_ASSET_FRAME), CGRectGetWidth(self.bounds) - 20.0f, self._contentLabelHeight}
+#define CONTENT_LABEL_FRAME (CGRect) {10.0f, 10.0f + CGRectGetMaxY(MEDIA_ASSET_FRAME), DETAIL_WIDTH - 20.0f, self._contentLabelHeight}
 #define CONTENT_LABEL_MAX_SIZE (CGSize){CGRectGetWidth(CONTENT_LABEL_FRAME), MAXFLOAT}
 #define BACKGROUND_IMAGE_INSETS (UIEdgeInsets){3.0f, 4.0f, 4.0f, 5.0f}
 #define BUTTON_FRAME(idx) (CGRect){10.0f, CGRectGetMaxY(CONTENT_LABEL_FRAME) + 40.0f * ++idx, CGRectGetWidth(self.bounds) - 20.0f, 40.0f}
@@ -103,10 +103,10 @@
 
     NSInteger i = [self._buttons count] - 1;
     if (i < 0) {
-        return (CGSize){DETAI_WIDTH, CGRectGetMaxY(CONTENT_LABEL_FRAME) + 10.0f};
+        return (CGSize){DETAIL_WIDTH, CGRectGetMaxY(CONTENT_LABEL_FRAME) + 10.0f};
     }
     
-    return (CGSize){DETAI_WIDTH, CGRectGetMaxY(BUTTON_FRAME(i)) + 5.0f};
+    return (CGSize){DETAIL_WIDTH, CGRectGetMaxY(BUTTON_FRAME(i)) + 5.0f};
 }
 
 - (void)didMoveToSuperview {
