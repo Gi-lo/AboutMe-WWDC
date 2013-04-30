@@ -9,9 +9,9 @@
 
 static NSString *const GPTimelineCellIdentifier = @"GPTimelineCellIdentifier";
 
-static CGRect const GPTimelineCellCircleViewFrame = (CGRect){9.0f, 54.0f, 9.0f, 9.0f};
-static CGRect const GPTimelineCellTimelineBubbleViewFrame = (CGRect){26.0f, 20.0f, 284.0f, 74.0f};
-static CGRect const GPTimelineCellIndicatorFrame = (CGRect){294.0f, 50.0f, 7.0f, 12.0f};
+#define CIRCLE_FRAME (CGRect){9.0f, 54.0f, 9.0f, 9.0f}
+#define BUBBLE_FRAME (CGRect){26.0f, 20.0f, 284.0f, 74.0f}
+#define INDICATOR_FRAME (CGRect){294.0f, 50.0f, 7.0f, 12.0f}
 
 /* ------------------------------------------------------------------------------------------------------
  @interface GPTimelineCell ()
@@ -48,8 +48,11 @@ static CGRect const GPTimelineCellIndicatorFrame = (CGRect){294.0f, 50.0f, 7.0f,
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if ((self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])) {
         self.selectedBackgroundView = [UIView new];
-        self.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GPTimelineCellIndicator"]];
-
+        
+        UIImageView *accessoryImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GPTimelineCellIndicator"]];
+        accessoryImageView.highlightedImage = [UIImage imageNamed:@"GPTimelineCellIndicator_selected"];
+        self.accessoryView = accessoryImageView;
+        
         [self _addCircleView];
         [self _addTimelineBubbleView];
     }
@@ -61,17 +64,26 @@ static CGRect const GPTimelineCellIndicatorFrame = (CGRect){294.0f, 50.0f, 7.0f,
 #pragma mark Views
 
 - (void)_addCircleView {
-    GPCircleView *view = [[GPCircleView alloc] initWithFrame:GPTimelineCellCircleViewFrame];
+    GPCircleView *view = [[GPCircleView alloc] initWithFrame:CIRCLE_FRAME];
     [self.contentView addSubview:view];
         
     self.circleView = view;
 }
 
 - (void)_addTimelineBubbleView {
-    GPTimelineBubbleView *view = [[GPTimelineBubbleView alloc] initWithFrame:GPTimelineCellTimelineBubbleViewFrame];
+    GPTimelineBubbleView *view = [[GPTimelineBubbleView alloc] initWithFrame:BUBBLE_FRAME];
     [self.contentView addSubview:view];
     
     self.timelineBubbleView = view;
+}
+
+#pragma mark -
+#pragma mark Setter
+
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
+    [super setHighlighted:highlighted animated:animated];
+    
+    self.timelineBubbleView.highlighted = highlighted;
 }
 
 #pragma mark - 
@@ -80,7 +92,7 @@ static CGRect const GPTimelineCellIndicatorFrame = (CGRect){294.0f, 50.0f, 7.0f,
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.accessoryView.frame = GPTimelineCellIndicatorFrame;
+    self.accessoryView.frame = INDICATOR_FRAME;
 }
 
 #pragma mark -

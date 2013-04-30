@@ -7,13 +7,21 @@
 
 #import "GPAboutMeButton.h"
 
-static CGFloat const GPAboutMeButtonArrowSpacing = 5.0f;
+#define ARROW_SPACING 5.0f
+#define ARROW_FRAME CGRectIntegral((CGRect){{textWidth + ARROW_SPACING, CGRectGetHeight(self.bounds) / 2.0f -  arrowImage.size.height / 2.0f}, arrowImage.size})
 
 /* ------------------------------------------------------------------------------------------------------
  @implementation GPAboutMeButton
  ------------------------------------------------------------------------------------------------------ */
 
 @implementation GPAboutMeButton
+
+#pragma mark -
+#pragma marl Getter
+
+- (BOOL)isOpaque {
+    return NO;
+}
 
 #pragma mark -
 #pragma marl Setter
@@ -27,7 +35,6 @@ static CGFloat const GPAboutMeButtonArrowSpacing = 5.0f;
     
     [self setNeedsLayout];
 }
-
 
 #pragma mark -
 #pragma mark Highlighting
@@ -43,13 +50,9 @@ static CGFloat const GPAboutMeButtonArrowSpacing = 5.0f;
 
 - (CGSize)sizeThatFits:(CGSize)size {
     CGSize sizeOfTitle = [self.title sizeWithFont:[UIFont systemFontOfSize:20.0f]];
-    sizeOfTitle.width += [UIImage imageNamed:@"GPAboutMeButtonArrow"].size.width + GPAboutMeButtonArrowSpacing;
+    sizeOfTitle.width += [UIImage imageNamed:@"GPAboutMeButtonArrow"].size.width + ARROW_SPACING;
 
     return sizeOfTitle;
-}
-
-- (void)didMoveToSuperview {    
-    self.backgroundColor = [UIColor clearColor];
 }
 
 #pragma mark -
@@ -57,16 +60,13 @@ static CGFloat const GPAboutMeButtonArrowSpacing = 5.0f;
 
 - (void)drawRect:(CGRect)rect {
     GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
-        CGContextSetShadowWithColor(UIGraphicsGetCurrentContext(), (CGSize){0.0f, 1.0f}, 2.0f, [UIColor colorWithWhite:0.0f alpha:0.5f].CGColor);
-        [self.highlighted ? [UIColor colorWithWhite:0.851f alpha:1.0f] : [UIColor whiteColor] setFill];
+        CGContextSetShadowWithColor(UIGraphicsGetCurrentContext(), (CGSize){0.0f, 1.0f}, 2.0f, [UIColor colorWithWhite:0.0f alpha:0.7f].CGColor);
+        [self.highlighted ? [UIColor colorWithWhite:0.8f alpha:1.0f] : [UIColor whiteColor] setFill];
         
         CGFloat textWidth = [self.title drawInRect:self.bounds withFont:[UIFont systemFontOfSize:20.0f]].width;
         
-        UIImage *arrowImage = [UIImage imageNamed:self.highlighted ? @"GPTimelineCellIndicator": @"GPAboutMeButtonArrow"];
-        [arrowImage drawInRect:CGRectIntegral((CGRect){{
-                textWidth + GPAboutMeButtonArrowSpacing,
-                CGRectGetHeight(self.bounds) / 2.0f -  arrowImage.size.height / 2.0f
-            }, arrowImage.size})];
+        UIImage *arrowImage = [UIImage imageNamed:self.highlighted ? @"GPAboutMeButtonArrow_selected": @"GPAboutMeButtonArrow"];
+        [arrowImage drawInRect:ARROW_FRAME];
     });
 }
 

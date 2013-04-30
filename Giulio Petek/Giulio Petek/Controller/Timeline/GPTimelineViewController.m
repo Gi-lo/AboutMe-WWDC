@@ -12,7 +12,7 @@
 #import "GPTimelineHeaderView.h"
 #import "GPTimelineDetailViewController.h"
 
-static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
+#define CELL_HEIGHT 100.0f
 
 /* ------------------------------------------------------------------------------------------------------
  @implementation GPTimelineViewController ()
@@ -22,7 +22,6 @@ static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
 
 @property (nonatomic, strong, readwrite) GPTimelineEntriesFetcher *_entriesFetcher;
 
-- (void)_configureTableView;
 - (void)_openAboutMe:(GPAboutMeButton *)button;
 - (void)_timelineFetcherDidFinishMapping:(NSNotification *)notification;
 
@@ -82,7 +81,7 @@ static CGFloat const GPTimelineViewControllerCellHeight = 100.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return GPTimelineViewControllerCellHeight;
+    return CELL_HEIGHT;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

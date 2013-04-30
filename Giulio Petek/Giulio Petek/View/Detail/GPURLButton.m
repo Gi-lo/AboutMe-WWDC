@@ -36,10 +36,10 @@
 }
 
 #pragma mark -
-#pragma mark - Layout
+#pragma mark Getter
 
-- (void)didMoveToSuperview {    
-    self.backgroundColor = [UIColor whiteColor];
+- (BOOL)isOpaque {
+    return NO;
 }
 
 #pragma mark -

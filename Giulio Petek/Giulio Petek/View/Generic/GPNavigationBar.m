@@ -7,7 +7,10 @@
 
 #import "GPNavigationBar.h"
 
-static CGFloat const GPNavigationBarHeight = 44.0f;
+#define NAVIGATION_BAR_HEIGHT 44.0f
+#define LINE_FRAME (CGRect){0.0f, CGRectGetHeight(self.bounds) - 1.0f, CGRectGetWidth(self.bounds), 1.0f}
+#define TITLE_FRAME self.titleLabel.frame = (CGRect){NAVIGATION_BAR_HEIGHT, 0.0f, CGRectGetWidth(self.bounds) - NAVIGATION_BAR_HEIGHT * 2.0f,NAVIGATION_BAR_HEIGHT - CGRectGetHeight(LINE_FRAME)};
+#define BACK_FRAME (CGRect){0.0f, 0.0f, NAVIGATION_BAR_HEIGHT, NAVIGATION_BAR_HEIGHT}
 
 /* ------------------------------------------------------------------------------------------------------
  @interface GPNavigationBar ()
@@ -54,8 +57,8 @@ static CGFloat const GPNavigationBarHeight = 44.0f;
     }
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setImage:[UIImage imageNamed:@"GPBackButton"] forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"GPBackButton_selected"] forState:UIControlStateHighlighted];
+    [button setImage:[UIImage imageNamed:@"GPBackButtonArrow"] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"GPBackButtonArrow_selected"] forState:UIControlStateHighlighted];
     [button addTarget:self action:@selector(_popBack:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:button];
     
@@ -90,25 +93,17 @@ static CGFloat const GPNavigationBarHeight = 44.0f;
 #pragma mark - Layout 
 
 - (CGSize)sizeThatFits:(CGSize)size {
-    return (CGSize){CGRectGetWidth(self.superview.bounds), GPNavigationBarHeight};
+    return (CGSize){CGRectGetWidth(self.superview.bounds), NAVIGATION_BAR_HEIGHT};
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.titleLabel.frame = (CGRect){
-        GPNavigationBarHeight,
-        0.0f,
-        CGRectGetWidth(self.bounds) - GPNavigationBarHeight * 2.0f,
-        GPNavigationBarHeight - 1.0f
-    };
-    
-    self._backButton.frame = (CGRect){0.0f, 0.0f, GPNavigationBarHeight, GPNavigationBarHeight};
+    self.titleLabel.frame = TITLE_FRAME;
+    self._backButton.frame = BACK_FRAME;
 }
 
-- (void)didMoveToSuperview {    
-    self.backgroundColor = [UIColor whiteColor];
-    
+- (void)didMoveToSuperview {        
     [self sizeToFit];
 }
 
@@ -117,8 +112,11 @@ static CGFloat const GPNavigationBarHeight = 44.0f;
 
 - (void)drawRect:(CGRect)rect {
     GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
+        [[UIColor whiteColor] setFill];
+        UIRectFill(self.bounds);
+        
         [self.lineColor setFill];
-        UIRectFill((CGRect){0.0f, CGRectGetHeight(self.bounds) - 1.0f, CGRectGetWidth(self.bounds), 1.0f});
+        UIRectFill(LINE_FRAME);
     });
 }
 

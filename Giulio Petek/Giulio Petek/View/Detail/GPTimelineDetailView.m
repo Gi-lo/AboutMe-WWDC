@@ -8,6 +8,7 @@
 #import "GPTimelineDetailView.h"
 #import "GPURLButton.h"
 
+#define DETAI_WIDTH 300.0f
 #define MEDIA_ASSET_FRAME (CGRect){10.0f, 10.0f, CGRectGetWidth(self.bounds) - 20.0f, 150.0f}
 #define CONTENT_LABEL_FRAME (CGRect) {10.0f, 10.0f + CGRectGetMaxY(MEDIA_ASSET_FRAME), CGRectGetWidth(self.bounds) - 20.0f, self._contentLabelHeight}
 #define CONTENT_LABEL_MAX_SIZE (CGSize){CGRectGetWidth(CONTENT_LABEL_FRAME), MAXFLOAT}
@@ -64,6 +65,10 @@
     return _contentTextLabel;
 }
 
+- (BOOL)isOpaque {
+    return NO;
+}
+
 #pragma mark -
 #pragma mark Buttons
 
@@ -98,15 +103,13 @@
 
     NSInteger i = [self._buttons count] - 1;
     if (i < 0) {
-        return (CGSize){300.0f, CGRectGetMaxY(CONTENT_LABEL_FRAME) + 10.0f};
+        return (CGSize){DETAI_WIDTH, CGRectGetMaxY(CONTENT_LABEL_FRAME) + 10.0f};
     }
     
-    return (CGSize){300.0f, CGRectGetMaxY(BUTTON_FRAME(i)) + 5.0f};
+    return (CGSize){DETAI_WIDTH, CGRectGetMaxY(BUTTON_FRAME(i)) + 5.0f};
 }
 
 - (void)didMoveToSuperview {
-    self.backgroundColor = [UIColor clearColor];
-
     [self sizeToFit];
 }
 
@@ -125,7 +128,7 @@
 #pragma mark Drawing
 
 - (void)drawRect:(CGRect)rect {    
-    UIImage *backgroundImage = [UIImage imageNamed:@"GPContentTextBackground"];
+    UIImage *backgroundImage = [UIImage imageNamed:@"GPContentBackground"];
     backgroundImage = [backgroundImage resizableImageWithCapInsets:BACKGROUND_IMAGE_INSETS resizingMode:UIImageResizingModeStretch];
     [backgroundImage drawInRect:self.bounds];
 }

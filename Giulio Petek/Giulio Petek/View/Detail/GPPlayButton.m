@@ -43,8 +43,7 @@
 - (void)drawRect:(CGRect)rect {
     GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
         CGRect circleFrame = CIRCLE_FRAME;
-        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:circleFrame
-                                                        cornerRadius:floorf(CGRectGetHeight(circleFrame) / 2.0f)];
+        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:circleFrame cornerRadius:floorf(CGRectGetHeight(circleFrame) / 2.0f)];
         
         [self.circleColor setFill];
         [path fill];

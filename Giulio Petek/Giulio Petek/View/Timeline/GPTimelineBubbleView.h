@@ -12,5 +12,6 @@
 @property (nonatomic, weak, readonly) UILabel *titleLabel;
 @property (nonatomic, weak, readonly) UILabel *dateLabel;
 @property (nonatomic, weak, readonly) UILabel *textPreviewLabel;
+@property (nonatomic, unsafe_unretained, getter = isHighlighted) BOOL highlighted;
 
 @end

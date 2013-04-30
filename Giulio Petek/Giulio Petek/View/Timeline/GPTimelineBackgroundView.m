@@ -7,7 +7,7 @@
 
 #import "GPTimelineBackgroundView.h"
 
-static CGFloat const GPTimelineBackgroundViewLineOriginX = 13.0f;
+#define LINE_FRAME (CGRect){13.0f, 0.0f, 1.0f, CGRectGetHeight(self.bounds)}
 
 /* ------------------------------------------------------------------------------------------------------
  @implementation GPTimelineBackgroundView
@@ -20,7 +20,7 @@ static CGFloat const GPTimelineBackgroundViewLineOriginX = 13.0f;
 
 - (id)init {
     if ((self = [super init])) {
-       self.backgroundColor = [UIColor colorWithWhite:0.949f alpha:1.0f];
+        self.backgroundColor = [UIColor colorWithWhite:0.949f alpha:1.0f];
     }
     
     return self;
@@ -32,7 +32,7 @@ static CGFloat const GPTimelineBackgroundViewLineOriginX = 13.0f;
 - (void)drawRect:(CGRect)rect {
     GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
         [[UIColor colorWithWhite:0.851f alpha:1.0f] setFill];
-        UIRectFill((CGRect){GPTimelineBackgroundViewLineOriginX, 0.0f, 1.0f, CGRectGetHeight(self.bounds)});
+        UIRectFill(LINE_FRAME);
     });
 }
 
