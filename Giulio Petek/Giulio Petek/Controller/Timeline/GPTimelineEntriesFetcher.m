@@ -48,15 +48,15 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
 
 + (NSMutableArray *)_allEntryNames {
     NSBundle *mainBundle = [NSBundle mainBundle];
-    NSArray *allBundlesInMain = [mainBundle URLsForResourcesWithExtension:@"entry.bundle" subdirectory:nil];
+    NSArray *allBundlesInMain = [mainBundle pathsForResourcesOfType:@"entry.bundle" inDirectory:nil];
     
     NSMutableArray *allEntryNames = [NSMutableArray arrayWithCapacity:[allBundlesInMain count]];
-    for (NSURL *bundleURL in allBundlesInMain) {
-        NSString *resourceSpecifier = [bundleURL resourceSpecifier];
-        NSRange rangeOfEntryBundle = [resourceSpecifier rangeOfString:@".entry.bundle"];
+    for (NSString *bundlePath in allBundlesInMain) {
+        NSString *lastPathComponent = [bundlePath lastPathComponent];
+        NSRange rangeOfEntryBundle = [lastPathComponent rangeOfString:@".entry.bundle"];
 
         if (rangeOfEntryBundle.location != NSNotFound) {
-            [allEntryNames addObject:[resourceSpecifier substringToIndex:rangeOfEntryBundle.location]];
+            [allEntryNames addObject:[lastPathComponent substringToIndex:rangeOfEntryBundle.location]];
         }
     }
     
@@ -87,26 +87,30 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
             NSString *currentName = [allEntryNames lastObject];
             NSString *currentDateString = [self _dateStringForEntryNamed:currentName];
             if (![currentDateString length]) {
+                [allEntryNames removeLastObject];
                 continue;
             }
-                        
+        
             __block int i = 0;
+            __block BOOL loopWasCancelled = NO;
             [sortedEntryNames enumerateObjectsUsingBlock:^(NSString *alreadyProcessedName, NSUInteger idx, BOOL *stop) {
+                i = idx;
+
                 NSString *alreadyProcessedDateString = datesForNames[alreadyProcessedName];
                 if ([self _dateStringIsOlder:alreadyProcessedDateString than:currentDateString]) {
+                    loopWasCancelled = YES;
                     *stop = YES;
                 }
-                
-                if (idx == 0) { idx++; } i = idx;
             }];
-                        
+            if (!loopWasCancelled) { i = [sortedEntryNames count]; }
+        
             [datesForNames setObject:currentDateString forKey:currentName];
             [sortedEntryNames insertObject:currentName atIndex:i];
             [allEntryNames removeLastObject];
         }
         
         GPTimelineEntriesFetcherIndexList = [sortedEntryNames copy];
-        
+
         dispatch_async(dispatch_get_main_queue(), ^{
             [[NSNotificationCenter defaultCenter] postNotificationName:GPTimelineEntriesFetcherDidFinishMappingNotifiaction object:nil];
         });

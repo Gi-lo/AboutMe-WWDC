@@ -30,7 +30,7 @@
 #pragma mark Drawing
 
 - (void)drawRect:(CGRect)rect {
-    GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
+    GCXSafeCurrentContextDrawing(^{
         [[UIColor colorWithWhite:0.851f alpha:1.0f] setFill];
         UIRectFill(LINE_FRAME);
     });

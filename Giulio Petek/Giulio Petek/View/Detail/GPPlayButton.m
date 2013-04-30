@@ -41,14 +41,14 @@
 #pragma mark Drawing
 
 - (void)drawRect:(CGRect)rect {
-    GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
+    GCXSafeCurrentContextDrawing(^{
         CGRect circleFrame = CIRCLE_FRAME;
         UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:circleFrame cornerRadius:floorf(CGRectGetHeight(circleFrame) / 2.0f)];
         
         [self.circleColor setFill];
         [path fill];
         
-        UIImage *playImage = [UIImage imageNamed:@"GPTriangleGlyph"];
+        UIImage *playImage = [UIImage imageNamed:@"GPPlayButtonGlyph"];
         [playImage drawInRect:PLAY_GLYPH_FRAME];
         
         if (self.highlighted) {

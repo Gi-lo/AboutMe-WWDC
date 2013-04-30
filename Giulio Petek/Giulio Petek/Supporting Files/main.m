@@ -5,8 +5,6 @@
  Copyright 2013 Giulio Petek. All rights reserved.
  ------------------------------------------------------------------------------------------------------ */
 
-
-#import <UIKit/UIKit.h>
 #import "GPAppDelegate.h"
 
 int main(int argc, char *argv[]) {

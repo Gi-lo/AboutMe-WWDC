@@ -28,6 +28,17 @@
 		2C00D4D4172FC563002F0C5D /* GPTimelineCellIndicator_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4BE172FC563002F0C5D /* GPTimelineCellIndicator_selected@2x.png */; };
 		2C00D4D5172FC563002F0C5D /* GPTimelineCellIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4BF172FC563002F0C5D /* GPTimelineCellIndicator.png */; };
 		2C00D4D6172FC563002F0C5D /* GPTimelineCellIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4C0172FC563002F0C5D /* GPTimelineCellIndicator@2x.png */; };
+		2C00D4E2172FDB38002F0C5D /* AEG.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4D7172FDB38002F0C5D /* AEG.entry.bundle */; };
+		2C00D4E3172FDB38002F0C5D /* Birth.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4D8172FDB38002F0C5D /* Birth.entry.bundle */; };
+		2C00D4E4172FDB38002F0C5D /* CKCrashReporter.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4D9172FDB38002F0C5D /* CKCrashReporter.entry.bundle */; };
+		2C00D4E5172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DA172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle */; };
+		2C00D4E6172FDB38002F0C5D /* FH BRS.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DB172FDB38002F0C5D /* FH BRS.entry.bundle */; };
+		2C00D4E7172FDB38002F0C5D /* Final examinatons.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DC172FDB38002F0C5D /* Final examinatons.entry.bundle */; };
+		2C00D4E8172FDB38002F0C5D /* GCX full time.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DD172FDB38002F0C5D /* GCX full time.bundle */; };
+		2C00D4E9172FDB38002F0C5D /* GCX Summer Internship.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DE172FDB38002F0C5D /* GCX Summer Internship.entry.bundle */; };
+		2C00D4EA172FDB38002F0C5D /* PocketPlayer.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DF172FDB38002F0C5D /* PocketPlayer.entry.bundle */; };
+		2C00D4EB172FDB38002F0C5D /* Relocation To Bonn.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4E0172FDB38002F0C5D /* Relocation To Bonn.entry.bundle */; };
+		2C00D4EC172FDB38002F0C5D /* Working Student.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4E1172FDB38002F0C5D /* Working Student.entry.bundle */; };
 		2C2D358D172ECF3300EE1025 /* SunsetOverBonn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D358B172ECF3300EE1025 /* SunsetOverBonn.png */; };
 		2C2D358E172ECF3300EE1025 /* SunsetOverBonn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D358C172ECF3300EE1025 /* SunsetOverBonn@2x.png */; };
 		2C2D359F172EFAE000EE1025 /* GPNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D359E172EFAE000EE1025 /* GPNavigationBar.m */; };
@@ -37,7 +48,6 @@
 		2C2D35B9172F0C3600EE1025 /* GPPlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35B8172F0C3600EE1025 /* GPPlayButton.m */; };
 		2C2D35BB172F0E1700EE1025 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D35BA172F0E1700EE1025 /* MediaPlayer.framework */; };
 		2C2D35C2172F20B900EE1025 /* GPURLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35C1172F20B800EE1025 /* GPURLButton.m */; };
-		2C2D35C7172F268200EE1025 /* GCXDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35C6172F268200EE1025 /* GCXDrawing.m */; };
 		2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273117284FD9009B905D /* UIKit.framework */; };
 		2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273317284FD9009B905D /* Foundation.framework */; };
 		2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273517284FD9009B905D /* CoreGraphics.framework */; };
@@ -82,6 +92,17 @@
 		2C00D4BE172FC563002F0C5D /* GPTimelineCellIndicator_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPTimelineCellIndicator_selected@2x.png"; sourceTree = "<group>"; };
 		2C00D4BF172FC563002F0C5D /* GPTimelineCellIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPTimelineCellIndicator.png; sourceTree = "<group>"; };
 		2C00D4C0172FC563002F0C5D /* GPTimelineCellIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPTimelineCellIndicator@2x.png"; sourceTree = "<group>"; };
+		2C00D4D7172FDB38002F0C5D /* AEG.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AEG.entry.bundle; sourceTree = "<group>"; };
+		2C00D4D8172FDB38002F0C5D /* Birth.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Birth.entry.bundle; sourceTree = "<group>"; };
+		2C00D4D9172FDB38002F0C5D /* CKCrashReporter.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CKCrashReporter.entry.bundle; sourceTree = "<group>"; };
+		2C00D4DA172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Etch-a-Sketch.entry.bundle"; sourceTree = "<group>"; };
+		2C00D4DB172FDB38002F0C5D /* FH BRS.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "FH BRS.entry.bundle"; sourceTree = "<group>"; };
+		2C00D4DC172FDB38002F0C5D /* Final examinatons.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Final examinatons.entry.bundle"; sourceTree = "<group>"; };
+		2C00D4DD172FDB38002F0C5D /* GCX full time.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "GCX full time.bundle"; sourceTree = "<group>"; };
+		2C00D4DE172FDB38002F0C5D /* GCX Summer Internship.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "GCX Summer Internship.entry.bundle"; sourceTree = "<group>"; };
+		2C00D4DF172FDB38002F0C5D /* PocketPlayer.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PocketPlayer.entry.bundle; sourceTree = "<group>"; };
+		2C00D4E0172FDB38002F0C5D /* Relocation To Bonn.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Relocation To Bonn.entry.bundle"; sourceTree = "<group>"; };
+		2C00D4E1172FDB38002F0C5D /* Working Student.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Working Student.entry.bundle"; sourceTree = "<group>"; };
 		2C2D358B172ECF3300EE1025 /* SunsetOverBonn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SunsetOverBonn.png; sourceTree = "<group>"; };
 		2C2D358C172ECF3300EE1025 /* SunsetOverBonn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SunsetOverBonn@2x.png"; sourceTree = "<group>"; };
 		2C2D359D172EFAE000EE1025 /* GPNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPNavigationBar.h; sourceTree = "<group>"; };
@@ -98,7 +119,6 @@
 		2C2D35C0172F20B800EE1025 /* GPURLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPURLButton.h; sourceTree = "<group>"; };
 		2C2D35C1172F20B800EE1025 /* GPURLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPURLButton.m; sourceTree = "<group>"; };
 		2C2D35C5172F268200EE1025 /* GCXDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCXDrawing.h; sourceTree = "<group>"; };
-		2C2D35C6172F268200EE1025 /* GCXDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCXDrawing.m; sourceTree = "<group>"; };
 		2CAF272E17284FD9009B905D /* Giulio Petek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giulio Petek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAF273117284FD9009B905D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CAF273317284FD9009B905D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -187,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				2C2D35C5172F268200EE1025 /* GCXDrawing.h */,
-				2C2D35C6172F268200EE1025 /* GCXDrawing.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -278,8 +297,8 @@
 			children = (
 				2CD96FCB172C71B3008EF3EB /* GPAppDelegate.h */,
 				2CD96FCC172C71B3008EF3EB /* GPAppDelegate.m */,
-				2CD96FCA172C71B3008EF3EB /* Giulio Petek-Prefix.pch */,
 				2CD96FCD172C71B3008EF3EB /* main.m */,
+				2CD96FCA172C71B3008EF3EB /* Giulio Petek-Prefix.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -317,6 +336,17 @@
 		2CD96FBD172C6F55008EF3EB /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				2C00D4D7172FDB38002F0C5D /* AEG.entry.bundle */,
+				2C00D4D8172FDB38002F0C5D /* Birth.entry.bundle */,
+				2C00D4D9172FDB38002F0C5D /* CKCrashReporter.entry.bundle */,
+				2C00D4DA172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle */,
+				2C00D4DB172FDB38002F0C5D /* FH BRS.entry.bundle */,
+				2C00D4DC172FDB38002F0C5D /* Final examinatons.entry.bundle */,
+				2C00D4DD172FDB38002F0C5D /* GCX full time.bundle */,
+				2C00D4DE172FDB38002F0C5D /* GCX Summer Internship.entry.bundle */,
+				2C00D4DF172FDB38002F0C5D /* PocketPlayer.entry.bundle */,
+				2C00D4E0172FDB38002F0C5D /* Relocation To Bonn.entry.bundle */,
+				2C00D4E1172FDB38002F0C5D /* Working Student.entry.bundle */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -457,6 +487,17 @@
 				2C00D4D4172FC563002F0C5D /* GPTimelineCellIndicator_selected@2x.png in Resources */,
 				2C00D4D5172FC563002F0C5D /* GPTimelineCellIndicator.png in Resources */,
 				2C00D4D6172FC563002F0C5D /* GPTimelineCellIndicator@2x.png in Resources */,
+				2C00D4E2172FDB38002F0C5D /* AEG.entry.bundle in Resources */,
+				2C00D4E3172FDB38002F0C5D /* Birth.entry.bundle in Resources */,
+				2C00D4E4172FDB38002F0C5D /* CKCrashReporter.entry.bundle in Resources */,
+				2C00D4E5172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle in Resources */,
+				2C00D4E6172FDB38002F0C5D /* FH BRS.entry.bundle in Resources */,
+				2C00D4E7172FDB38002F0C5D /* Final examinatons.entry.bundle in Resources */,
+				2C00D4E8172FDB38002F0C5D /* GCX full time.bundle in Resources */,
+				2C00D4E9172FDB38002F0C5D /* GCX Summer Internship.entry.bundle in Resources */,
+				2C00D4EA172FDB38002F0C5D /* PocketPlayer.entry.bundle in Resources */,
+				2C00D4EB172FDB38002F0C5D /* Relocation To Bonn.entry.bundle in Resources */,
+				2C00D4EC172FDB38002F0C5D /* Working Student.entry.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,8 +508,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD96FCE172C71B3008EF3EB /* GPAppDelegate.m in Sources */,
 				2CD96FCF172C71B3008EF3EB /* main.m in Sources */,
+				2CD96FCE172C71B3008EF3EB /* GPAppDelegate.m in Sources */,
 				2CFA1FA1172D811A00655648 /* GPAboutMeButton.m in Sources */,
 				2CFA1FA2172D811A00655648 /* GPTimelineBackgroundView.m in Sources */,
 				2CFA1FA3172D811A00655648 /* GPTimelineBubbleView.m in Sources */,
@@ -485,7 +526,6 @@
 				2C2D35B2172EFE8D00EE1025 /* GPMediaAssetView.m in Sources */,
 				2C2D35B9172F0C3600EE1025 /* GPPlayButton.m in Sources */,
 				2C2D35C2172F20B900EE1025 /* GPURLButton.m in Sources */,
-				2C2D35C7172F268200EE1025 /* GCXDrawing.m in Sources */,
 				2C00D4AA172FB711002F0C5D /* GPWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,6 +595,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Giulio Petek/Supporting Files/Giulio Petek-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Giulio Petek/Resources/Giulio Petek-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1.2.4\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -566,6 +610,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Giulio Petek/Supporting Files/Giulio Petek-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Giulio Petek/Resources/Giulio Petek-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1.2.4\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

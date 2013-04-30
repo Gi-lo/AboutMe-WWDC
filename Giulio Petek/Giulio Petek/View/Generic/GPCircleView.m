@@ -37,7 +37,7 @@
 #pragma mark Drawing
 
 - (void)drawRect:(CGRect)rect {
-    GCXSafeDrawing(UIGraphicsGetCurrentContext(), ^{
+    GCXSafeCurrentContextDrawing(^{
         [self.circleColor setFill];
         [[UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:floorf(CGRectGetHeight(self.bounds) / 2.0f)] fill];
     });
