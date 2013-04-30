@@ -28,7 +28,6 @@
 		2C00D4D4172FC563002F0C5D /* GPTimelineCellIndicator_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4BE172FC563002F0C5D /* GPTimelineCellIndicator_selected@2x.png */; };
 		2C00D4D5172FC563002F0C5D /* GPTimelineCellIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4BF172FC563002F0C5D /* GPTimelineCellIndicator.png */; };
 		2C00D4D6172FC563002F0C5D /* GPTimelineCellIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4C0172FC563002F0C5D /* GPTimelineCellIndicator@2x.png */; };
-		2C00D4E2172FDB38002F0C5D /* AEG.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4D7172FDB38002F0C5D /* AEG.entry.bundle */; };
 		2C00D4E3172FDB38002F0C5D /* Birth.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4D8172FDB38002F0C5D /* Birth.entry.bundle */; };
 		2C00D4E4172FDB38002F0C5D /* CKCrashReporter.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4D9172FDB38002F0C5D /* CKCrashReporter.entry.bundle */; };
 		2C00D4E5172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4DA172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle */; };
@@ -92,7 +91,6 @@
 		2C00D4BE172FC563002F0C5D /* GPTimelineCellIndicator_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPTimelineCellIndicator_selected@2x.png"; sourceTree = "<group>"; };
 		2C00D4BF172FC563002F0C5D /* GPTimelineCellIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPTimelineCellIndicator.png; sourceTree = "<group>"; };
 		2C00D4C0172FC563002F0C5D /* GPTimelineCellIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPTimelineCellIndicator@2x.png"; sourceTree = "<group>"; };
-		2C00D4D7172FDB38002F0C5D /* AEG.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AEG.entry.bundle; sourceTree = "<group>"; };
 		2C00D4D8172FDB38002F0C5D /* Birth.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Birth.entry.bundle; sourceTree = "<group>"; };
 		2C00D4D9172FDB38002F0C5D /* CKCrashReporter.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CKCrashReporter.entry.bundle; sourceTree = "<group>"; };
 		2C00D4DA172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Etch-a-Sketch.entry.bundle"; sourceTree = "<group>"; };
@@ -337,7 +335,6 @@
 			isa = PBXGroup;
 			children = (
 				2C00D4F5173008DC002F0C5D /* GCX full time.entry.bundle */,
-				2C00D4D7172FDB38002F0C5D /* AEG.entry.bundle */,
 				2C00D4D8172FDB38002F0C5D /* Birth.entry.bundle */,
 				2C00D4D9172FDB38002F0C5D /* CKCrashReporter.entry.bundle */,
 				2C00D4DA172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle */,
@@ -487,7 +484,6 @@
 				2C00D4D4172FC563002F0C5D /* GPTimelineCellIndicator_selected@2x.png in Resources */,
 				2C00D4D5172FC563002F0C5D /* GPTimelineCellIndicator.png in Resources */,
 				2C00D4D6172FC563002F0C5D /* GPTimelineCellIndicator@2x.png in Resources */,
-				2C00D4E2172FDB38002F0C5D /* AEG.entry.bundle in Resources */,
 				2C00D4E3172FDB38002F0C5D /* Birth.entry.bundle in Resources */,
 				2C00D4E4172FDB38002F0C5D /* CKCrashReporter.entry.bundle in Resources */,
 				2C00D4E5172FDB38002F0C5D /* Etch-a-Sketch.entry.bundle in Resources */,

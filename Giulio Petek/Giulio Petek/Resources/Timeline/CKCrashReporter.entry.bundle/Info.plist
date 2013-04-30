@@ -7,15 +7,15 @@
 	<key>title</key>
 	<string>CKCrashReporter</string>
 	<key>text</key>
-	<string>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+	<string>CKCrashReporter is a crash reporter class for your iOS application. It is very simple to adopt and easy to extend. Once a NSException is instantiated, CKCrashReporter will save it and other useful information on disk. The next time the user starts your application you can read out that information and e.g. send a mail with it attached via a MFMailComposeViewController.
+
+CKCrashReporter was a side project based on a task at grandcentrix. I had to write a github wiki entry about iOS crashlogs and how to correctly analyze them.</string>
 	<key>previewText</key>
 	<string>CKCrashReporter is one of my open source projects on Github.</string>
 	<key>urls</key>
 	<dict>
-		<key>URL1</key>
-		<string>http://google.de</string>
-		<key>Noch ein URL</key>
-		<string>http://google.de</string>
+		<key>CKCrashReporter (Github)</key>
+		<string>https://github.com/Gi-lo/CKCrashReporter?source=cr</string>
 	</dict>
 	<key>type</key>
 	<string>private</string>

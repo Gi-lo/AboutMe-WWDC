@@ -102,8 +102,8 @@ static NSString *NSStringFromGPTimelineEntryType(GPTimelineEntryType type) {
 - (UIColor *)suggestedUIColor {
     switch (self.type) {
         case GPTimelineEntryTypeEducation: return [UIColor colorWithRed:1.0f green:0.502f blue:0.004f alpha:1.0f]; break;
-        case GPTimelineEntryTypeProfession: return [UIColor colorWithRed:0.0f green:0.596f blue:1.0f alpha:1.0f]; break;
-        case GPTimelineEntryTypePrivate: return [UIColor colorWithRed:1.0f green:0.894f blue:0.004f alpha:1.0f]; break;
+        case GPTimelineEntryTypeProfession: return [UIColor colorWithRed:1.0f green:0.894f blue:0.004f alpha:1.0f]; break;
+        case GPTimelineEntryTypePrivate: return [UIColor colorWithRed:0.0f green:0.596f blue:1.0f alpha:1.0f];  break;
         case GPTimelineEntryTypeOthers: return [UIColor colorWithRed:0.008f green:0.859f blue:0.251f alpha:1.0f]; break;
     }
     

@@ -7,15 +7,19 @@
 	<key>title</key>
 	<string>Birth</string>
 	<key>text</key>
-	<string>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+	<string>On the Fifteenth of december, 1992, I was born in the university hospital of Düsseldorf. The regional Capital of North Rhine-Westphalia has a variety of interest points. From big shopping boulevards like the KÖ (Königsallee) to the Kunstpalast (Artpalace) there are enough spare time possibilities without getting bored quickly. 
+
+I have lived in Düsseldorf for a couple of years before my parents and I moved to Kaarst. It is a rather small city with around 40.000 citizens. I have spend most of my live here. Although it might be not as big as Düsseldorf it is at least as beautiful.</string>
 	<key>previewText</key>
 	<string>I was born in Düsseldorf, Germany, where I lived a couple of years.</string>
 	<key>urls</key>
 	<dict>
-		<key>URL1</key>
-		<string>http://google.de</string>
-		<key>Noch ein URL</key>
-		<string>http://google.de</string>
+		<key>Museum Kunstpalast</key>
+		<string>http://www.smkp.de/en/home.html</string>
+		<key>Königsallee</key>
+		<string>http://www.koenigsallee-duesseldorf.de/index.php/en</string>
+		<key>Düsseldorf</key>
+		<string>http://www.duesseldorf.de/de/eng/index.shtml</string>
 	</dict>
 	<key>type</key>
 	<string>other</string>

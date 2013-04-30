@@ -7,15 +7,19 @@
 	<key>title</key>
 	<string>Summer Internship</string>
 	<key>text</key>
-	<string>/</string>
+	<string>After building EtchPad I knew that I really love to develop iOS applications. And if you love something you always struggle to get better. By searching for internship on various platforms I quickly got an offer by grandcentrix. back then it was located in a rather small office in cologne. There were only around 10 employees.
+
+My first task was to build a component which displays a navigation tree like UITableView. The requirement included that it is fillable via a remote server. After some initial troubles I got along pretty quickly and then could continue working on an Application for Sparkasse, a German bank institute. To my way of thinking the new task was way more interesting. I had to build a complete chat kit. This includes UI and data persistence, no network connections though. After my internship the grandcentrix team and I decided to keep in touch. It was a great experience and definitely a step towards the right direction.</string>
 	<key>previewText</key>
 	<string>My first chance to get introduced into the business way of developing applications.</string>
 	<key>urls</key>
 	<dict>
-		<key>URL1</key>
-		<string>http://google.de</string>
-		<key>Noch ein URL</key>
-		<string>http://google.de</string>
+		<key>grandcentrix</key>
+		<string>http://www.grandcentrix.net</string>
+		<key>Finanz Informatik</key>
+		<string>http://www.grandcentrix.net/portfolio/finanz-informatik-messeberater-mobile-companion/</string>
+		<key>ROMA</key>
+		<string>http://www.grandcentrix.net/portfolio/roma-vertriebsunterstutzung/</string>
 	</dict>
 	<key>type</key>
 	<string>profession</string>

@@ -7,16 +7,11 @@
 	<key>title</key>
 	<string>Final Examinations</string>
 	<key>text</key>
-	<string>/</string>
+	<string>My final examinations took place during march and april, 2012. By getting my test results in May, I had the required education to enroll at a university.
+
+My subjects included biology, geography, english and computer science. The two latter ones were a good foundation for what I do now. Studying computer science and communicating in english. Biology and geography where two other topics where I was interested in. Although I decided to not enlarge my knowledge about it.</string>
 	<key>previewText</key>
 	<string>Subjects: Biology, Geography, English and of course computer science.</string>
-	<key>urls</key>
-	<dict>
-		<key>URL1</key>
-		<string>http://google.de</string>
-		<key>Noch ein URL</key>
-		<string>http://google.de</string>
-	</dict>
 	<key>type</key>
 	<string>education</string>
 </dict>

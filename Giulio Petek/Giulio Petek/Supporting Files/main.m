@@ -7,6 +7,8 @@
 
 #import "GPAppDelegate.h"
 
+#warning DONT FORGET TO CHANGE CODE SIGNING!!!
+
 int main(int argc, char *argv[]) {
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([GPAppDelegate class]));
