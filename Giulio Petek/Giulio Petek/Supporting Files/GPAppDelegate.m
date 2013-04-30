@@ -6,7 +6,6 @@
  ------------------------------------------------------------------------------------------------------ */
 
 #import "GPAppDelegate.h"
-#import "GPTimelineEntriesFetcher.h"
 #import "GPTimelineViewController.h"
 
 /* ------------------------------------------------------------------------------------------------------
@@ -20,8 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor blueColor];
-    self.window.rootViewController = [[GPTimelineViewController alloc] init];
+    self.window.backgroundColor = [UIColor blackColor];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[GPTimelineViewController alloc] init]];
+    [navigationController setNavigationBarHidden:YES animated:NO];
+    self.window.rootViewController = navigationController;
+    
     [self.window makeKeyAndVisible];
 
     return YES;

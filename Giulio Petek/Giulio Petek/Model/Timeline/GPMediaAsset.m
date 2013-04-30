@@ -66,6 +66,18 @@ static NSString *NSStringFromGPMediaAssetType(GPMediaAssetType type) {
 }
 
 #pragma mark -
+#pragma mark Preview Image
+
+- (UIImage *)previewImage {
+    if (self.type == GPMediaAssetTypePhoto) {
+        return [UIImage imageWithContentsOfFile:self.filePath];
+    }
+    
+    MPMoviePlayerController *player = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:self.filePath]];
+    return [player thumbnailImageAtTime:1.0 timeOption:MPMovieTimeOptionNearestKeyFrame];
+}
+
+#pragma mark -
 #pragma mark Debug
 
 - (NSString *)description {

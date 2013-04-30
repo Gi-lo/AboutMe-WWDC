@@ -1,17 +1,19 @@
 /* ------------------------------------------------------------------------------------------------------
- GPTimelineBubbleView.h
+ GPMediaAssetView.h
  
- Created by Giulio Petek on 27.04.13.
+ Created by Giulio Petek on 29.04.13.
  Copyright 2013 Giulio Petek. All rights reserved.
  ------------------------------------------------------------------------------------------------------ */
 
+#import "GPMediaAsset.h"
+#import "GPPlayButton.h"
+
 /* --- interface -------------------------------------------------------------------------------------- */
 
-@interface GPTimelineBubbleView : UIView
+@interface GPMediaAssetView : UIView
 
-@property (nonatomic, weak, readonly) UILabel *titleLabel;
-@property (nonatomic, weak, readonly) UILabel *dateLabel;
-@property (nonatomic, weak, readonly) UILabel *textPreviewLabel;
-@property (nonatomic, unsafe_unretained, getter = isHighlighted) BOOL highlighted;
+@property (nonatomic, weak, readonly) UIImageView *imageView;
+@property (nonatomic, weak, readonly) GPPlayButton *playButton;
+@property (nonatomic, unsafe_unretained) GPMediaAssetType type;
 
 @end

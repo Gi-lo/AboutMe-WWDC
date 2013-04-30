@@ -188,32 +188,33 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
 #pragma mark -
 #pragma mark Fetch
 
-- (void)fetchTimelineEntryAtIndex:(NSUInteger)idx andCallback:(GPTimelineEntriesFetcherCallback)callback {
+- (GPTimelineEntry *)timelineEntryAtIndex:(NSUInteger)idx {
     if (!self.isReady) {
         NSLog(@"Requested timeline entry before mapping was done! Resgister for GPTimelineEntriesFetcherDidFinsihMappingNotifiaction if you want to be notified once its done.");
-        callback(nil);
-        return;
+        return nil;
     }
     
     if ([GPTimelineEntriesFetcherIndexList count] < idx) {
         NSLog(@"Requested an entry at an index which is not there. Use <numberOfEntries> to avoid this error.");
-        
-        callback(nil);
-        return;
+        return nil;
     }
     
     __block GPTimelineEntry *timelineEntry = [self._entryCache objectForKey:@(idx)];
     if (timelineEntry) {
-        callback(timelineEntry);
-        return;
+        return timelineEntry;
     }
     
+    timelineEntry = [GPTimelineEntry timelineEntryNamed:GPTimelineEntriesFetcherIndexList[idx]];
+    if (timelineEntry) {
+        [self._entryCache setObject:timelineEntry forKey:@(idx)];
+    }
+    
+    return timelineEntry;
+}
+
+- (void)fetchTimelineEntryAtIndex:(NSUInteger)idx andCallback:(GPTimelineEntriesFetcherCallback)callback {    
     [self._entryFetchQueue addOperationWithBlock:^{
-        timelineEntry = [GPTimelineEntry timelineEntryNamed:GPTimelineEntriesFetcherIndexList[idx]];
-        
-        if (timelineEntry) {
-            [self._entryCache setObject:timelineEntry forKey:@(idx)];
-        }
+        GPTimelineEntry *timelineEntry = [self timelineEntryAtIndex:idx];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             callback(timelineEntry);

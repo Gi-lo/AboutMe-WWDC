@@ -12,7 +12,7 @@
 @interface GPTimelineHeaderView : UIView
 
 @property (nonatomic, weak, readonly) UIImageView *avatarImageView;
-@property (nonatomic, weak, readonly) GPAboutMeButton *aboutMeButton;
 @property (nonatomic, weak, readonly) UIImageView *backgroundImageView;
+@property (nonatomic, weak, readonly) GPAboutMeButton *aboutMeButton;
 
 @end
