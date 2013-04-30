@@ -8,6 +8,16 @@
 #import "GPCircleView.h"
 
 /* ------------------------------------------------------------------------------------------------------
+ @interface GPCircleView ()
+ ------------------------------------------------------------------------------------------------------ */
+
+@interface GPCircleView ()
+
+@property (nonatomic, strong) UIBezierPath *_circlePath;
+
+@end
+
+/* ------------------------------------------------------------------------------------------------------
  @implementation GPCircleView
  ------------------------------------------------------------------------------------------------------ */
 
@@ -29,17 +39,38 @@
 #pragma mark -
 #pragma mark Getter
 
-- (BOOL)isOpaque {
-    return NO;
+- (UIBezierPath *)_circlePath {
+    if (__circlePath) {
+        return __circlePath;
+    }
+    
+    return __circlePath = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:floorf(CGRectGetHeight(self.bounds) / 2.0f)];
+}
+
+#pragma mark -
+#pragma mark Layout
+
+- (void)setNeedsLayout {
+    [super setNeedsLayout];
+    
+    self._circlePath = nil;
+}
+
+- (void)didMoveToSuperview {
+    [super didMoveToSuperview];
+    
+    self.backgroundColor = [UIColor clearColor];
 }
 
 #pragma mark -
 #pragma mark Drawing
 
 - (void)drawRect:(CGRect)rect {
+    [super drawRect:rect];
+    
     GCXSafeCurrentContextDrawing(^{
         [self.circleColor setFill];
-        [[UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:floorf(CGRectGetHeight(self.bounds) / 2.0f)] fill];
+        [self._circlePath fill];
     });
 }
 

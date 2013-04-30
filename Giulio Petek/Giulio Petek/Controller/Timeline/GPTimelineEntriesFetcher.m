@@ -20,7 +20,6 @@ static dispatch_once_t monthsToken = 0;
 
 @interface GPTimelineEntriesFetcher ()
 
-@property (nonatomic, strong) NSCache *_entryCache;
 @property (nonatomic, strong) NSOperationQueue *_entryFetchQueue;
 
 + (NSMutableArray *)_allEntryNames;
@@ -160,10 +159,7 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
 #pragma mark Init
 
 - (instancetype)init {
-    if ((self = [super init])) {
-        self._entryCache = [[NSCache alloc] init];
-        self._entryCache.name = @"GPTimelineEntriesFetcherEntryCache";
-        
+    if ((self = [super init])) {        
         self._entryFetchQueue = [[NSOperationQueue alloc] init];
         self._entryFetchQueue.name = @"GPTimelineEntriesFetcherEntryFetchQueue";
         self._entryFetchQueue.maxConcurrentOperationCount = 1;
@@ -192,37 +188,17 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
 #pragma mark -
 #pragma mark Fetch
 
-- (GPTimelineEntry *)timelineEntryAtIndex:(NSUInteger)idx {
-    if (!self.isReady) {
-        NSLog(@"Requested timeline entry before mapping was done! Resgister for GPTimelineEntriesFetcherDidFinsihMappingNotifiaction if you want to be notified once its done.");
-        return nil;
-    }
-    
-    if ([GPTimelineEntriesFetcherIndexList count] < idx) {
-        NSLog(@"Requested an entry at an index which is not there. Use <numberOfEntries> to avoid this error.");
-        return nil;
-    }
-    
-    __block GPTimelineEntry *timelineEntry = [self._entryCache objectForKey:@(idx)];
-    if (timelineEntry) {
-        return timelineEntry;
-    }
-    
-    timelineEntry = [GPTimelineEntry timelineEntryNamed:GPTimelineEntriesFetcherIndexList[idx]];
-    if (timelineEntry) {
-        [self._entryCache setObject:timelineEntry forKey:@(idx)];
-    }
-    
-    return timelineEntry;
+- (GPTimelineEntry *)timelineEntryAtIndex:(NSUInteger)idx {    
+    return [GPTimelineEntry timelineEntryNamed:GPTimelineEntriesFetcherIndexList[idx]];
 }
 
-- (void)fetchTimelineEntryAtIndex:(NSUInteger)idx andCallback:(GPTimelineEntriesFetcherCallback)callback {    
+- (void)fetchTimelineEntryAtIndex:(NSUInteger)idx andCallback:(GPTimelineEntriesFetcherCallback)callback {
     [self._entryFetchQueue addOperationWithBlock:^{
         GPTimelineEntry *timelineEntry = [self timelineEntryAtIndex:idx];
         
-        dispatch_async(dispatch_get_main_queue(), ^{
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             callback(timelineEntry);
-        });
+        }];
     }];
 }
 

@@ -101,7 +101,6 @@ static NSString *const GPTimelineCellIdentifier = @"GPTimelineCellIdentifier";
 - (void)prepareForReuse {
     [super prepareForReuse];
     
-    self.circleView.circleColor = nil;
     self.timelineBubbleView.titleLabel.text = nil;
     self.timelineBubbleView.dateLabel.text = nil;
     self.timelineBubbleView.textPreviewLabel.text = nil;
