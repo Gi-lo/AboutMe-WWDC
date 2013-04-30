@@ -57,9 +57,7 @@
     GPTimelineDetailView *detailView = [[GPTimelineDetailView alloc] initWithFrame:DETAIL_VIEW_FRAME];
     detailView.contentTextLabel.text = self._timelineEntry.text;
     detailView.actionDelegate = self;
-    [detailView.mediaAssetView.playButton addTarget:self
-                                             action:@selector(_didTapVideoButton:)
-                                   forControlEvents:UIControlEventTouchUpInside];
+    [detailView.mediaAssetView.playButton addTarget:self action:@selector(_didTapVideoButton:) forControlEvents:UIControlEventTouchUpInside];
     detailView.mediaAssetView.type = self._timelineEntry.type;
     detailView.mediaAssetView.imageView.image = [self._timelineEntry.mediaAsset previewImage];
     detailView.mediaAssetView.playButton.circleColor = [self._timelineEntry suggestedUIColor];
@@ -77,7 +75,8 @@
 #pragma mark Actions
 
 - (void)_didTapVideoButton:(GPPlayButton *)button {
-    NSLog(@"video");
+    MPMoviePlayerViewController *moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:self._timelineEntry.mediaAsset.filePath]];
+    [self presentMoviePlayerViewControllerAnimated:moviePlayer];
 }
 
 #pragma mark -
