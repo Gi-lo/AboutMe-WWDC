@@ -62,7 +62,6 @@ static void *GPTimelineHeaderScrollViewDidScrollViewContext;
     }
 
     UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.backgroundColor = [UIColor redColor];
     imageView.layer.cornerRadius = AVATAR_LENGTH / 2.0f;
     imageView.layer.borderColor = [UIColor whiteColor].CGColor;
     imageView.layer.borderWidth = 2.0f;

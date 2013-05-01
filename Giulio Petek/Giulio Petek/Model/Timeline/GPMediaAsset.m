@@ -47,7 +47,7 @@ static NSString *urlEscapeString(NSString *string) {
     
     NSString *previewImageName = @"Preview";
     if ([[UIScreen mainScreen] scale]) {
-        previewImageName = [previewImageName stringByAppendingString:([[UIScreen mainScreen] scale] == 2.0 ? @"@2x" : nil)];
+        previewImageName = [previewImageName stringByAppendingString:([[UIScreen mainScreen] scale] == 2.0 ? @"@2x" : @"")];
     }
     
     asset._previewImagePath = [bundle pathForResource:previewImageName ofType:@"png"];
