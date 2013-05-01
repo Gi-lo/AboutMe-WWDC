@@ -45,12 +45,15 @@
 		2C2D35C2172F20B900EE1025 /* GPURLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35C1172F20B800EE1025 /* GPURLButton.m */; };
 		2C2F91A61731062000B3E004 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F91A41731062000B3E004 /* Icon.png */; };
 		2C2F91A71731062000B3E004 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F91A51731062000B3E004 /* Icon@2x.png */; };
+		2C2F91AA1731073900B3E004 /* WWDCLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F91A81731073900B3E004 /* WWDCLogo@2x.png */; };
+		2C2F91AB1731073900B3E004 /* WWDCLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F91A91731073900B3E004 /* WWDCLogo.png */; };
 		2C48E27E1730239E00D56AA7 /* GPCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48E27D1730239E00D56AA7 /* GPCircleView.m */; };
 		2C48E287173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E283173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png */; };
 		2C48E288173080E800D56AA7 /* GPAboutMeButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E284173080E800D56AA7 /* GPAboutMeButtonArrow.png */; };
 		2C48E289173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E285173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png */; };
 		2C48E28A173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E286173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png */; };
 		2C48E28D173088C600D56AA7 /* GPAboutMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48E28C173088C600D56AA7 /* GPAboutMeCell.m */; };
+		2C48E2981730AD0A00D56AA7 /* CAAnimation+CompletionBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48E2971730AD0A00D56AA7 /* CAAnimation+CompletionBlock.m */; };
 		2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273117284FD9009B905D /* UIKit.framework */; };
 		2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273317284FD9009B905D /* Foundation.framework */; };
 		2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273517284FD9009B905D /* CoreGraphics.framework */; };
@@ -115,6 +118,8 @@
 		2C2D35C5172F268200EE1025 /* GCXDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCXDrawing.h; sourceTree = "<group>"; };
 		2C2F91A41731062000B3E004 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		2C2F91A51731062000B3E004 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		2C2F91A81731073900B3E004 /* WWDCLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WWDCLogo@2x.png"; sourceTree = "<group>"; };
+		2C2F91A91731073900B3E004 /* WWDCLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWDCLogo.png; sourceTree = "<group>"; };
 		2C48E27C1730239E00D56AA7 /* GPCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCircleView.h; sourceTree = "<group>"; };
 		2C48E27D1730239E00D56AA7 /* GPCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCircleView.m; sourceTree = "<group>"; };
 		2C48E283173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPAboutMeButtonArrow_selected@2x.png"; sourceTree = "<group>"; };
@@ -123,6 +128,8 @@
 		2C48E286173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPAboutMeButtonArrow_selected.png; sourceTree = "<group>"; };
 		2C48E28B173088C600D56AA7 /* GPAboutMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAboutMeCell.h; sourceTree = "<group>"; };
 		2C48E28C173088C600D56AA7 /* GPAboutMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAboutMeCell.m; sourceTree = "<group>"; };
+		2C48E2961730AD0A00D56AA7 /* CAAnimation+CompletionBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+CompletionBlock.h"; sourceTree = "<group>"; };
+		2C48E2971730AD0A00D56AA7 /* CAAnimation+CompletionBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+CompletionBlock.m"; sourceTree = "<group>"; };
 		2CAF272E17284FD9009B905D /* Giulio Petek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giulio Petek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAF273117284FD9009B905D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CAF273317284FD9009B905D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -294,6 +301,8 @@
 		2CAF276B172855DD009B905D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C48E2961730AD0A00D56AA7 /* CAAnimation+CompletionBlock.h */,
+				2C48E2971730AD0A00D56AA7 /* CAAnimation+CompletionBlock.m */,
 				2CD96FCB172C71B3008EF3EB /* GPAppDelegate.h */,
 				2CD96FCC172C71B3008EF3EB /* GPAppDelegate.m */,
 				2CD96FCD172C71B3008EF3EB /* main.m */,
@@ -307,6 +316,8 @@
 			children = (
 				2C2F91A41731062000B3E004 /* Icon.png */,
 				2C2F91A51731062000B3E004 /* Icon@2x.png */,
+				2C2F91A91731073900B3E004 /* WWDCLogo.png */,
+				2C2F91A81731073900B3E004 /* WWDCLogo@2x.png */,
 				2C48E283173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png */,
 				2C48E284173080E800D56AA7 /* GPAboutMeButtonArrow.png */,
 				2C48E285173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png */,
@@ -495,6 +506,8 @@
 				2C48E28A173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png in Resources */,
 				2C2F91A61731062000B3E004 /* Icon.png in Resources */,
 				2C2F91A71731062000B3E004 /* Icon@2x.png in Resources */,
+				2C2F91AA1731073900B3E004 /* WWDCLogo@2x.png in Resources */,
+				2C2F91AB1731073900B3E004 /* WWDCLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +538,7 @@
 				2C00D4AA172FB711002F0C5D /* GPWebViewController.m in Sources */,
 				2C48E27E1730239E00D56AA7 /* GPCircleView.m in Sources */,
 				2C48E28D173088C600D56AA7 /* GPAboutMeCell.m in Sources */,
+				2C48E2981730AD0A00D56AA7 /* CAAnimation+CompletionBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
