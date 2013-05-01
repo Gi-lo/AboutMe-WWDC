@@ -39,7 +39,7 @@ static char CAAnimationCompletionBlockKey;
 
 - (void)animationDidStop:(CAAnimation *)animation finished:(BOOL)finished {
     if (self.completionBlock) {
-        self.completionBlock(animation);
+        self.completionBlock(animation, finished);
     }
 }
 

@@ -25,9 +25,7 @@
  
  ---------------------------------------------------------------------- */
 
-#import <QuartzCore/QuartzCore.h>
-
-typedef void (^CAAnimationCompletionBlock)(CAAnimation *animation);
+typedef void (^CAAnimationCompletionBlock)(CAAnimation *animation, BOOL finished);
 
 /* --- Interface ------------------------------------------------------ */
 
