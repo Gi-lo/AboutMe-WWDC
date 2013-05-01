@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C00D4AA172FB711002F0C5D /* GPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C00D4A9172FB711002F0C5D /* GPWebViewController.m */; };
-		2C00D4C1172FC563002F0C5D /* GPAboutMeButtonArrow_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4AB172FC563002F0C5D /* GPAboutMeButtonArrow_selected.png */; };
-		2C00D4C2172FC563002F0C5D /* GPAboutMeButtonArrow_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4AC172FC563002F0C5D /* GPAboutMeButtonArrow_selected@2x.png */; };
-		2C00D4C3172FC563002F0C5D /* GPAboutMeButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4AD172FC563002F0C5D /* GPAboutMeButtonArrow.png */; };
-		2C00D4C4172FC563002F0C5D /* GPAboutMeButtonArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4AE172FC563002F0C5D /* GPAboutMeButtonArrow@2x.png */; };
 		2C00D4C5172FC563002F0C5D /* GPBackButtonArrow_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4AF172FC563002F0C5D /* GPBackButtonArrow_selected.png */; };
 		2C00D4C6172FC563002F0C5D /* GPBackButtonArrow_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4B0172FC563002F0C5D /* GPBackButtonArrow_selected@2x.png */; };
 		2C00D4C7172FC563002F0C5D /* GPBackButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00D4B1172FC563002F0C5D /* GPBackButtonArrow.png */; };
@@ -48,6 +44,11 @@
 		2C2D35BB172F0E1700EE1025 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D35BA172F0E1700EE1025 /* MediaPlayer.framework */; };
 		2C2D35C2172F20B900EE1025 /* GPURLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35C1172F20B800EE1025 /* GPURLButton.m */; };
 		2C48E27E1730239E00D56AA7 /* GPCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48E27D1730239E00D56AA7 /* GPCircleView.m */; };
+		2C48E287173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E283173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png */; };
+		2C48E288173080E800D56AA7 /* GPAboutMeButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E284173080E800D56AA7 /* GPAboutMeButtonArrow.png */; };
+		2C48E289173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E285173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png */; };
+		2C48E28A173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E286173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png */; };
+		2C48E28D173088C600D56AA7 /* GPAboutMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48E28C173088C600D56AA7 /* GPAboutMeCell.m */; };
 		2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273117284FD9009B905D /* UIKit.framework */; };
 		2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273317284FD9009B905D /* Foundation.framework */; };
 		2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273517284FD9009B905D /* CoreGraphics.framework */; };
@@ -71,10 +72,6 @@
 /* Begin PBXFileReference section */
 		2C00D4A8172FB711002F0C5D /* GPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPWebViewController.h; sourceTree = "<group>"; };
 		2C00D4A9172FB711002F0C5D /* GPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPWebViewController.m; sourceTree = "<group>"; };
-		2C00D4AB172FC563002F0C5D /* GPAboutMeButtonArrow_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPAboutMeButtonArrow_selected.png; sourceTree = "<group>"; };
-		2C00D4AC172FC563002F0C5D /* GPAboutMeButtonArrow_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPAboutMeButtonArrow_selected@2x.png"; sourceTree = "<group>"; };
-		2C00D4AD172FC563002F0C5D /* GPAboutMeButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPAboutMeButtonArrow.png; sourceTree = "<group>"; };
-		2C00D4AE172FC563002F0C5D /* GPAboutMeButtonArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPAboutMeButtonArrow@2x.png"; sourceTree = "<group>"; };
 		2C00D4AF172FC563002F0C5D /* GPBackButtonArrow_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPBackButtonArrow_selected.png; sourceTree = "<group>"; };
 		2C00D4B0172FC563002F0C5D /* GPBackButtonArrow_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPBackButtonArrow_selected@2x.png"; sourceTree = "<group>"; };
 		2C00D4B1172FC563002F0C5D /* GPBackButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPBackButtonArrow.png; sourceTree = "<group>"; };
@@ -119,6 +116,12 @@
 		2C2D35C5172F268200EE1025 /* GCXDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCXDrawing.h; sourceTree = "<group>"; };
 		2C48E27C1730239E00D56AA7 /* GPCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCircleView.h; sourceTree = "<group>"; };
 		2C48E27D1730239E00D56AA7 /* GPCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCircleView.m; sourceTree = "<group>"; };
+		2C48E283173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPAboutMeButtonArrow_selected@2x.png"; sourceTree = "<group>"; };
+		2C48E284173080E800D56AA7 /* GPAboutMeButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPAboutMeButtonArrow.png; sourceTree = "<group>"; };
+		2C48E285173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPAboutMeButtonArrow@2x.png"; sourceTree = "<group>"; };
+		2C48E286173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPAboutMeButtonArrow_selected.png; sourceTree = "<group>"; };
+		2C48E28B173088C600D56AA7 /* GPAboutMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAboutMeCell.h; sourceTree = "<group>"; };
+		2C48E28C173088C600D56AA7 /* GPAboutMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAboutMeCell.m; sourceTree = "<group>"; };
 		2CAF272E17284FD9009B905D /* Giulio Petek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giulio Petek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAF273117284FD9009B905D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CAF273317284FD9009B905D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -304,10 +307,10 @@
 		2CAF276C17285601009B905D /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2C00D4AB172FC563002F0C5D /* GPAboutMeButtonArrow_selected.png */,
-				2C00D4AC172FC563002F0C5D /* GPAboutMeButtonArrow_selected@2x.png */,
-				2C00D4AD172FC563002F0C5D /* GPAboutMeButtonArrow.png */,
-				2C00D4AE172FC563002F0C5D /* GPAboutMeButtonArrow@2x.png */,
+				2C48E283173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png */,
+				2C48E284173080E800D56AA7 /* GPAboutMeButtonArrow.png */,
+				2C48E285173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png */,
+				2C48E286173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png */,
 				2C00D4AF172FC563002F0C5D /* GPBackButtonArrow_selected.png */,
 				2C00D4B0172FC563002F0C5D /* GPBackButtonArrow_selected@2x.png */,
 				2C00D4B1172FC563002F0C5D /* GPBackButtonArrow.png */,
@@ -364,6 +367,8 @@
 				2CFA1FA0172D811A00655648 /* GPTimelineHeaderView.m */,
 				2CFA1F97172D811A00655648 /* GPAboutMeButton.h */,
 				2CFA1F98172D811A00655648 /* GPAboutMeButton.m */,
+				2C48E28B173088C600D56AA7 /* GPAboutMeCell.h */,
+				2C48E28C173088C600D56AA7 /* GPAboutMeCell.m */,
 				2CFA1F9D172D811A00655648 /* GPTimelineCell.h */,
 				2CFA1F9E172D811A00655648 /* GPTimelineCell.m */,
 				2CFA1F9B172D811A00655648 /* GPTimelineBubbleView.h */,
@@ -464,10 +469,6 @@
 				2CD96FD5172C71D1008EF3EB /* Default@2x.png in Resources */,
 				2C2D358D172ECF3300EE1025 /* SunsetOverBonn.png in Resources */,
 				2C2D358E172ECF3300EE1025 /* SunsetOverBonn@2x.png in Resources */,
-				2C00D4C1172FC563002F0C5D /* GPAboutMeButtonArrow_selected.png in Resources */,
-				2C00D4C2172FC563002F0C5D /* GPAboutMeButtonArrow_selected@2x.png in Resources */,
-				2C00D4C3172FC563002F0C5D /* GPAboutMeButtonArrow.png in Resources */,
-				2C00D4C4172FC563002F0C5D /* GPAboutMeButtonArrow@2x.png in Resources */,
 				2C00D4C5172FC563002F0C5D /* GPBackButtonArrow_selected.png in Resources */,
 				2C00D4C6172FC563002F0C5D /* GPBackButtonArrow_selected@2x.png in Resources */,
 				2C00D4C7172FC563002F0C5D /* GPBackButtonArrow.png in Resources */,
@@ -494,6 +495,10 @@
 				2C00D4EB172FDB38002F0C5D /* Relocation To Bonn.entry.bundle in Resources */,
 				2C00D4EC172FDB38002F0C5D /* Working Student.entry.bundle in Resources */,
 				2C00D4F6173008DC002F0C5D /* GCX full time.entry.bundle in Resources */,
+				2C48E287173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png in Resources */,
+				2C48E288173080E800D56AA7 /* GPAboutMeButtonArrow.png in Resources */,
+				2C48E289173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png in Resources */,
+				2C48E28A173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +528,7 @@
 				2C2D35C2172F20B900EE1025 /* GPURLButton.m in Sources */,
 				2C00D4AA172FB711002F0C5D /* GPWebViewController.m in Sources */,
 				2C48E27E1730239E00D56AA7 /* GPCircleView.m in Sources */,
+				2C48E28D173088C600D56AA7 /* GPAboutMeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

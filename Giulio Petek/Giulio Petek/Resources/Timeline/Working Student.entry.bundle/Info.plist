@@ -7,12 +7,12 @@
 	<key>title</key>
 	<string>Working Student</string>
 	<key>text</key>
-	<string>While studying computer science I reduced the time I spend working for grandcetrix. In my maximum 20 hours a week at the new shiny office in the heart of cologne, I mainly do bug fixes. It is amazing how much and fast you learn if you have that large variety of projects. You see others code, their code smell and there cleverness. You can always learn from it. 
+	<string>While studying computer science, I reduced the time I spent working for grandcetrix. In my maximum 20 hours a week at the shiny new office in the heart of cologne, I mainly do bug fixes. It is amazing how much and fast you learn if you have such a large variety of projects. You see others code, their code smell and there cleverness. You can always learn from it.
 
-Between the break of the first and the second semester I spent some more time working for grandcentrix. Luckily I got the task to rewrite the former IFA Loewe ShowCase application. My Co-worker and I started from scratch as it was clear that the showcase version was only be a quickly coded prototype. With the management team introducing scrum to our workflow we managed to finish the application just in time. Loewe Assist Media for iPhone will be submitted to the App Store very soon.</string>
+Between the break of the first and the second semester I spent some more time working for grandcentrix. Luckily I got the task to rewrite the former IFA Loewe ShowCase application. My Co-worker and I started from scratch as it was clear that the showcase version was only a quickly coded prototype. With the management team introducing scrum to our workflow we managed to finish the application just in time. Loewe Assist Media for iPhone will be submitted to the App Store very soon.</string>
 	<key>previewText</key>
 	<string>Financing my education and learning by doing.</string>
 	<key>type</key>
-	<string>education</string>
+	<string>profession</string>
 </dict>
 </plist>

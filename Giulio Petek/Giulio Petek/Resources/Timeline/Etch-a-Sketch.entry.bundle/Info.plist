@@ -7,8 +7,8 @@
 	<key>title</key>
 	<string>EtchPad</string>
 	<key>text</key>
-	<string>A friend of mine and I decided to build an application for the brand new iPad. As he enjoyed playing Etch-a-Sketch as child we decided to bring back some good old childhood memories. Though the application was rejected due copyright issue it was a still a great learning experience. Diving deeper in CoreGraphics and custom UIControls was a clever choice.
-EtchPad features two rotary knobs for vertical and horizontal line movement. There is also an undo function as well as the possibility to export and share your drawing.</string>
+	<string>A friend of mine and I decided to build an application for the recently released first generation of the iPad. As he enjoyed playing Etch-a-Sketch as child we decided to bring back some good old childhood memories. Altough the application was rejected due to copyright issue it was a still a great learning experience. Diving deeper in CoreGraphics and custom UIControls was a clever choice.
+EtchPad features two rotary knobs for vertical and horizontal line movement. There is also an undo function as well as the possibility to export and share your drawings.</string>
 	<key>previewText</key>
 	<string>EtchPad is an application designed to bring back some childhood memories.</string>
 	<key>urls</key>

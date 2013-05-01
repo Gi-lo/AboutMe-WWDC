@@ -176,12 +176,6 @@ static NSArray *GPTimelineEntriesFetcherIndexList = nil;
 }
 
 - (NSUInteger)numberOfEntries {
-    if (!self.isReady) {
-        NSLog(@"Requested timeline entry before mapping was done! Resgister for GPTimelineEntriesFetcherDidFinsihMappingNotifiaction if you want to be notified once its done.");
-        
-        return 0;
-    }
-    
     return [GPTimelineEntriesFetcherIndexList count];
 }
 

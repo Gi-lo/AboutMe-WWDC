@@ -7,8 +7,18 @@
 
 #import "GPAboutMeButton.h"
 
-#define ARROW_SPACING 5.0f
-#define ARROW_FRAME CGRectIntegral((CGRect){{textWidth + ARROW_SPACING, CGRectGetHeight(self.bounds) / 2.0f -  arrowImage.size.height / 2.0f}, arrowImage.size})
+#define ARROW_FRAME (CGRect){{self._textWidth, 4.0f}, CGRectGetHeight(self.bounds), CGRectGetHeight(self.bounds)-4.0f}
+
+/* ------------------------------------------------------------------------------------------------------
+ @interface GPAboutMeButton ()
+------------------------------------------------------------------------------------------------------ */
+
+@interface GPAboutMeButton ()
+
+@property (nonatomic, unsafe_unretained) CGFloat _textWidth;
+@property (nonatomic, weak) UIImageView *_arrowImageView;
+
+@end
 
 /* ------------------------------------------------------------------------------------------------------
  @implementation GPAboutMeButton
@@ -23,6 +33,22 @@
     return NO;
 }
 
+- (UIImageView *)_arrowImageView {
+    if (__arrowImageView) {
+        return __arrowImageView;
+    }
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GPAboutMeButtonArrow"]];
+    imageView.highlightedImage = [UIImage imageNamed:@"GPAboutMeButtonArrow_selected"];
+    imageView.contentMode = UIViewContentModeCenter;
+    imageView.layer.anchorPoint = (CGPoint){0.5f, 0.45f};
+    [self addSubview:imageView];
+    
+    __arrowImageView = imageView;
+    
+    return __arrowImageView;
+}
+
 #pragma mark -
 #pragma marl Setter
 
@@ -32,8 +58,22 @@
     }
     
     _title = title;
+        
+    [self sizeToFit];
+}
+
+- (void)setDirection:(GPAboutMeButtonArrowDirection)direction {
+    if (_direction == direction) {
+        return;
+    }
     
-    [self setNeedsLayout];
+    _direction = direction;
+    
+    [UIView animateWithDuration:0.3f
+                     animations:^{
+        CGFloat degree = direction == GPAboutMeButtonArrowDirectionPointingDown ? 0.0f : 180.0f;
+        self._arrowImageView.transform = CGAffineTransformMakeRotation(degree * M_PI / 180.0f);
+    }];
 }
 
 #pragma mark -
@@ -42,17 +82,26 @@
 - (void)setHighlighted:(BOOL)highlighted {
     [super setHighlighted:highlighted];
     
+    self._arrowImageView.highlighted = highlighted;
+    
     [self setNeedsDisplay];
 }
 
 #pragma mark -
 #pragma mark Layout
 
-- (CGSize)sizeThatFits:(CGSize)size {
-    CGSize sizeOfTitle = [self.title sizeWithFont:[UIFont systemFontOfSize:20.0f]];
-    sizeOfTitle.width += [UIImage imageNamed:@"GPAboutMeButtonArrow"].size.width + ARROW_SPACING;
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    self._arrowImageView.frame = ARROW_FRAME;
+}
 
-    return sizeOfTitle;
+- (CGSize)sizeThatFits:(CGSize)size {
+    CGSize textSize = [self.title sizeWithFont:[UIFont systemFontOfSize:20.0f]];
+    self._textWidth = textSize.width;
+    textSize.width += [UIImage imageNamed:@"GPAboutMeButtonArrow"].size.width;
+    
+    return textSize;
 }
 
 #pragma mark -
@@ -62,11 +111,7 @@
     GCXSafeCurrentContextDrawing(^{
         CGContextSetShadowWithColor(UIGraphicsGetCurrentContext(), (CGSize){0.0f, 1.0f}, 2.0f, [UIColor colorWithWhite:0.0f alpha:0.7f].CGColor);
         [self.highlighted ? [UIColor colorWithWhite:0.8f alpha:1.0f] : [UIColor whiteColor] setFill];
-        
-        CGFloat textWidth = [self.title drawInRect:self.bounds withFont:[UIFont systemFontOfSize:20.0f]].width;
-        
-        UIImage *arrowImage = [UIImage imageNamed:self.highlighted ? @"GPAboutMeButtonArrow_selected": @"GPAboutMeButtonArrow"];
-        [arrowImage drawInRect:ARROW_FRAME];
+        [self.title drawInRect:self.bounds withFont:[UIFont systemFontOfSize:20.0f]];
     });
 }
 
