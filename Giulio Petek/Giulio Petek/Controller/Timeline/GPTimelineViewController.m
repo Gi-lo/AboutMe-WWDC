@@ -75,7 +75,7 @@ typedef NS_ENUM(NSInteger, GPTimelineViewControllerSection) {
 #pragma mark Notification
 
 - (void)_timelineFetcherDidFinishMapping:(NSNotification *)notification {
-    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationBottom];
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:GPTimelineEntriesFetcherDidFinishMappingNotifiaction object:nil];
 }
@@ -129,7 +129,7 @@ typedef NS_ENUM(NSInteger, GPTimelineViewControllerSection) {
 
 - (GPAboutMeCell *)_aboutMeCell {
     GPAboutMeCell *cell = [GPAboutMeCell reusableCellFromTableView:self.tableView];
-    cell.contentTextLabel.text = @"Hello, my name is Giulio Petek and I am a 20-years-old computer science student from the former capital of Germany, Bonn.\n\nI currently work at grandcentrix where I develop iPhone and iPad Applications for larger companies. Besides developing I love going out and have fun with friends. I am also fascinated by soccer as well as tablesoccer.\n\nEmail:       giulio.petek@grandcentrix.net\nGithub:     http://github.com/gi-lo\nTwitter:    http://twitter.com/GiloTM\nWebsite:  giuliopetek.com\nMobile:    +49 0176 31150339";
+    cell.contentTextView.text = @"Hello, my name is Giulio Petek and I am a 20-years-old computer science student from the former capital of Germany, Bonn.\n\nI currently work at grandcentrix where I develop iPhone and iPad Applications for larger companies. Besides developing I love going out and have fun with friends. I am also fascinated by soccer as well as tablesoccer.\n\nEmail:     giulio.petek@grandcentrix.net\nGithub:   http://github.com/gi-lo\nTwitter:   http://twitter.com/GiloTM\nWebsite: giuliopetek.com\nMobile:  +49 0176 31150339";
     
     return cell;
 }

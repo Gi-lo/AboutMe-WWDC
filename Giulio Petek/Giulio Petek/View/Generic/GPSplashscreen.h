@@ -1,13 +1,11 @@
-//
-//  GPSplashscreen.h
-//  Giulio Petek
-//
-//  Created by Giulio Petek on 01.05.13.
-//  Copyright (c) 2013 grandcentrix. All rights reserved.
-//
+/* ------------------------------------------------------------------------------------------------------
+ GPSplashscreen.h
+ 
+ Created by Giulio Petek on 1.05.13.
+ Copyright 2013 Giulio Petek. All rights reserved.
+ ------------------------------------------------------------------------------------------------------ */
 
-#import <UIKit/UIKit.h>
+/* --- interface -------------------------------------------------------------------------------------- */
 
 @interface GPSplashscreen : UIView
-
 @end

@@ -11,6 +11,6 @@
 
 + (GPAboutMeCell *)reusableCellFromTableView:(UITableView *)tableView;
 
-@property (nonatomic, weak, readonly) UILabel *contentTextLabel;
+@property (nonatomic, weak, readonly) UITextView *contentTextView;
 
 @end

@@ -18,7 +18,7 @@ static NSString *const GPAboutMeCellIdentifier = @"GPAboutMeCellIdentifier";
  ------------------------------------------------------------------------------------------------------ */
 
 @implementation GPAboutMeCell
-@synthesize contentTextLabel = _contentTextLabel;
+@synthesize contentTextView = _contentTextView;
 
 #pragma mark -
 #pragma mark Init
@@ -49,20 +49,23 @@ static NSString *const GPAboutMeCellIdentifier = @"GPAboutMeCellIdentifier";
 #pragma mark -
 #pragma mark Getter
 
-- (UILabel *)contentTextLabel {
-    if (_contentTextLabel) {
-        return _contentTextLabel;
+- (UITextView *)contentTextView {
+    if (_contentTextView) {
+        return _contentTextView;
     }
     
-    UILabel *label = [[UILabel alloc] init];
-    label.numberOfLines = 0;
-    label.font = [UIFont boldSystemFontOfSize:13.0f];
-    label.textColor = [UIColor colorWithWhite:0.302f alpha:1.0f];
-    [self.contentView addSubview:label];
+    UITextView *textView = [[UITextView alloc] init];
+    textView.dataDetectorTypes = UIDataDetectorTypeAll;
+    textView.contentInset = UIEdgeInsetsMake(-8.0f, -8.0f, -8.0f, -8.0f);
+    textView.scrollEnabled = NO;
+    textView.editable = NO;
+    textView.font = [UIFont boldSystemFontOfSize:13.0f];
+    textView.textColor = [UIColor colorWithWhite:0.302f alpha:1.0f];
+    [self.contentView addSubview:textView];
     
-    _contentTextLabel = label;
+    _contentTextView = textView;
     
-    return _contentTextLabel;
+    return _contentTextView;
 }
 
 #pragma mark -
@@ -71,9 +74,8 @@ static NSString *const GPAboutMeCellIdentifier = @"GPAboutMeCellIdentifier";
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.contentTextLabel.frame = LABEL_FRAME;
+    self.contentTextView.frame = LABEL_FRAME;
     self.backgroundView.frame = BACKGROUND_FRAME;
-    // ?
 }
 
 @end
