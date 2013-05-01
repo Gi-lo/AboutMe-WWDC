@@ -1,20 +1,16 @@
 /* ------------------------------------------------------------------------------------------------------
  GPAboutMeButton.h
  
- Created by Giulio Petek on 27.04.13.
+ Created by Giulio Petek on 1.05.13.
  Copyright 2013 Giulio Petek. All rights reserved.
  ------------------------------------------------------------------------------------------------------ */
 
-typedef NS_ENUM(NSInteger, GPAboutMeButtonArrowDirection) {
-    GPAboutMeButtonArrowDirectionPointingDown = 0,
-    GPAboutMeButtonArrowDirectionPointingUp
-};
-
 /* --- interface -------------------------------------------------------------------------------------- */
 
-@interface GPAboutMeButton : UIControl
+@interface GPAboutMeCell : UITableViewCell
 
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, unsafe_unretained) GPAboutMeButtonArrowDirection direction;
++ (GPAboutMeCell *)reusableCellFromTableView:(UITableView *)tableView;
+
+@property (nonatomic, weak, readonly) UILabel *contentTextLabel;
 
 @end
