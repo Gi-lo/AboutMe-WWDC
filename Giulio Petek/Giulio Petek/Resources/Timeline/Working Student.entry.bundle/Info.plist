@@ -14,5 +14,10 @@ Between the break of the first and the second semester I spent some more time wo
 	<string>Financing my education and learning by doing.</string>
 	<key>type</key>
 	<string>profession</string>
+	<key>urls</key>
+	<dict>
+		<key>RTL (German)</key>
+		<string>http://www.grandcentrix.net/portfolio/rtl-media-group-social-tv/</string>
+	</dict>
 </dict>
 </plist>

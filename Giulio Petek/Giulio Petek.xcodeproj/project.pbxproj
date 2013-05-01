@@ -43,20 +43,28 @@
 		2C2D35B9172F0C3600EE1025 /* GPPlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35B8172F0C3600EE1025 /* GPPlayButton.m */; };
 		2C2D35BB172F0E1700EE1025 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D35BA172F0E1700EE1025 /* MediaPlayer.framework */; };
 		2C2D35C2172F20B900EE1025 /* GPURLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D35C1172F20B800EE1025 /* GPURLButton.m */; };
+		2C2F91B2173116B500B3E004 /* GPSplashscreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F91B1173116B500B3E004 /* GPSplashscreen.m */; };
 		2C48E27E1730239E00D56AA7 /* GPCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48E27D1730239E00D56AA7 /* GPCircleView.m */; };
 		2C48E287173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E283173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png */; };
 		2C48E288173080E800D56AA7 /* GPAboutMeButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E284173080E800D56AA7 /* GPAboutMeButtonArrow.png */; };
 		2C48E289173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E285173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png */; };
 		2C48E28A173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C48E286173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png */; };
 		2C48E28D173088C600D56AA7 /* GPAboutMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48E28C173088C600D56AA7 /* GPAboutMeCell.m */; };
+		2C66450817312018009A1C2C /* CAAnimation+CompletionBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C66450717312018009A1C2C /* CAAnimation+CompletionBlock.m */; };
+		2C7E0597173124100017E24E /* WWDC_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E0595173124100017E24E /* WWDC_Logo.png */; };
+		2C7E0598173124100017E24E /* WWDC_Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E0596173124100017E24E /* WWDC_Logo@2x.png */; };
+		2C7E05AA173136650017E24E /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E05A8173136650017E24E /* Avatar.png */; };
+		2C7E05AB173136650017E24E /* Avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E05A9173136650017E24E /* Avatar@2x.png */; };
+		2C7E05B1173137DC0017E24E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E05B0173137DC0017E24E /* Default-568h@2x.png */; };
+		2C7E05B3173138000017E24E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E05B2173138000017E24E /* Icon@2x.png */; };
+		2C7E05B5173138060017E24E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E05B4173138060017E24E /* Icon.png */; };
+		2C7E05B71731383A0017E24E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E05B61731383A0017E24E /* Default.png */; };
+		2C7E05B91731383C0017E24E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E05B81731383C0017E24E /* Default@2x.png */; };
 		2CAF273217284FD9009B905D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273117284FD9009B905D /* UIKit.framework */; };
 		2CAF273417284FD9009B905D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273317284FD9009B905D /* Foundation.framework */; };
 		2CAF273617284FD9009B905D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAF273517284FD9009B905D /* CoreGraphics.framework */; };
 		2CD96FCE172C71B3008EF3EB /* GPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FCC172C71B3008EF3EB /* GPAppDelegate.m */; };
 		2CD96FCF172C71B3008EF3EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD96FCD172C71B3008EF3EB /* main.m */; };
-		2CD96FD3172C71D1008EF3EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD0172C71D1008EF3EB /* Default-568h@2x.png */; };
-		2CD96FD4172C71D1008EF3EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD1172C71D1008EF3EB /* Default.png */; };
-		2CD96FD5172C71D1008EF3EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD96FD2172C71D1008EF3EB /* Default@2x.png */; };
 		2CFA1FA1172D811A00655648 /* GPAboutMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F98172D811A00655648 /* GPAboutMeButton.m */; };
 		2CFA1FA2172D811A00655648 /* GPTimelineBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F9A172D811A00655648 /* GPTimelineBackgroundView.m */; };
 		2CFA1FA3172D811A00655648 /* GPTimelineBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA1F9C172D811A00655648 /* GPTimelineBubbleView.m */; };
@@ -114,6 +122,8 @@
 		2C2D35C0172F20B800EE1025 /* GPURLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPURLButton.h; sourceTree = "<group>"; };
 		2C2D35C1172F20B800EE1025 /* GPURLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPURLButton.m; sourceTree = "<group>"; };
 		2C2D35C5172F268200EE1025 /* GCXDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCXDrawing.h; sourceTree = "<group>"; };
+		2C2F91B0173116B500B3E004 /* GPSplashscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSplashscreen.h; sourceTree = "<group>"; };
+		2C2F91B1173116B500B3E004 /* GPSplashscreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSplashscreen.m; sourceTree = "<group>"; };
 		2C48E27C1730239E00D56AA7 /* GPCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCircleView.h; sourceTree = "<group>"; };
 		2C48E27D1730239E00D56AA7 /* GPCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCircleView.m; sourceTree = "<group>"; };
 		2C48E283173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPAboutMeButtonArrow_selected@2x.png"; sourceTree = "<group>"; };
@@ -122,6 +132,17 @@
 		2C48E286173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPAboutMeButtonArrow_selected.png; sourceTree = "<group>"; };
 		2C48E28B173088C600D56AA7 /* GPAboutMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAboutMeCell.h; sourceTree = "<group>"; };
 		2C48E28C173088C600D56AA7 /* GPAboutMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAboutMeCell.m; sourceTree = "<group>"; };
+		2C66450617312018009A1C2C /* CAAnimation+CompletionBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+CompletionBlock.h"; sourceTree = "<group>"; };
+		2C66450717312018009A1C2C /* CAAnimation+CompletionBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+CompletionBlock.m"; sourceTree = "<group>"; };
+		2C7E0595173124100017E24E /* WWDC_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWDC_Logo.png; sourceTree = "<group>"; };
+		2C7E0596173124100017E24E /* WWDC_Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WWDC_Logo@2x.png"; sourceTree = "<group>"; };
+		2C7E05A8173136650017E24E /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
+		2C7E05A9173136650017E24E /* Avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avatar@2x.png"; sourceTree = "<group>"; };
+		2C7E05B0173137DC0017E24E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2C7E05B2173138000017E24E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		2C7E05B4173138060017E24E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2C7E05B61731383A0017E24E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2C7E05B81731383C0017E24E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2CAF272E17284FD9009B905D /* Giulio Petek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giulio Petek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAF273117284FD9009B905D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CAF273317284FD9009B905D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -130,9 +151,6 @@
 		2CD96FCB172C71B3008EF3EB /* GPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAppDelegate.h; sourceTree = "<group>"; };
 		2CD96FCC172C71B3008EF3EB /* GPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAppDelegate.m; sourceTree = "<group>"; };
 		2CD96FCD172C71B3008EF3EB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2CD96FD0172C71D1008EF3EB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2CD96FD1172C71D1008EF3EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		2CD96FD2172C71D1008EF3EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2CD96FD8172C7205008EF3EB /* Giulio Petek-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Giulio Petek-Info.plist"; sourceTree = "<group>"; };
 		2CFA1F97172D811A00655648 /* GPAboutMeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPAboutMeButton.h; sourceTree = "<group>"; };
 		2CFA1F98172D811A00655648 /* GPAboutMeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPAboutMeButton.m; sourceTree = "<group>"; };
@@ -208,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				2C2D35C5172F268200EE1025 /* GCXDrawing.h */,
+				2C66450617312018009A1C2C /* CAAnimation+CompletionBlock.h */,
+				2C66450717312018009A1C2C /* CAAnimation+CompletionBlock.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -215,6 +235,11 @@
 		2CAF272517284FD9009B905D = {
 			isa = PBXGroup;
 			children = (
+				2C7E05B61731383A0017E24E /* Default.png */,
+				2C7E05B81731383C0017E24E /* Default@2x.png */,
+				2C7E05B0173137DC0017E24E /* Default-568h@2x.png */,
+				2C7E05B4173138060017E24E /* Icon.png */,
+				2C7E05B2173138000017E24E /* Icon@2x.png */,
 				2CAF273717284FD9009B905D /* Giulio Petek */,
 				2CAF273017284FD9009B905D /* Frameworks */,
 				2CAF272F17284FD9009B905D /* Products */,
@@ -265,8 +290,8 @@
 		2CAF276817285369009B905D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2C2D35AC172EFC1C00EE1025 /* Detail */,
 				2CFA1FAD172D815A00655648 /* Generic */,
+				2C2D35AC172EFC1C00EE1025 /* Detail */,
 				2CFA1F96172D811A00655648 /* Timeline */,
 			);
 			path = View;
@@ -307,6 +332,10 @@
 		2CAF276C17285601009B905D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2C7E0595173124100017E24E /* WWDC_Logo.png */,
+				2C7E0596173124100017E24E /* WWDC_Logo@2x.png */,
+				2C7E05A8173136650017E24E /* Avatar.png */,
+				2C7E05A9173136650017E24E /* Avatar@2x.png */,
 				2C48E283173080E800D56AA7 /* GPAboutMeButtonArrow_selected@2x.png */,
 				2C48E284173080E800D56AA7 /* GPAboutMeButtonArrow.png */,
 				2C48E285173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png */,
@@ -327,9 +356,6 @@
 				2C00D4BE172FC563002F0C5D /* GPTimelineCellIndicator_selected@2x.png */,
 				2C00D4BF172FC563002F0C5D /* GPTimelineCellIndicator.png */,
 				2C00D4C0172FC563002F0C5D /* GPTimelineCellIndicator@2x.png */,
-				2CD96FD0172C71D1008EF3EB /* Default-568h@2x.png */,
-				2CD96FD1172C71D1008EF3EB /* Default.png */,
-				2CD96FD2172C71D1008EF3EB /* Default@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -397,6 +423,8 @@
 			children = (
 				2C2D359D172EFAE000EE1025 /* GPNavigationBar.h */,
 				2C2D359E172EFAE000EE1025 /* GPNavigationBar.m */,
+				2C2F91B0173116B500B3E004 /* GPSplashscreen.h */,
+				2C2F91B1173116B500B3E004 /* GPSplashscreen.m */,
 			);
 			path = Generic;
 			sourceTree = "<group>";
@@ -464,9 +492,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD96FD3172C71D1008EF3EB /* Default-568h@2x.png in Resources */,
-				2CD96FD4172C71D1008EF3EB /* Default.png in Resources */,
-				2CD96FD5172C71D1008EF3EB /* Default@2x.png in Resources */,
 				2C2D358D172ECF3300EE1025 /* SunsetOverBonn.png in Resources */,
 				2C2D358E172ECF3300EE1025 /* SunsetOverBonn@2x.png in Resources */,
 				2C00D4C5172FC563002F0C5D /* GPBackButtonArrow_selected.png in Resources */,
@@ -499,6 +524,15 @@
 				2C48E288173080E800D56AA7 /* GPAboutMeButtonArrow.png in Resources */,
 				2C48E289173080E800D56AA7 /* GPAboutMeButtonArrow@2x.png in Resources */,
 				2C48E28A173080E800D56AA7 /* GPAboutMeButtonArrow_selected.png in Resources */,
+				2C7E0597173124100017E24E /* WWDC_Logo.png in Resources */,
+				2C7E0598173124100017E24E /* WWDC_Logo@2x.png in Resources */,
+				2C7E05AA173136650017E24E /* Avatar.png in Resources */,
+				2C7E05AB173136650017E24E /* Avatar@2x.png in Resources */,
+				2C7E05B1173137DC0017E24E /* Default-568h@2x.png in Resources */,
+				2C7E05B3173138000017E24E /* Icon@2x.png in Resources */,
+				2C7E05B5173138060017E24E /* Icon.png in Resources */,
+				2C7E05B71731383A0017E24E /* Default.png in Resources */,
+				2C7E05B91731383C0017E24E /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +563,8 @@
 				2C00D4AA172FB711002F0C5D /* GPWebViewController.m in Sources */,
 				2C48E27E1730239E00D56AA7 /* GPCircleView.m in Sources */,
 				2C48E28D173088C600D56AA7 /* GPAboutMeCell.m in Sources */,
+				2C2F91B2173116B500B3E004 /* GPSplashscreen.m in Sources */,
+				2C66450817312018009A1C2C /* CAAnimation+CompletionBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,10 +633,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Giulio Petek/Supporting Files/Giulio Petek-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Giulio Petek/Resources/Giulio Petek-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/TestFlightSDK1.2.4\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -612,10 +645,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Giulio Petek/Supporting Files/Giulio Petek-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Giulio Petek/Resources/Giulio Petek-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/TestFlightSDK1.2.4\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
