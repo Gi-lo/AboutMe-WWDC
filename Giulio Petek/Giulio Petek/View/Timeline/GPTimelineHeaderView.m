@@ -62,7 +62,8 @@ static void *GPTimelineHeaderScrollViewDidScrollViewContext;
 
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Avatar"]];
     [self addSubview:imageView];
-    
+
+
     _avatarImageView = imageView;
     
     return _avatarImageView;
