@@ -149,7 +149,7 @@ typedef NS_ENUM(NSInteger, GPTimelineViewControllerSection) {
 
 - (GPAboutMeCell *)_aboutMeCell {
     GPAboutMeCell *cell = [GPAboutMeCell reusableCellFromTableView:self.tableView];
-    cell.contentTextView.text = @"Hello, my name is Giulio Petek and I am a 20-years-old computer science student from the former capital of Germany, Bonn.\n\nI currently work at grandcentrix where I develop iPhone and iPad applications for larger companies. Besides developing I love going out and have fun with friends. I am also fascinated by soccer as well as tablesoccer.\n\nEmail:     giulio.petek@grandcentrix.net\nGithub:   http://github.com/gi-lo\nTwitter:   http://twitter.com/GiloTM\nWebsite: giuliopetek.com\nMobile:  +49 0176 31150339";
+    cell.contentTextView.text = @"Hello, my name is Giulio Petek and I am a 20-year-old computer science student from the former capital of Germany, Bonn.\n\nI currently work at grandcentrix where I develop iPhone and iPad applications for large companies. Besides development I love to go out and have fun with friends in games such as soccer and foosball.\n\nEmail:     giulio.petek@grandcentrix.net\nGithub:   http://github.com/gi-lo\nTwitter:   http://twitter.com/GiloTM\nWebsite: giuliopetek.com\nMobile:  +49 0176 31150339";
     
     return cell;
 }
